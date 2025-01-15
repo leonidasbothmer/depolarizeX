@@ -84,7 +84,66 @@
             </div>
             <div class="design-side">
                 <!-- <iframe class="device" src="feed-large-heart.html" frameborder="0"></iframe> -->
-                <div class="device"><img src="designs/be-that-emoji-2x.png" alt=""><div class="notch"></div></div>
+                <div class="device"><div class="notch"></div>
+                    <div class="slider-container">
+                        <button class="slide-btn prev"><img class="arrow" src="static/assets/icons_essay/arrow-left.svg" alt=""></button>
+                        <div class="slider">
+                            <img src="designs/be-that-emoji-1-2x.png" alt="">
+                            <img src="designs/be-that-emoji-2-2x.png" alt="">
+                            <img src="designs/be-that-emoji-3-2x.png" alt="">
+                            <img src="designs/be-that-emoji-4-2x.png" alt="">
+                        </div>
+                        <button class="slide-btn next"><img class="arrow" src="static/assets/icons_essay/arrow-right.svg" alt=""></button>
+                    </div>
+                </div>
+                <style>
+                    .slider-container {
+                        position: relative;
+                        width: 100%;
+                        overflow: hidden;
+                    }
+                    .slider {
+                        display: flex;
+                        transition: transform 0.3s ease;
+                    }
+                    .slider img {
+                        width: 100%;
+                        flex-shrink: 0;
+                    }
+                    .slide-btn {
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        background: rgba(0,0,0,1);
+                        color: white;
+                        border: none;
+                        /* padding: 10px; */
+                        height: 48px;
+                        width: 24px;
+                        cursor: pointer;
+                        z-index: 1;
+                    }
+                    .arrow {
+                        height: 16px;
+                    }
+                    .prev { left: 0px;  border-radius: 0 100px 100px 0; padding-right: 10px; }
+                    .next { right: 0px; border-radius: 100px 0 0 100px; padding-left: 10px;  }
+                </style>
+                <script>
+                    const slider = document.querySelector('.slider');
+                    const prevBtn = document.querySelector('.prev');
+                    const nextBtn = document.querySelector('.next');
+                    let currentSlide = 0;
+
+                    function slide(direction) {
+                        const slides = document.querySelectorAll('.slider img');
+                        currentSlide = (currentSlide + direction + slides.length) % slides.length;
+                        slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+                    }
+
+                    prevBtn.addEventListener('click', () => slide(-1));
+                    nextBtn.addEventListener('click', () => slide(1));
+                </script>
 
             </div>
         </div>
