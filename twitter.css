@@ -1,0 +1,222 @@
+:root {
+    --tw_accent: #1DA1F2;
+    --tw_text: #0F1419;
+    --tw_light_gray: #CFD8DE;
+    --tw_dark_gray: #536470;
+    box-sizing: border-box;
+
+}
+
+body {
+    color: var(--tw_text);
+    font-family: helvetica;
+}
+
+a {
+    color: var(--tw_accent);
+}
+
+p {
+    margin: 0;
+}
+
+.accent-color {
+    color: var(--tw_accent);
+}
+.ios-menu {
+    height: 54px;
+}
+
+.ios-home-indicator {
+    height: 21px;
+}
+
+
+.circle {
+    width: 50px;
+    height: 50px;
+    border: 2px solid lightgrey;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+}
+
+.link-pale {
+    color: var(--tw_dark_gray, #536470);
+    text-align: center;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.28px;
+}
+
+/* SHEETS */
+
+.sheet-title {
+    color: #000;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin: 0;
+}
+.sheet-subtitle {
+    color: var(--tw_dark_gray, #536470);
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 21px */
+    letter-spacing: -0.231px;
+    margin: 0;
+}
+
+.sheet-title-hold {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 0 16px;
+}
+
+/* MENU BAR */
+
+.menu-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px; /* Adjust height as needed */
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid #ccc; /* Optional: border at the top of the menu bar */
+    z-index: 1000; /* Ensure it stays on top of other content */
+}
+
+.menu-item {
+    width: 40px; /* Adjust size as needed */
+    height: 40px; /* Adjust size as needed */
+    border: 1px solid gray; /* Placeholder for icons */
+    background-color: #f0f0f0; /* Placeholder background color */
+    border-radius: 8px; /* Optional: rounded corners */
+}
+
+/* HEADER */
+
+header {
+    border-bottom: 0.33px solid var(--tw_light_gray);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: white;
+}
+
+.tw-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    background-color: white;
+}
+
+.profile-header {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+
+.logo-header {
+    width: 26px;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.secondary-btn {
+    padding: 6px 15px;
+    background-color: white;
+    color: black;
+    border-radius: 100px;
+    border: 1px solid #D3DCE0;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 19.5px */
+    letter-spacing: -0.208px;
+}
+.tab-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    padding-top: 12px;
+    background-color: white;
+    margin: 0;
+}
+.tab {
+    list-style-type: none;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.label-hold {
+    color: #536470;
+    display: inline-block;
+    text-align: center;
+    border-bottom: solid white 3px;
+    
+}
+.label {
+    padding-bottom: 8px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 21px */
+    letter-spacing: -0.224px;
+}
+.active-tab {
+    border-bottom: solid var(--tw_accent) 3px;
+    font-weight: 700;
+    color: black;
+}
+
+/* MENU */
+
+footer {
+    border-top: 0.33px solid var(--tw_light_gray);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 75px;
+    z-index: 9;
+}
+
+.menu-bar {
+    border: none;
+    display: flex;
+    height: 100%;
+    align-items: flex-start;
+    padding-top: 10px;
+    position: absolute;
+    bottom: 0;
+    border-top: 1px solid #C6D4DC;
+    background: rgba(255, 255, 255, 0.70);
+    backdrop-filter: blur(16px);
+}
+
+.menu-item {
+    display: flex;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+}
+
+.menu-item img {
+    width: 32px;
+    height: 32px;
+}

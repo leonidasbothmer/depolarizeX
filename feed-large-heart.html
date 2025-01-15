@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feed with Gravity Hearts</title>
+    <link rel="stylesheet" href="device.css">
+    <link rel="stylesheet" href="twitter.css">
+    <link rel="stylesheet" href="feed.css">
+    <link rel="stylesheet" href="feed-large-heart.css">
+    <!-- <link rel="stylesheet" href="onesec.css">
+    <link rel="stylesheet" href="splash.css"> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="https://p5play.org/v3/planck.min.js"></script>
+    <script src="https://p5play.org/v3/p5play.js"></script>
+    <!-- <script src="menu-bar.js" defer></script> -->
+    <!-- <script src="create-posts.js" defer></script> -->
+</head>
+<body>
+    <div class="screen">
+        <div class="notch"></div>
+        <div class="home-ind-hold">
+            <div class="home-ind"></div>
+        </div>
+        <header id="tw-header">
+            <div class="ios-menu">
+                <div class="ios-time">
+                    <time datetime="15:12">15:12</time>
+                </div>
+                <div class="ios-battery-etc">
+                    <img src="static/assets/icons/cellular.svg" alt="Icon 2">
+                    <img src="static/assets/icons/wifi.svg" alt="Icon 3">
+                    <img src="static/assets/icons/battery.svg" alt="Icon 1">
+                </div>
+            </div>
+            <div class="tw-header">
+                <img class="profile-header" src="static/assets/icons/no-profile.svg" alt="">
+                <img class="logo-header" src="static/assets/logos/x-logo-black.svg" alt="">
+                <button class="secondary-btn">Upgrade</button>
+            </div>
+            <ul class="tab-bar">
+                <li class="tab tab-1">
+                    <div class="label-hold">
+                        <p class="label">For you</p>
+                    </div>
+                </li>
+                <li class="tab tab-2">
+                    <div class="label-hold active-tab">
+                        <p class="label">Following</p>
+                    </div>
+                </li>
+            </ul>
+        </header>
+        <main id="feed"></main>
+        <footer id="tw-menu">
+            <nav class="menu-bar">
+                <a href="#" class="menu-item">
+                    <img src="static/assets/icons/menu-home.svg" alt="Home">
+                </a>
+                <a href="#" class="menu-item">
+                    <img src="static/assets/icons/menu-search.svg" alt="Search">
+                </a>
+                <a href="#" class="menu-item">
+                    <img src="static/assets/icons/menu-community.svg" alt="Community">
+                </a>
+                <a href="#" class="menu-item">
+                    <img src="static/assets/icons/menu-notifications.svg" alt="Notifications">
+                </a>
+                <a href="#" class="menu-item">
+                    <img src="static/assets/icons/menu-message.svg" alt="Messages">
+                </a>
+            </nav>
+        </footer>
+    </div>
+    <!-- <script src="create-header.js"></script> -->
+    <script src="create-posts.js"></script>
+    <script defer>
+        document.addEventListener('postsLoaded', function() {
+            
+            let sketch = new p5(function(p) {
+                let walls;
+
+                p.setup = function() {
+                    let canvas = p.createCanvas(375, 812, p.SVG);
+                    canvas.parent('feed');
+                }
+
+                p.draw = function() {
+                    p.clear();
+                    p.background("white");
+                    p.clear();
+                }
+
+                // Store p5 instance methods in window for click handler
+                window.scaleHeart = function() {
+                    if (!event.target.classList.contains('liked')) {
+                        event.target.src = 'static/assets/icons/heart-red.svg';
+                        event.target.classList.add('liked');
+                    } else {
+                        event.target.classList.remove('liked');
+                        event.target.src = 'static/assets/icons/heart-blank.svg';
+                    }
+                }
+                window.scaleBookmark = function() {
+                    if (!event.target.classList.contains('bookmarked')) {
+                        event.target.src = 'static/assets/icons/bookmark-blue.svg';
+                        event.target.classList.add('bookmarked');
+                    } else {
+                        event.target.classList.remove('bookmarked');
+                        event.target.src = 'static/assets/icons/bookmark-blank.svg';
+                    }
+                }
+                window.scaleComment = function() {
+                    if (!event.target.classList.contains('commented')) {
+                        event.target.src = 'static/assets/icons/comment-blue.svg';
+                        event.target.classList.add('commented');
+                    } else {
+                        event.target.classList.remove('commented');
+                        event.target.src = 'static/assets/icons/comment-blank.svg';
+                    }
+                }
+                window.scaleRetweet = function() {
+                    if (!event.target.classList.contains('retweeted')) {
+                        event.target.src = 'static/assets/icons/retweet-green.svg';
+                        event.target.classList.add('retweeted');
+                    } else {
+                        event.target.classList.remove('retweeted');
+                        event.target.src = 'static/assets/icons/retweet-blank.svg';
+                    }
+                }
+                window.scaleImpressions = function() {
+                    if (!event.target.classList.contains('impressed')) {
+                        event.target.src = 'static/assets/icons/impressions-blue.svg';
+                        event.target.classList.add('impressed');
+                    } else {
+                        event.target.classList.remove('impressed');
+                        event.target.src = 'static/assets/icons/impressions-blank.svg';
+                    }
+                }
+                window.scaleShare = function() {
+                    if (!event.target.classList.contains('shared')) {
+                        event.target.src = 'static/assets/icons/share-blue.svg';
+                        event.target.classList.add('shared');
+                    } else {
+                        event.target.classList.remove('shared');
+                        event.target.src = 'static/assets/icons/share-blank.svg';
+                    }
+                }
+            });
+
+            document.addEventListener('click', function(event) {
+                if (event.target.classList.contains('comment-icon')) {
+                    window.scaleComment();
+                } if (event.target.classList.contains('retweet-icon')) {
+                    window.scaleRetweet();
+                } if (event.target.classList.contains('heart-icon')) {
+                    window.scaleHeart();
+                } if (event.target.classList.contains('bookmark-icon')) {
+                    window.scaleBookmark();
+                } if (event.target.classList.contains('impressions-icon')) {
+                    window.scaleImpressions();
+                } if (event.target.classList.contains('share-icon')) {
+                    window.scaleShare();
+                }
+            });
+        });
+    </script>
+</body>
+</html>

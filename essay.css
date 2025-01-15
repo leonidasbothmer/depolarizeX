@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #FCFBF9;
+}
+
+@font-face {
+    font-family: "ABC Marist Unlicenced Trial";
+    src: url('/static/fonts/ABCMarist-Regular-Trial.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "ABC Marist Unlicenced Trial";
+    src: url('/static/fonts/ABCMarist-RegularItalic-Trial.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "ABC Marist Unlicenced Trial";
+    src: url('/static/fonts/ABCMarist-Bold-Trial.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+  
+p {
+    /* font-family: "Monaspace _____ VF", sans-serif;  */
+    font-family: "ABC Marist Unlicenced Trial", serif; 
+    font-size: 24px;
+    line-height: 130%;
+
+    margin-bottom: 18px;
+}
+
+
+a {
+    color: #FFA600;
+    text-decoration: none;
+
+}
+a:hover {
+    /* color: #FFA600; */
+    text-decoration: underline;
+}
+a:visited {
+    /* color: #8C5B00; */
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 120px;
+}
+h2 {
+    font-size: 64px;
+    line-height: 115%;
+    font-family: "Bricolage Grotesque Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: SemiBold;
+    font-style: normal;
+    margin-bottom: 64px;
+    /* margin-top: calc((100vh - 812px - 12px) / 2); */
+    margin-top: 196px;
+}
+h3 {
+    font-size: 32px;
+    line-height: 115%;
+    font-family: "Bricolage Grotesque Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: SemiBold;
+    font-style: normal;
+    margin-bottom: 32px;
+}
+  
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 256px;
+}
+.paragraph-hold {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    /* border: 1px dashed black; */
+    gap: 64px;
+    /* padding: 50px; */
+    box-sizing: inherit;
+
+}
+.device {
+    width: 375px;
+    height: 812px;
+
+    /* border: 1px dashed red; */
+
+    background-color: white;
+    position: sticky;
+    top: calc((100vh - 812px - 12px) / 2);
+}
+.device img {
+    width: 100%;
+}
+.essay-side {
+    width: 50%;
+    /* border: 1px dashed blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.design-side {
+    width: 50%;
+    /* border: 1px dashed green; */
+    position: relative;
+    /* height: 100vh; */
+}
+
+.essay-snippet {
+    max-width: 512px;
+}
+
+footer {
+    background-color: #303E48;
+    color: white;
+    font-size: 20px;
+    margin-top: 64px;
+}
+
+.references {
+    font-size: 16px;
+    line-height: 130%;
+    font-family: "ABC Marist Unlicenced Trial", serif; 
+    margin-top: 64px;
+    max-width: 960px;
+    margin: auto;
+    padding: 72px 0;
+}
+
+.references p {
+    margin-bottom: 18px;
+    font-size: 18px;
+}
+.references a {
+    color: #FFA600;
+    text-decoration: none;
+
+}
+.references a:hover {
+    /* color: #FFD17B; */
+    text-decoration: underline;
+}
+.references a:visited {
+    /* color: #8C5B00; */
+    text-decoration: none;
+}
+

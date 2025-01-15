@@ -1,0 +1,1392 @@
+[
+  {
+    "tweet": {
+      "id": "p001",
+      "author_id": "a001",
+      "text": "They want to control what you say, what you think, and what you do. Resist the woke mob before it\u2019s too late! #FreeSpeech",
+      "image_url": null,
+      "metrics": {
+        "likes": 139,
+        "comments": 305,
+        "shares": 105,
+        "bookmarks": 49,
+        "impressions": 5798
+      }
+    },
+    "comments": [
+      {
+        "id": "p011",
+        "author_id": "a053",
+        "text": "Comment 1 on tweet 1.",
+        "image_url": null,
+        "metrics": {
+          "likes": 999,
+          "comments": 181,
+          "shares": 66,
+          "bookmarks": 5,
+          "impressions": 3144
+        }
+      },
+      {
+        "id": "p012",
+        "author_id": "a027",
+        "text": "Comment 2 on tweet 1.",
+        "image_url": null,
+        "metrics": {
+          "likes": 1788,
+          "comments": 432,
+          "shares": 278,
+          "bookmarks": 40,
+          "impressions": 4046
+        }
+      },
+      {
+        "id": "p013",
+        "author_id": "a076",
+        "text": "Comment 3 on tweet 1.",
+        "image_url": null,
+        "metrics": {
+          "likes": 1024,
+          "comments": 387,
+          "shares": 219,
+          "bookmarks": 29,
+          "impressions": 8902
+        }
+      }
+    ]
+  },
+  {
+    "tweet": {
+      "id": "p002",
+      "author_id": "a002",
+      "text": "The global elites are pushing their \u2018Great Reset.\u2019 Don\u2019t let them destroy our sovereignty. #WakeUpAmerica",
+      "image_url": null,
+      "metrics": {
+        "likes": 270,
+        "comments": 476,
+        "shares": 289,
+        "bookmarks": 38,
+        "impressions": 4593
+      }
+    },
+    "comments": [
+      {
+        "id": "p021",
+        "author_id": "a030",
+        "text": "Comment 1 on tweet 2.",
+        "image_url": null,
+        "metrics": {
+          "likes": 245,
+          "comments": 77,
+          "shares": 71,
+          "bookmarks": 79,
+          "impressions": 7924
+        }
+      },
+      {
+        "id": "p022",
+        "author_id": "a033",
+        "text": "Comment 2 on tweet 2.",
+        "image_url": "static/data/images/p022.png",
+        "metrics": {
+          "likes": 1372,
+          "comments": 144,
+          "shares": 150,
+          "bookmarks": 58,
+          "impressions": 6315
+        }
+      },
+      {
+        "id": "p023",
+        "author_id": "a074",
+        "text": "Comment 3 on tweet 2.",
+        "image_url": "static/data/images/p023.png",
+        "metrics": {
+          "likes": 163,
+          "comments": 372,
+          "shares": 168,
+          "bookmarks": 1,
+          "impressions": 7923
+        }
+      }
+    ]
+  },
+  {
+    "tweet": {
+      "id": "p003",
+      "author_id": "a003",
+      "text": "The Second Amendment isn\u2019t up for debate. An armed population is a free population. #2A",
+      "image_url": null,
+      "metrics": {
+        "likes": 635,
+        "comments": 88,
+        "shares": 50,
+        "bookmarks": 67,
+        "impressions": 2673
+      }
+    },
+    "comments": [
+      {
+        "id": "p031",
+        "author_id": "a092",
+        "text": "Comment 1 on tweet 3.",
+        "image_url": "static/data/images/p031.png",
+        "metrics": {
+          "likes": 487,
+          "comments": 178,
+          "shares": 154,
+          "bookmarks": 57,
+          "impressions": 9682
+        }
+      },
+      {
+        "id": "p032",
+        "author_id": "a099",
+        "text": "Comment 2 on tweet 3.",
+        "image_url": null,
+        "metrics": {
+          "likes": 630,
+          "comments": 232,
+          "shares": 280,
+          "bookmarks": 61,
+          "impressions": 1494
+        }
+      },
+      {
+        "id": "p033",
+        "author_id": "a018",
+        "text": "Comment 3 on tweet 3.",
+        "image_url": null,
+        "metrics": {
+          "likes": 738,
+          "comments": 80,
+          "shares": 219,
+          "bookmarks": 100,
+          "impressions": 1920
+        }
+      }
+    ]
+  },
+  {
+    "tweet": {
+      "id": "p004",
+      "author_id": "a004",
+      "text": "Why are schools teaching kids to hate America? It\u2019s time to stop this woke indoctrination! #ParentsRights",
+      "image_url": null,
+      "metrics": {
+        "likes": 920,
+        "comments": 212,
+        "shares": 76,
+        "bookmarks": 15,
+        "impressions": 6437
+      }
+    },
+    "comments": [
+      {
+        "id": "p041",
+        "author_id": "a036",
+        "text": "Comment 1 on tweet 4.",
+        "image_url": null,
+        "metrics": {
+          "likes": 1259,
+          "comments": 236,
+          "shares": 107,
+          "bookmarks": 69,
+          "impressions": 3802
+        }
+      },
+      {
+        "id": "p042",
+        "author_id": "a027",
+        "text": "Comment 2 on tweet 4.",
+        "image_url": null,
+        "metrics": {
+          "likes": 903,
+          "comments": 251,
+          "shares": 98,
+          "bookmarks": 47,
+          "impressions": 7152
+        }
+      },
+      {
+        "id": "p043",
+        "author_id": "a094",
+        "text": "Comment 3 on tweet 4.",
+        "image_url": null,
+        "metrics": {
+          "likes": 320,
+          "comments": 18,
+          "shares": 198,
+          "bookmarks": 70,
+          "impressions": 9575
+        }
+      }
+    ]
+  },
+  {
+    "tweet": {
+      "id": "p005",
+      "author_id": "a005",
+      "text": "Big Pharma, Big Tech, and the media\u2014they\u2019re all in on it. Follow the money. #TruthWillOut",
+      "image_url": null,
+      "metrics": {
+        "likes": 1927,
+        "comments": 147,
+        "shares": 47,
+        "bookmarks": 72,
+        "impressions": 3784
+      }
+    },
+    "comments": [
+      {
+        "id": "p051",
+        "author_id": "a098",
+        "text": "Comment 1 on tweet 5.",
+        "image_url": "static/data/images/p051.png",
+        "metrics": {
+          "likes": 1722,
+          "comments": 115,
+          "shares": 246,
+          "bookmarks": 15,
+          "impressions": 7347
+        }
+      },
+      {
+        "id": "p052",
+        "author_id": "a083",
+        "text": "Comment 2 on tweet 5.",
+        "image_url": null,
+        "metrics": {
+          "likes": 1798,
+          "comments": 302,
+          "shares": 213,
+          "bookmarks": 79,
+          "impressions": 5738
+        }
+      },
+      {
+        "id": "p053",
+        "author_id": "a034",
+        "text": "Comment 3 on tweet 5.",
+        "image_url": null,
+        "metrics": {
+          "likes": 1013,
+          "comments": 109,
+          "shares": 189,
+          "bookmarks": 42,
+          "impressions": 8669
+        }
+      }
+    ]
+  },
+  {
+    "tweet": {
+      "id": "p006",
+      "author_id": "a006",
+      "text": "They lied about the virus. They lied about the vaccine. What else are they lying about? Think critically. #QuestionEverything",
+      "image_url": null,
+      "metrics": {
+        "likes": 1958,
+        "comments": 470,
+        "shares": 223,
+        "bookmarks": 99,
+        "impressions": 4832
+      }
+    },
+    "comments": [
+      {
+        "id": "p061",
+        "author_id": "a067",
+        "text": "Comment 1 on tweet 6.",
+        "image_url": null,
+        "metrics": {
+          "likes": 366,
+          "comments": 167,
+          "shares": 252,
+          "bookmarks": 74,
+          "impressions": 6265
+        }
+      },
+      {
+        "id": "p062",
+        "author_id": "a032",
+        "text": "Comment 2 on tweet 6.",
+        "image_url": null,
+        "metrics": {
+          "likes": 1873,
+          "comments": 313,
+          "shares": 64,
+          "bookmarks": 6,
+          "impressions": 6664
+        }
+      },
+      {
+        "id": "p063",
+        "author_id": "a020",
+        "text": "Comment 3 on tweet 6.",
+        "image_url": "static/data/images/p063.png",
+        "metrics": {
+          "likes": 1756,
+          "comments": 385,
+          "shares": 144,
+          "bookmarks": 49,
+          "impressions": 4075
+        }
+      }
+    ]
+  },
+  {
+    "tweet": {
+      "id": "p007",
+      "author_id": "a007",
+      "text": "There are only TWO genders. Biology isn\u2019t a social construct, folks. #Science",
+      "image_url": null,
+      "metrics": {
+        "likes": 1648,
+        "comments": 272,
+        "shares": 298,
+        "bookmarks": 84,
+        "impressions": 2479
+      }
+    },
+    "comments": [
+      {
+        "id": "p071",
+        "author_id": "a093",
+        "text": "Comment 1 on tweet 7.",
+        "image_url": null,
+        "metrics": {
+          "likes": 909,
+          "comments": 387,
+          "shares": 56,
+          "bookmarks": 96,
+          "impressions": 4144
+        }
+      },
+      {
+        "id": "p072",
+        "author_id": "a048",
+        "text": "Comment 2 on tweet 7.",
+        "image_url": null,
+        "metrics": {
+          "likes": 1556,
+          "comments": 175,
+          "shares": 149,
+          "bookmarks": 36,
+          "impressions": 9607
+        }
+      },
+      {
+        "id": "p073",
+        "author_id": "a017",
+        "text": "Comment 3 on tweet 7.",
+        "image_url": null,
+        "metrics": {
+          "likes": 437,
+          "comments": 295,
+          "shares": 150,
+          "bookmarks": 9,
+          "impressions": 8980
+        }
+      }
+    ]
+  },
+  {
+    "tweet": {
+      "id": "p008",
+      "author_id": "a008",
+      "text": "Why is the border wide open while Americans struggle to make ends meet? It\u2019s an invasion, not immigration. #SecureTheBorder",
+      "image_url": null,
+      "metrics": {
+        "likes": 880,
+        "comments": 29,
+        "shares": 204,
+        "bookmarks": 91,
+        "impressions": 8320
+      }
+    },
+    "comments": [
+      {
+        "id": "p081",
+        "author_id": "a059",
+        "text": "Comment 1 on tweet 8.",
+        "image_url": null,
+        "metrics": {
+          "likes": 798,
+          "comments": 162,
+          "shares": 286,
+          "bookmarks": 28,
+          "impressions": 2666
+        }
+      },
+      {
+        "id": "p082",
+        "author_id": "a079",
+        "text": "Comment 2 on tweet 8.",
+        "image_url": null,
+        "metrics": {
+          "likes": 439,
+          "comments": 144,
+          "shares": 247,
+          "bookmarks": 11,
+          "impressions": 6991
+        }
+      },
+      {
+        "id": "p083",
+        "author_id": "a095",
+        "text": "Comment 3 on tweet 8.",
+        "image_url": null,
+        "metrics": {
+          "likes": 837,
+          "comments": 444,
+          "shares": 144,
+          "bookmarks": 38,
+          "impressions": 9827
+        }
+      }
+    ]
+  },
+  {
+    "tweet": {
+      "id": "p009",
+      "author_id": "a009",
+      "text": "The deep state is real, and they\u2019ll stop at nothing to silence patriots. Stay vigilant. #DrainTheSwamp",
+      "image_url": "static/data/images/p009.png",
+      "metrics": {
+        "likes": 775,
+        "comments": 397,
+        "shares": 270,
+        "bookmarks": 11,
+        "impressions": 2231
+      }
+    },
+    "comments": [
+      {
+        "id": "p091",
+        "author_id": "a043",
+        "text": "Comment 1 on tweet 9.",
+        "image_url": null,
+        "metrics": {
+          "likes": 1876,
+          "comments": 211,
+          "shares": 95,
+          "bookmarks": 58,
+          "impressions": 6908
+        }
+      },
+      {
+        "id": "p092",
+        "author_id": "a064",
+        "text": "Comment 2 on tweet 9.",
+        "image_url": null,
+        "metrics": {
+          "likes": 666,
+          "comments": 220,
+          "shares": 62,
+          "bookmarks": 6,
+          "impressions": 5009
+        }
+      },
+      {
+        "id": "p093",
+        "author_id": "a092",
+        "text": "Comment 3 on tweet 9.",
+        "image_url": null,
+        "metrics": {
+          "likes": 1063,
+          "comments": 73,
+          "shares": 235,
+          "bookmarks": 88,
+          "impressions": 4468
+        }
+      }
+    ]
+  },
+  {
+    "tweet": {
+      "id": "p010",
+      "author_id": "a010",
+      "text": "The climate change hoax is just another excuse to take away your freedoms. Don\u2019t fall for it. #ClimateScam",
+      "image_url": null,
+      "metrics": {
+        "likes": 1697,
+        "comments": 36,
+        "shares": 277,
+        "bookmarks": 33,
+        "impressions": 9540
+      }
+    },
+    "comments": [
+      {
+        "id": "p101",
+        "author_id": "a094",
+        "text": "Comment 1 on tweet 10.",
+        "image_url": null,
+        "metrics": {
+          "likes": 1189,
+          "comments": 99,
+          "shares": 42,
+          "bookmarks": 62,
+          "impressions": 3740
+        }
+      },
+      {
+        "id": "p102",
+        "author_id": "a062",
+        "text": "Comment 2 on tweet 10.",
+        "image_url": null,
+        "metrics": {
+          "likes": 1202,
+          "comments": 294,
+          "shares": 40,
+          "bookmarks": 60,
+          "impressions": 4489
+        }
+      },
+      {
+        "id": "p103",
+        "author_id": "a087",
+        "text": "Comment 3 on tweet 10.",
+        "image_url": null,
+        "metrics": {
+          "likes": 205,
+          "comments": 171,
+          "shares": 230,
+          "bookmarks": 31,
+          "impressions": 8634
+        }
+      }
+    ]
+  },
+  {
+    "tweet": {
+      "id": "p011",
+      "author_id": "a011",
+      "text": "Black Lives Matter isn\u2019t just a slogan. It\u2019s a movement. It\u2019s time to dismantle systemic racism. #BLM",
+      "image_url": null,
+      "metrics": {
+        "likes": 456,
+        "comments": 458,
+        "shares": 118,
+        "bookmarks": 52,
+        "impressions": 3318
+      }
+    },
+    "comments": [
+      {
+        "id": "p111",
+        "author_id": "a050",
+        "text": "Comment 1 on tweet 11.",
+        "image_url": null,
+        "metrics": {
+          "likes": 1678,
+          "comments": 225,
+          "shares": 236,
+          "bookmarks": 60,
+          "impressions": 9689
+        }
+      },
+      {
+        "id": "p112",
+        "author_id": "a092",
+        "text": "Comment 2 on tweet 11.",
+        "image_url": null,
+        "metrics": {
+          "likes": 154,
+          "comments": 94,
+          "shares": 188,
+          "bookmarks": 71,
+          "impressions": 9848
+        }
+      },
+      {
+        "id": "p113",
+        "author_id": "a090",
+        "text": "Comment 3 on tweet 11.",
+        "image_url": null,
+        "metrics": {
+          "likes": 392,
+          "comments": 428,
+          "shares": 33,
+          "bookmarks": 94,
+          "impressions": 7607
+        }
+      }
+    ]
+  },
+  {
+    "tweet": {
+      "id": "p012",
+      "author_id": "a012",
+      "text": "Corporations love to wave rainbow flags in June but pay their workers poverty wages. True allyship means fighting for justice. #Pride",
+      "image_url": null,
+      "metrics": {
+        "likes": 1625,
+        "comments": 186,
+        "shares": 60,
+        "bookmarks": 51,
+        "impressions": 9002
+      }
+    },
+    "comments": [
+      {
+        "id": "p121",
+        "author_id": "a013",
+        "text": "Comment 1 on tweet 12.",
+        "image_url": null,
+        "metrics": {
+          "likes": 1236,
+          "comments": 483,
+          "shares": 201,
+          "bookmarks": 89,
+          "impressions": 8754
+        }
+      },
+      {
+        "id": "p122",
+        "author_id": "a013",
+        "text": "Comment 2 on tweet 12.",
+        "image_url": null,
+        "metrics": {
+          "likes": 1620,
+          "comments": 152,
+          "shares": 267,
+          "bookmarks": 19,
+          "impressions": 1941
+        }
+      },
+      {
+        "id": "p123",
+        "author_id": "a023",
+        "text": "Comment 3 on tweet 12.",
+        "image_url": null,
+        "metrics": {
+          "likes": 584,
+          "comments": 319,
+          "shares": 93,
+          "bookmarks": 99,
+          "impressions": 1825
+        }
+      }
+    ]
+  },
+  {
+    "tweet": {
+      "id": "p013",
+      "author_id": "a013",
+      "text": "Indigenous land was stolen. Reparations aren\u2019t a favor\u2014they\u2019re overdue. #LandBack",
+      "image_url": null,
+      "metrics": {
+        "likes": 1674,
+        "comments": 268,
+        "shares": 176,
+        "bookmarks": 60,
+        "impressions": 1695
+      }
+    },
+    "comments": [
+      {
+        "id": "p131",
+        "author_id": "a048",
+        "text": "Comment 1 on tweet 13.",
+        "image_url": null,
+        "metrics": {
+          "likes": 1505,
+          "comments": 424,
+          "shares": 196,
+          "bookmarks": 86,
+          "impressions": 7584
+        }
+      },
+      {
+        "id": "p132",
+        "author_id": "a032",
+        "text": "Comment 2 on tweet 13.",
+        "image_url": null,
+        "metrics": {
+          "likes": 322,
+          "comments": 17,
+          "shares": 154,
+          "bookmarks": 95,
+          "impressions": 9675
+        }
+      },
+      {
+        "id": "p133",
+        "author_id": "a088",
+        "text": "Comment 3 on tweet 13.",
+        "image_url": null,
+        "metrics": {
+          "likes": 1452,
+          "comments": 128,
+          "shares": 185,
+          "bookmarks": 70,
+          "impressions": 5468
+        }
+      }
+    ]
+  },
+  {
+    "tweet": {
+      "id": "p014",
+      "author_id": "a014",
+      "text": "Student loan forgiveness isn\u2019t radical. It\u2019s basic economic justice. Cancel the debt! #DebtReliefNow",
+      "image_url": null,
+      "metrics": {
+        "likes": 1563,
+        "comments": 33,
+        "shares": 161,
+        "bookmarks": 85,
+        "impressions": 2569
+      }
+    },
+    "comments": [
+      {
+        "id": "p141",
+        "author_id": "a063",
+        "text": "Comment 1 on tweet 14.",
+        "image_url": null,
+        "metrics": {
+          "likes": 1223,
+          "comments": 58,
+          "shares": 290,
+          "bookmarks": 74,
+          "impressions": 6813
+        }
+      },
+      {
+        "id": "p142",
+        "author_id": "a084",
+        "text": "Comment 2 on tweet 14.",
+        "image_url": null,
+        "metrics": {
+          "likes": 368,
+          "comments": 108,
+          "shares": 96,
+          "bookmarks": 54,
+          "impressions": 7310
+        }
+      },
+      {
+        "id": "p143",
+        "author_id": "a055",
+        "text": "Comment 3 on tweet 14.",
+        "image_url": null,
+        "metrics": {
+          "likes": 1579,
+          "comments": 263,
+          "shares": 179,
+          "bookmarks": 86,
+          "impressions": 6357
+        }
+      }
+    ]
+  },
+  {
+    "tweet": {
+      "id": "p015",
+      "author_id": "a015",
+      "text": "The police don\u2019t keep us safe. Investing in communities does. Defund the police and reimagine public safety. #DefundThePolice",
+      "image_url": null,
+      "metrics": {
+        "likes": 1095,
+        "comments": 367,
+        "shares": 179,
+        "bookmarks": 6,
+        "impressions": 2508
+      }
+    },
+    "comments": [
+      {
+        "id": "p151",
+        "author_id": "a049",
+        "text": "Comment 1 on tweet 15.",
+        "image_url": "static/data/images/p151.png",
+        "metrics": {
+          "likes": 1499,
+          "comments": 500,
+          "shares": 57,
+          "bookmarks": 94,
+          "impressions": 8729
+        }
+      },
+      {
+        "id": "p152",
+        "author_id": "a026",
+        "text": "Comment 2 on tweet 15.",
+        "image_url": null,
+        "metrics": {
+          "likes": 1018,
+          "comments": 20,
+          "shares": 185,
+          "bookmarks": 19,
+          "impressions": 9581
+        }
+      },
+      {
+        "id": "p153",
+        "author_id": "a075",
+        "text": "Comment 3 on tweet 15.",
+        "image_url": null,
+        "metrics": {
+          "likes": 1048,
+          "comments": 31,
+          "shares": 244,
+          "bookmarks": 49,
+          "impressions": 9565
+        }
+      }
+    ]
+  },
+  {
+    "tweet": {
+      "id": "p016",
+      "author_id": "a016",
+      "text": "We can\u2019t save the planet with capitalism. The future is socialist, or there won\u2019t be one. #EcoSocialism",
+      "image_url": null,
+      "metrics": {
+        "likes": 1901,
+        "comments": 165,
+        "shares": 284,
+        "bookmarks": 93,
+        "impressions": 1221
+      }
+    },
+    "comments": [
+      {
+        "id": "p161",
+        "author_id": "a080",
+        "text": "Comment 1 on tweet 16.",
+        "image_url": null,
+        "metrics": {
+          "likes": 937,
+          "comments": 294,
+          "shares": 61,
+          "bookmarks": 36,
+          "impressions": 9618
+        }
+      },
+      {
+        "id": "p162",
+        "author_id": "a061",
+        "text": "Comment 2 on tweet 16.",
+        "image_url": null,
+        "metrics": {
+          "likes": 1101,
+          "comments": 46,
+          "shares": 101,
+          "bookmarks": 28,
+          "impressions": 5066
+        }
+      },
+      {
+        "id": "p163",
+        "author_id": "a033",
+        "text": "Comment 3 on tweet 16.",
+        "image_url": "static/data/images/p163.png",
+        "metrics": {
+          "likes": 318,
+          "comments": 257,
+          "shares": 286,
+          "bookmarks": 77,
+          "impressions": 3141
+        }
+      }
+    ]
+  },
+  {
+    "tweet": {
+      "id": "p017",
+      "author_id": "a017",
+      "text": "Gender is a spectrum, and love is love. Let\u2019s celebrate diversity, not fear it. #LGBTQIA",
+      "image_url": null,
+      "metrics": {
+        "likes": 55,
+        "comments": 69,
+        "shares": 151,
+        "bookmarks": 48,
+        "impressions": 6592
+      }
+    },
+    "comments": [
+      {
+        "id": "p171",
+        "author_id": "a066",
+        "text": "Comment 1 on tweet 17.",
+        "image_url": null,
+        "metrics": {
+          "likes": 511,
+          "comments": 200,
+          "shares": 234,
+          "bookmarks": 16,
+          "impressions": 7931
+        }
+      },
+      {
+        "id": "p172",
+        "author_id": "a050",
+        "text": "Comment 2 on tweet 17.",
+        "image_url": null,
+        "metrics": {
+          "likes": 166,
+          "comments": 51,
+          "shares": 203,
+          "bookmarks": 54,
+          "impressions": 6812
+        }
+      },
+      {
+        "id": "p173",
+        "author_id": "a069",
+        "text": "Comment 3 on tweet 17.",
+        "image_url": null,
+        "metrics": {
+          "likes": 833,
+          "comments": 273,
+          "shares": 103,
+          "bookmarks": 9,
+          "impressions": 6839
+        }
+      }
+    ]
+  },
+  {
+    "tweet": {
+      "id": "p018",
+      "author_id": "a018",
+      "text": "We won\u2019t rest until every trans kid feels safe, loved, and affirmed. Trans rights are human rights. #ProtectTransKids",
+      "image_url": null,
+      "metrics": {
+        "likes": 329,
+        "comments": 83,
+        "shares": 127,
+        "bookmarks": 69,
+        "impressions": 6557
+      }
+    },
+    "comments": [
+      {
+        "id": "p181",
+        "author_id": "a062",
+        "text": "Comment 1 on tweet 18.",
+        "image_url": null,
+        "metrics": {
+          "likes": 726,
+          "comments": 381,
+          "shares": 78,
+          "bookmarks": 89,
+          "impressions": 7445
+        }
+      },
+      {
+        "id": "p182",
+        "author_id": "a062",
+        "text": "Comment 2 on tweet 18.",
+        "image_url": null,
+        "metrics": {
+          "likes": 1669,
+          "comments": 444,
+          "shares": 148,
+          "bookmarks": 35,
+          "impressions": 5761
+        }
+      },
+      {
+        "id": "p183",
+        "author_id": "a059",
+        "text": "Comment 3 on tweet 18.",
+        "image_url": null,
+        "metrics": {
+          "likes": 306,
+          "comments": 175,
+          "shares": 288,
+          "bookmarks": 20,
+          "impressions": 6367
+        }
+      }
+    ]
+  },
+  {
+    "tweet": {
+      "id": "p019",
+      "author_id": "a019",
+      "text": "America was built on stolen labor and stolen land. The least we can do is tell the truth about it. #CriticalRaceTheory",
+      "image_url": null,
+      "metrics": {
+        "likes": 1094,
+        "comments": 127,
+        "shares": 269,
+        "bookmarks": 67,
+        "impressions": 5413
+      }
+    },
+    "comments": [
+      {
+        "id": "p191",
+        "author_id": "a097",
+        "text": "Comment 1 on tweet 19.",
+        "image_url": null,
+        "metrics": {
+          "likes": 161,
+          "comments": 343,
+          "shares": 279,
+          "bookmarks": 41,
+          "impressions": 5123
+        }
+      },
+      {
+        "id": "p192",
+        "author_id": "a032",
+        "text": "Comment 2 on tweet 19.",
+        "image_url": null,
+        "metrics": {
+          "likes": 610,
+          "comments": 305,
+          "shares": 211,
+          "bookmarks": 6,
+          "impressions": 8174
+        }
+      },
+      {
+        "id": "p193",
+        "author_id": "a033",
+        "text": "Comment 3 on tweet 19.",
+        "image_url": null,
+        "metrics": {
+          "likes": 1115,
+          "comments": 451,
+          "shares": 83,
+          "bookmarks": 1,
+          "impressions": 2209
+        }
+      }
+    ]
+  },
+  {
+    "tweet": {
+      "id": "p020",
+      "author_id": "a020",
+      "text": "Universal health care isn\u2019t radical. It\u2019s a moral obligation. Nobody should die because they can\u2019t afford a doctor. #HealthCareForAll",
+      "image_url": null,
+      "metrics": {
+        "likes": 1835,
+        "comments": 168,
+        "shares": 38,
+        "bookmarks": 85,
+        "impressions": 8481
+      }
+    },
+    "comments": [
+      {
+        "id": "p201",
+        "author_id": "a013",
+        "text": "Comment 1 on tweet 20.",
+        "image_url": null,
+        "metrics": {
+          "likes": 1735,
+          "comments": 134,
+          "shares": 278,
+          "bookmarks": 54,
+          "impressions": 1858
+        }
+      },
+      {
+        "id": "p202",
+        "author_id": "a069",
+        "text": "Comment 2 on tweet 20.",
+        "image_url": null,
+        "metrics": {
+          "likes": 946,
+          "comments": 190,
+          "shares": 257,
+          "bookmarks": 19,
+          "impressions": 6934
+        }
+      },
+      {
+        "id": "p203",
+        "author_id": "a044",
+        "text": "Comment 3 on tweet 20.",
+        "image_url": null,
+        "metrics": {
+          "likes": 499,
+          "comments": 34,
+          "shares": 290,
+          "bookmarks": 83,
+          "impressions": 2559
+        }
+      }
+    ]
+  },
+  {
+    "tweet": {
+      "id": "p020",
+      "author_id": "a021",
+      "text": "Universal health care isn\u2019t radical. It\u2019s a moral obligation. Nobody should die because they can\u2019t afford a doctor. #HealthCareForAll",
+      "image_url": null,
+      "metrics": {
+        "likes": 1835,
+        "comments": 168,
+        "shares": 38,
+        "bookmarks": 85,
+        "impressions": 8481
+      }
+    },
+    "comments": []
+  },
+  {
+    "tweet": {
+      "id": "p021",
+      "author_id": "a022",
+      "text": "Just witnessed the most incredible sunset over the mountains. Nature reminds us how small we are in this vast universe. Sometimes I wonder if we're all just tiny specks of stardust trying to find our way home. #Nature #Philosophy #BeautifulEarth",
+      "image_url": "static/data/images/p021.png",
+      "metrics": {
+        "likes": 2341,
+        "comments": 183,
+        "shares": 445,
+        "bookmarks": 127,
+        "impressions": 12453
+      }
+    },
+    "comments": [
+      {
+        "id": "p211",
+        "author_id": "a045",
+        "text": "This reminds me of last summer's hiking trip!",
+        "image_url": null,
+        "metrics": {
+          "likes": 876,
+          "comments": 92,
+          "shares": 134,
+          "bookmarks": 23,
+          "impressions": 3421
+        }
+      }
+    ]
+  },
+  {
+    "tweet": {
+      "id": "p022",
+      "author_id": "a023",
+      "text": "AI is not just changing how we work - it's revolutionizing how we think about consciousness itself. The implications for humanity are both exciting and terrifying. What does it mean to be human in an age of artificial minds? #AI #FutureOfTechnology",
+      "image_url": null,
+      "metrics": {
+        "likes": 4532,
+        "comments": 892,
+        "shares": 1203,
+        "bookmarks": 343,
+        "impressions": 28765
+      }
+    },
+    "comments": []
+  },
+  {
+    "tweet": {
+      "id": "p023",
+      "author_id": "a024",
+      "text": "Made my grandmother's secret pasta sauce recipe today. The kitchen smells like childhood memories and love. Food really is the universal language that brings us all together. Share your favorite family recipes below! #Cooking #FamilyTraditions",
+      "image_url": "static/data/images/p023.png",
+      "metrics": {
+        "likes": 3267,
+        "comments": 456,
+        "shares": 234,
+        "bookmarks": 789,
+        "impressions": 15678
+      }
+    },
+    "comments": []
+  },
+  {
+    "tweet": {
+      "id": "p024",
+      "author_id": "a025",
+      "text": "Remember when we used to memorize phone numbers? Technology has changed our brains in ways we don't even realize. Kids today will never know the struggle of rewinding a VHS tape or the sweet sound of dial-up internet. #90sKids #TechnologyEvolution",
+      "image_url": null,
+      "metrics": {
+        "likes": 5678,
+        "comments": 912,
+        "shares": 1432,
+        "bookmarks": 234,
+        "impressions": 45321
+      }
+    },
+    "comments": []
+  },
+  {
+    "tweet": {
+      "id": "p025",
+      "author_id": "a026",
+      "text": "Breaking: Scientists discover new species of deep-sea creatures near the Mariana Trench. We know more about space than our own oceans. The mysteries below the waves are endless. #MarineScience #Discovery #Exploration",
+      "image_url": "static/data/images/p025.png",
+      "metrics": {
+        "likes": 8901,
+        "comments": 567,
+        "shares": 2345,
+        "bookmarks": 432,
+        "impressions": 67890
+      }
+    },
+    "comments": []
+  },
+  {
+    "tweet": {
+      "id": "p026",
+      "author_id": "a027",
+      "text": "Started learning Japanese today! 頑張ります! It's never too late to pick up a new skill. The human brain is capable of amazing things at any age. Who else is on a language learning journey? #LanguageLearning #NeverStopLearning",
+      "image_url": null,
+      "metrics": {
+        "likes": 2198,
+        "comments": 345,
+        "shares": 167,
+        "bookmarks": 543,
+        "impressions": 12987
+      }
+    },
+    "comments": []
+  },
+  {
+    "tweet": {
+      "id": "p027",
+      "author_id": "a028",
+      "text": "Just finished my first marathon! 26.2 miles of pure determination. Remember: the only limits that exist are the ones we create in our minds. Believe in yourself and push beyond your comfort zone. #Running #PersonalAchievement #NeverGiveUp",
+      "image_url": "static/data/images/p027.png",
+      "metrics": {
+        "likes": 6543,
+        "comments": 789,
+        "shares": 432,
+        "bookmarks": 234,
+        "impressions": 34567
+      }
+    },
+    "comments": []
+  },
+  {
+    "tweet": {
+      "id": "p028",
+      "author_id": "a029",
+      "text": "The latest Mars rover images are mind-blowing. To think we're exploring another planet while simultaneously struggling to protect our own. Let's channel this same innovation into saving Earth. #Space #ClimateAction #Innovation",
+      "image_url": null,
+      "metrics": {
+        "likes": 7890,
+        "comments": 1234,
+        "shares": 2345,
+        "bookmarks": 567,
+        "impressions": 89012
+      }
+    },
+    "comments": []
+  },
+  {
+    "tweet": {
+      "id": "p029",
+      "author_id": "a030",
+      "text": "Local bookstore closing after 50 years. Digital convenience is great, but there's something magical about the smell of books and the quiet rustle of pages. Support your local businesses before they become memories. #SaveLocalBookstores #Community",
+      "image_url": null,
+      "metrics": {
+        "likes": 4321,
+        "comments": 678,
+        "shares": 987,
+        "bookmarks": 345,
+        "impressions": 23456
+      }
+    },
+    "comments": []
+  },
+  {
+    "tweet": {
+      "id": "p030",
+      "author_id": "a031",
+      "text": "Found my old Pokemon cards in the attic. Childhood memories hit different when you're an adult. Sometimes the simplest things brought us the most joy. Anyone else miss the good old days? #Nostalgia #Pokemon #90sKid",
+      "image_url": "static/data/images/p030.png",
+      "metrics": {
+        "likes": 9876,
+        "comments": 543,
+        "shares": 765,
+        "bookmarks": 234,
+        "impressions": 45678
+      }
+    },
+    "comments": []
+  },
+  {
+    "tweet": {
+      "id": "p031",
+      "author_id": "a032",
+      "text": "Working on a new sustainable housing project using recycled materials. The future of architecture isn't just about aesthetics - it's about harmony with nature. Together we can build a better world. #SustainableDesign #Architecture #Innovation",
+      "image_url": null,
+      "metrics": {
+        "likes": 5432,
+        "comments": 876,
+        "shares": 1098,
+        "bookmarks": 432,
+        "impressions": 34567
+      }
+    },
+    "comments": []
+  },
+  {
+    "tweet": {
+      "id": "p032",
+      "author_id": "a033",
+      "text": "My garden is finally blooming! There's something deeply satisfying about growing your own food. Started with just a few herbs, now I have tomatoes, cucumbers, and peppers. Nature's miracles in my backyard! #Gardening #Sustainability #GrowYourOwn",
+      "image_url": "static/data/images/p032.png",
+      "metrics": {
+        "likes": 3456,
+        "comments": 234,
+        "shares": 567,
+        "bookmarks": 189,
+        "impressions": 23456
+      }
+    },
+    "comments": []
+  },
+  {
+    "tweet": {
+      "id": "p033",
+      "author_id": "a034",
+      "text": "Just witnessed a random act of kindness at the grocery store. Elderly gentleman couldn't afford his groceries, and the person behind him paid without hesitation. Humanity still exists. Be the light you want to see in the world. #Kindness #Humanity",
+      "image_url": null,
+      "metrics": {
+        "likes": 7654,
+        "comments": 432,
+        "shares": 1234,
+        "bookmarks": 567,
+        "impressions": 56789
+      }
+    },
+    "comments": []
+  },
+  {
+    "tweet": {
+      "id": "p034",
+      "author_id": "a035",
+      "text": "Finally launched my podcast about mental health and creativity! It's scary putting yourself out there, but if it helps even one person feel less alone, it's worth it. Check it out if you're interested! #MentalHealth #Creativity #NewPodcast",
+      "image_url": null,
+      "metrics": {
+        "likes": 4567,
+        "comments": 789,
+        "shares": 890,
+        "bookmarks": 345,
+        "impressions": 34567
+      }
+    },
+    "comments": []
+  },
+  {
+    "tweet": {
+      "id": "p035",
+      "author_id": "a036",
+      "text": "Spent the weekend teaching my grandparents how to use video chat. Their faces lit up when they saw their great-grandchildren on screen. Technology isn't just about progress - it's about connecting hearts across distances. #FamilyTime #Technology",
+      "image_url": "static/data/images/p035.png",
+      "metrics": {
+        "likes": 6789,
+        "comments": 345,
+        "shares": 678,
+        "bookmarks": 234,
+        "impressions": 45678
+      }
+    },
+    "comments": []
+  }
+]
