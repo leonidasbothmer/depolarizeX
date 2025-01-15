@@ -11,7 +11,7 @@ body {
 
 @font-face {
     font-family: "ABC Marist Unlicenced Trial";
-    src: url('/static/fonts/ABCMarist-Regular-Trial.woff2') format('woff2');
+    src: url('static/fonts/ABCMarist-Regular-Trial.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -19,7 +19,7 @@ body {
 
 @font-face {
     font-family: "ABC Marist Unlicenced Trial";
-    src: url('/static/fonts/ABCMarist-RegularItalic-Trial.woff2') format('woff2');
+    src: url('static/fonts/ABCMarist-RegularItalic-Trial.woff2') format('woff2');
     font-weight: normal;
     font-style: italic;
     font-display: swap;
@@ -27,7 +27,7 @@ body {
 
 @font-face {
     font-family: "ABC Marist Unlicenced Trial";
-    src: url('/static/fonts/ABCMarist-Bold-Trial.woff2') format('woff2');
+    src: url('static/fonts/ABCMarist-Bold-Trial.woff2') format('woff2');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
