@@ -13,8 +13,68 @@
     <link rel="stylesheet" href="device.css">
 </head>
 <body>
-    <header></header>
+    <div class="reading-progress"></div>
+
+    <script>
+        window.addEventListener('scroll', () => {
+            const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const progress = (window.scrollY / totalHeight) * 100;
+            document.querySelector('.reading-progress').style.width = `${progress}%`;
+        });
+    </script>
+    <!-- <header></header>
+    <style>
+        header {
+            height: 100vh;
+            width: 100%;
+            background-color: #808080;
+            position: relative;
+            /* top: 0;
+            left: 0; */
+            z-index: 100;
+            opacity: 0.5;
+        }
+        main {
+            position: sticky;
+            top: 0;
+            margin-top: -100vh;
+            z-index: 1;
+        }
+    </style> -->
     <main>
+        <div class="paragraph-hold">
+            <div class="essay-side">
+                <div class="essay-snippet">
+                    <h2>Introduction</h2> <!-- should we remove this here? maybe instead a grey background? -->
+                    <p>
+                        "Let that sink in" Elon Musk posted, right after he bought Twitter for 42 billion US-dollars, and attached a photo carrying a bathroom sink into the headquarters, while throwing a goofy grin at the camera (source). With the entry of the self-proclaimed free speech advocate, political polarisation has reached a new peak (source) in social media. This trend of deregulating social media platforms has taken another turn after Trump being elected, placing Musk into the administration (source) and his agenda right into the oval office. Since leading personalities behind other tech-companies, especially social networking have followed his example, first and foremost Mark Zuckerberg, announcing profound changes in their policies (Zuckerberg, 2025), which subsequently will have impact on interfaces of and culture on these platforms.
+                    </p>
+                    <p>
+                        But let us take a step back and look at the broader context of these changes. 2024 being the ultimate election year (Ewe, 2023), countries have called over four billion people worldwide to cast their votes (Reece, 2024). Meanwhile political polarisation in developed countries is reaching new highs year after year since the beginning of this century (McCoy et al., 2022). The World Economic Forum (WEF) places political polarization at number three of their Global Risks Report for 2024, directly following mis- and disinformation (WEF, 2024). Especially in the bi-partisan political system of the United States, this phenomenon became very apparent in 2024, following a decade of continuous polarization (Kleinfeld, 2023).
+                    </p>
+                    <p>
+                        Social media plays a crucial role in shaping opinions and fostering political education but also intensifies this political polarization through mechanisms like filter bubbles and echo chambers (Otieno, P., 2024). Platforms like X are particularly influential, with nearly 60% of users relying on it to stay informed about politics (McClain, Anderson & Gelles-Watnick, 2024).
+                    </p>
+                    <p>
+                        Following McCoy & Press (2022) increasing political polarization will lead to democratic Decline eventually. The study highlights that out of 52 instances where democracies experienced pernicious polarization since 1950, half saw a significant decline in their democratic quality. Further, these polarized societies tend to be unsuccessful in their efforts to reduce polarization.
+                    </p>
+                    <p>
+                        So, how can we, as designers, take action? Which role does design play in political polarization? In this essay, we will follow up on the research question, to what extent social media interfaces take effect on political polarization. We will dive deep into the design of X and suggest speculative approaches to shed light on the details of design and functionality as well as the psychological mechanics, which are embedded into the views that we interact with everyday, consuming political content or news.
+                    </p>
+                    <h3>Approach</h3>
+                    <p>
+                        To achieve this, we first have to distinguish influences by interface design on political polarization from others, such as general psychological, sociological or algorithmic effects, which all however are interconnected. Linear "For you" feeds for example are an interface decision, fueled by algorithms that curate the content you will see. Hate speech is a general problem, however, can be empowered to emotionalizing design choices.
+                    </p>
+                    <p>
+                        Subsequently, we will lay out the different problem spheres that group sets of the existing features X offers, that take impact on polarization, whether positively or negatively. Those are first Engagement-centric Design, second the general Structure of Content or information architecture, third Trust and Truth and fourth Hate Speech. Inside those spheres we will analyze features twofold, once on their direct impact on polarization and once on their indirect impact. Latter could be a feature that increases engagement with the app, while engagement itself has a polarizing effect.
+                    </p>
+                </div>
+            </div>
+            <div class="design-side"></div>
+        </div>
+
+
+
         <div class="paragraph-hold">
             <div class="essay-side">
                 <div class="essay-snippet">
@@ -29,7 +89,7 @@
                     </p>
                     <p>
                         <!-- <span>What are the effects in regard to polarisation?</span> -->
-                        Okay, but how does a highly engaging app affect political polarisation in discussion? A first simple but logical explanation for increased polarisation is the time spent on the platform. Those who spend more time on X, are exposed to more radical, hateful and polarized content (National Institute of Justice, 2023). At the same time those people of course interact more with posts of their peers, leading to positive feedback loops as these interactions shape their own future content, grouping users with similar opinions and thus reinforcing these of yourself. This phenomenon is called echo chambers or bubbles (source), which we will go more in depth in chapter structure of content. The third general argument for the correlation between engagement and polarisation is the fact that received engagement will drive user’s reach (X explains the mechanics here). This leads to radicalization of post content to evoke emotions in the viewers and provoke interaction, in its extreme form called engagement farming (Oestreicher, 2024).
+                        Okay, but how does a highly engaging app affect political polarisation in discussion? A first simple but logical explanation for increased polarisation is the time spent on the platform. Those who spend more time on X, are exposed to more radical, hateful and polarized content (<a href="#institute-justice">National Institute of Justice, 2023</a>). At the same time those people of course interact more with posts of their peers, leading to positive feedback loops as these interactions shape their own future content, grouping users with similar opinions and thus reinforcing these of yourself. This phenomenon is called echo chambers or bubbles (source), which we will go more in depth in chapter structure of content. The third general argument for the correlation between engagement and polarisation is the fact that received engagement will drive user’s reach (X explains the mechanics here). This leads to radicalization of post content to evoke emotions in the viewers and provoke interaction, in its extreme form called engagement farming (Oestreicher, 2024).
                     </p>
                     <p>
                         But let’s look at these above-mentioned features of X in detail and shed light on the concrete interface design decisions that ultimately lead to an increased engagement with the platform.
@@ -52,7 +112,6 @@
                 </div>
             </div>
             <div class="design-side">
-                <!-- <iframe class="device" src="feed-large-heart.html" frameborder="0"></iframe> -->
             </div>
         </div>
         
@@ -68,7 +127,9 @@
                 </div>
             </div>
             <div class="design-side">
-                <iframe class="device" src="feed-large-heart.html" frameborder="0"></iframe>
+                <div class="device-hold">
+                    <iframe class="device" src="feed-large-heart.html" frameborder="0"></iframe>
+                </div>
             </div>
         </div>
         <div class="paragraph-hold">
@@ -83,67 +144,20 @@
                 </div>
             </div>
             <div class="design-side">
-                <!-- <iframe class="device" src="feed-large-heart.html" frameborder="0"></iframe> -->
-                <div class="device"><div class="notch"></div>
-                    <div class="slider-container">
-                        <button class="slide-btn prev"><img class="arrow" src="static/assets/icons_essay/arrow-left.svg" alt=""></button>
-                        <div class="slider">
-                            <img src="designs/be-that-emoji-1-2x.png" alt="">
-                            <img src="designs/be-that-emoji-2-2x.png" alt="">
-                            <img src="designs/be-that-emoji-3-2x.png" alt="">
-                            <img src="designs/be-that-emoji-4-2x.png" alt="">
+                <div class="device-hold">
+                    <div class="device"><div class="notch"></div>
+                        <div class="slider-container">
+                            <button class="slide-btn prev"><img class="arrow" src="static/assets/icons_essay/arrow-left.svg" alt=""></button>
+                            <div class="slider">
+                                <img src="designs/be-that-emoji/be-that-emoji-1-2x.png" alt="">
+                                <img src="designs/be-that-emoji/be-that-emoji-2-2x.png" alt="">
+                                <img src="designs/be-that-emoji/be-that-emoji-3-2x.png" alt="">
+                                <img src="designs/be-that-emoji/be-that-emoji-4-2x.png" alt="">
+                            </div>
+                            <button class="slide-btn next"><img class="arrow" src="static/assets/icons_essay/arrow-right.svg" alt=""></button>
                         </div>
-                        <button class="slide-btn next"><img class="arrow" src="static/assets/icons_essay/arrow-right.svg" alt=""></button>
                     </div>
                 </div>
-                <style>
-                    .slider-container {
-                        position: relative;
-                        width: 100%;
-                        overflow: hidden;
-                    }
-                    .slider {
-                        display: flex;
-                        transition: transform 0.3s ease;
-                    }
-                    .slider img {
-                        width: 100%;
-                        flex-shrink: 0;
-                    }
-                    .slide-btn {
-                        position: absolute;
-                        top: 50%;
-                        transform: translateY(-50%);
-                        background: rgba(0,0,0,1);
-                        color: white;
-                        border: none;
-                        /* padding: 10px; */
-                        height: 48px;
-                        width: 24px;
-                        cursor: pointer;
-                        z-index: 1;
-                    }
-                    .arrow {
-                        height: 16px;
-                    }
-                    .prev { left: 0px;  border-radius: 0 100px 100px 0; padding-right: 10px; }
-                    .next { right: 0px; border-radius: 100px 0 0 100px; padding-left: 10px;  }
-                </style>
-                <script>
-                    const slider = document.querySelector('.slider');
-                    const prevBtn = document.querySelector('.prev');
-                    const nextBtn = document.querySelector('.next');
-                    let currentSlide = 0;
-
-                    function slide(direction) {
-                        const slides = document.querySelectorAll('.slider img');
-                        currentSlide = (currentSlide + direction + slides.length) % slides.length;
-                        slider.style.transform = `translateX(-${currentSlide * 100}%)`;
-                    }
-
-                    prevBtn.addEventListener('click', () => slide(-1));
-                    nextBtn.addEventListener('click', () => slide(1));
-                </script>
 
             </div>
         </div>
@@ -154,12 +168,26 @@
                         <strong>Reposting</strong>
                     </p>
                     <p>
-                        [sample] X offers a set of options that let you interact with another user’s post. Most prominently in social media, we look at “liking”, represented by a heart on X. As the names suggest, these are one-dimensional “black and white” reactions on a post, which leads to the thought of more diverse reactions. Another important functionality is reposting, formerly retweeting, with which users can share posts with or without commenting on them in their own timeline and the feeds of their peers. Last, but maybe most well known for Twitter's (back then) discussion culture, we will discuss the threaded commenting functionality and propose alternative concepts that shed light on the polarizing effects the current implementation has on the community.
+                        [sample] X offers a set of options that let you interact with another user’s post. Most prominently in social media, we look at “liking”, represented by a heart on X. As the names suggest, these are one-dimensional “black and white” reactions on a post, which leads to the thought of more diverse reactions. Another important functionality is reposting, formerly retweeting, with which users can share posts with or without commenting on them in their own timeline and the feeds of their peers. Last, but maybe most well known for Twitter's (back then) discussion culture, we will discuss the threaded commenting functionality and propose alternative concepts that shed light on the polarizing effects the current implementation has on the community. X offers a set of options that let you interact with another user’s post. Most prominently in social media, we look at “liking”, represented by a heart on X. As the names suggest, these are one-dimensional “black and white” reactions on a post, which leads to the thought of more diverse reactions. Another important functionality is reposting, formerly retweeting, with which users can share posts with or without commenting on them in their own timeline and the feeds of their peers. Last, but maybe most well known for Twitter's (back then) discussion culture, we will discuss the threaded commenting functionality and propose alternative concepts that shed light on the polarizing effects the current implementation has on the community. X offers a set of options that let you interact with another user’s post. Most prominently in social media, we look at “liking”, represented by a heart on X. As the names suggest, these are one-dimensional “black and white” reactions on a post, which leads to the thought of more diverse reactions. Another important functionality is reposting, formerly retweeting, with which users can share posts with or without commenting on them in their own timeline and the feeds of their peers. Last, but maybe most well known for Twitter's (back then) discussion culture, we will discuss the threaded commenting functionality and propose alternative concepts that shed light on the polarizing effects the current implementation has on the community.
                     </p>
                 </div>
             </div>
             <div class="design-side">
-                <iframe class="device" src="feed-large-heart.html" frameborder="0"></iframe>
+                <div class="device-hold">
+                    <div class="device"><div class="notch"></div>
+                        <video autoplay loop muted playsinline>
+                            <source src="designs/clubhouse-comments/clubhouse-comments.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="video-controls">
+                        <button class="playPause">
+                            <img class="play-pause-icon" src="static/assets/icons_essay/pause-icon.svg" alt="play/pause">
+                        </button>
+                        <div class="progress-bar">
+                            <div class="progress"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="paragraph-hold">
@@ -241,12 +269,108 @@
         <div>
             <div class="references">
                 <h3>References</h3>
-                <p id="burkeman" class="lit">Burkeman, O. (22.10.2019) The attention economy is in hyperdrive: how tech shaped the 2010s. <i>The Guardian</i>.  <a href="https://www.theguardian.com/culture/2019/nov/22/attention-economy-in-hyperdrive-how-tech-shaped-2010s-oliver-burkeman">https://www.theguardian.com/culture/2019/nov/22/attention-economy-in-hyperdrive-how-tech-shaped-2010s-oliver-burkeman</a></p>
-                <p class="lit">Center for Humane Technology. (2021). The attention economy: How tech companies capture and monetize our attention.</p>
-                <p class="lit">National Institute of Justice. (2023). The impact of social media on political polarization.</p>
-                <p class="lit">Oestreicher, P. (2024). Understanding engagement farming in social media platforms.</p>
+                <p id="burkeman" class="lit"><span class="lit-arrow">-></span>Burkeman, O. (22.10.2019) The attention economy is in hyperdrive: how tech shaped the 2010s. <i>The Guardian</i>.  <a href="https://www.theguardian.com/culture/2019/nov/22/attention-economy-in-hyperdrive-how-tech-shaped-2010s-oliver-burkeman">https://www.theguardian.com/culture/2019/nov/22/attention-economy-in-hyperdrive-how-tech-shaped-2010s-oliver-burkeman</a></p>
+                <p id="humane-tech" class="lit"><span class="lit-arrow">-> </span>Center for Humane Technology. (2021). The attention economy: How tech companies capture and monetize our attention.</p>
+                <p id="institute-justice" class="lit"><span class="lit-arrow">-> </span>National Institute of Justice. (2023). The impact of social media on political polarization.</p>
+                <p id="oestreicher" class="lit"><span class="lit-arrow">-> </span>Oestreicher, P. (2024). Understanding engagement farming in social media platforms.</p>
             </div>
         </div>
     </footer>
+
+    <!-- SLIDER -->
+    <script>
+        const slider = document.querySelector('.slider');
+        const prevBtn = document.querySelector('.prev');
+        const nextBtn = document.querySelector('.next');
+        let currentSlide = 0;
+
+        function slide(direction) {
+            const slides = document.querySelectorAll('.slider img');
+            currentSlide = (currentSlide + direction + slides.length) % slides.length;
+            slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+        }
+
+        prevBtn.addEventListener('click', () => slide(-1));
+        nextBtn.addEventListener('click', () => slide(1));
+    </script>
+
+    <!-- LINKING TO REFERENCES -->
+    <script>
+        document.querySelectorAll('a').forEach(anchor => {
+            anchor.addEventListener('click', function(event) {
+                event.preventDefault();
+                // First remove all active-arrow classes
+                document.querySelectorAll('.lit-arrow').forEach(arrow => {
+                    arrow.classList.remove('active-arrow');
+                });
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                    targetElement.querySelector('span').classList.add('active-arrow');
+                }
+            });
+        });
+        
+            // window.addEventListener('scroll', () => {
+            //     const footer = document.querySelector('footer');
+            //     if (footer) {
+            //         const spans = document.querySelectorAll('span.active-arrow');
+            //         const footerRect = footer.getBoundingClientRect();
+            //         spans.forEach(span => {
+            //             const spanRect = span.getBoundingClientRect();
+            //             if (spanRect.top <= window.innerHeight) {
+            //                 span.dataset.hasBeenSeen = 'true';
+            //             }
+            //             if (footerRect.top > window.innerHeight && span.dataset.hasBeenSeen === 'true') {
+            //                 span.classList.remove('active-arrow');
+            //             }
+            //         });
+            //     }
+            // });
+        
+    </script>
+    
+    <!-- VIDEO HANDLING -->
+    <script>
+        const video = document.querySelector('video');
+        const progress = document.querySelector('.progress');
+        
+        let animationFrame;
+
+        function updateProgress() {
+            const percent = (video.currentTime / video.duration) * 100;
+            progress.style.width = percent + '%';
+            animationFrame = requestAnimationFrame(updateProgress);
+        }
+
+        video.addEventListener('play', () => {
+            animationFrame = requestAnimationFrame(updateProgress);
+        });
+
+        video.addEventListener('pause', () => {
+            cancelAnimationFrame(animationFrame);
+        });
+
+        video.addEventListener('ended', () => {
+            cancelAnimationFrame(animationFrame);
+            progress.style.width = '0%';
+        });
+
+        const playPauseBtn = document.querySelector('.playPause');
+                const playPauseIcon = document.querySelector('.play-pause-icon');
+                let isPlaying = true;
+
+                playPauseBtn.addEventListener('click', () => {
+                    if (isPlaying) {
+                        video.pause();
+                        playPauseIcon.src = 'static/assets/icons_essay/play-icon.svg';
+                    } else {
+                        video.play();
+                        playPauseIcon.src = 'static/assets/icons_essay/pause-icon.svg';
+                    }
+                    isPlaying = !isPlaying;
+                });
+    </script>
 </body>
 </html>

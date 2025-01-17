@@ -4,11 +4,12 @@
     border-radius: 39px;
     outline: 8px solid black; /* First outline */
     box-shadow: 0 0 0 11px #becec1; /* Second outline */
-    margin-left: 125px;
     /* position: absolute;
     top: 0; bottom: 0; left: 0; right: 0; */
     overflow: hidden;
     /* overflow: scroll; */
+    /* border: 1px dashed green; */
+    background-color: white;
 }
 
 .screen {

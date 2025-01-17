@@ -79,7 +79,25 @@ h3 {
     font-weight: SemiBold;
     font-style: normal;
     margin-bottom: 32px;
+    margin-top: 64px;
 }
+
+
+/* ESSAY PROGRESS BAR */
+
+.reading-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: #FFA600;
+    z-index: 1000;
+    transition: width 0.1s;
+}
+
+
+/* MAIN ESSAY UI */
   
 main {
     display: flex;
@@ -97,13 +115,11 @@ main {
     box-sizing: inherit;
 
 }
-.device {
+.device-hold {
+    margin-left: 125px;
     width: 375px;
     height: 812px;
-
-    /* border: 1px dashed red; */
-
-    background-color: white;
+    /* outline: 1px solid red; */
     position: sticky;
     top: calc((100vh - 812px - 12px) / 2);
 }
@@ -128,13 +144,53 @@ main {
     max-width: 512px;
 }
 
+
+/* SCREEN STUFF */
+
+video {
+    width: 100%;
+}
+.video-controls {
+    display: flex;
+    gap: 10px;
+    width: 375px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    /* outline: 1px solid red; */
+}
+.video-controls a {
+    
+    text-decoration: none;
+    color: #666;
+}
+.progress-bar {
+    flex-grow: 1;
+    height: 3px;
+    background: #eee;
+    border-radius: 2px;
+}
+.progress {
+    width: 0%;
+    height: 100%;
+    background: #303E48;
+    border-radius: 2px;
+}
+.playPause {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    outline: none;
+}
+/* REFERENCES */
+
 footer {
     background-color: #303E48;
     color: white;
     font-size: 20px;
     margin-top: 64px;
 }
-
 .references {
     font-size: 16px;
     line-height: 130%;
@@ -144,7 +200,6 @@ footer {
     margin: auto;
     padding: 72px 0;
 }
-
 .references p {
     margin-bottom: 18px;
     font-size: 18px;
@@ -162,4 +217,46 @@ footer {
     /* color: #8C5B00; */
     text-decoration: none;
 }
+.lit-arrow {
+    color: #FFA600;
+    display: none;
+    margin-right: 4px;
+}
+.active-arrow {
+    display: inline-block;
+}
 
+
+/* IPHONE SLIDER */
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.slider {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+.slider img {
+    width: 100%;
+    flex-shrink: 0;
+}
+.slide-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,1);
+    color: white;
+    border: none;
+    /* padding: 10px; */
+    height: 48px;
+    width: 24px;
+    cursor: pointer;
+    z-index: 1;
+}
+.arrow {
+    height: 16px;
+}
+.prev { left: 0px;  border-radius: 0 100px 100px 0; padding-right: 10px; }
+.next { right: 0px; border-radius: 100px 0 0 100px; padding-left: 10px;  }
