@@ -14,12 +14,45 @@
 </head>
 <body>
     <div class="reading-progress"></div>
+    
+    <!-- LEGEND -->
+    <div class="legend-fab">
+        <div class="legend-icon question-icon">?</div>
+        <!-- <div class="legend-icon close-icon">X</div> -->
+        <div class="legend-content">
+            <div class="legend-item">
+                <div class="legend-circle" style="background-color: #becec1;"></div>
+                <span>Interactive</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-circle" style="background-color: #c49ac6;"></div>
+                <span>Video</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-circle" style="background-color: #ebd0a7;"></div>
+                <span>Image(s)</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-circle" style="background-color: #a3d3e9;"></div>
+                <span>Actual X</span>
+            </div>
+        </div>
+    </div>
+
 
     <script>
-        window.addEventListener('scroll', () => {
-            const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
-            const progress = (window.scrollY / totalHeight) * 100;
-            document.querySelector('.reading-progress').style.width = `${progress}%`;
+        const legendFab = document.querySelector('.legend-fab');
+        
+        legendFab.addEventListener('click', (e) => {
+            e.stopPropagation(); // Prevent click from bubbling to document
+            legendFab.classList.toggle('expanded');
+        });
+
+        // Close when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!legendFab.contains(e.target)) {
+                legendFab.classList.remove('expanded');
+            }
         });
     </script>
     <!-- <header></header>
@@ -70,7 +103,23 @@
                     </p>
                 </div>
             </div>
-            <div class="design-side"></div>
+            <div class="design-side">
+                <div class="device-hold">
+                    <div class="device type-video"><div class="notch"></div>
+                        <video autoplay loop muted playsinline>
+                            <source src="essay-visuals/let-that-sink-in/let-that-sink-in.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="video-controls">
+                        <button class="playPause">
+                            <img class="play-pause-icon" src="static/assets/icons_essay/pause-icon.svg" alt="play/pause">
+                        </button>
+                        <div class="progress-bar">
+                            <div class="progress"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
 
@@ -128,7 +177,7 @@
             </div>
             <div class="design-side">
                 <div class="device-hold">
-                    <iframe class="device" src="feed-large-heart.html" frameborder="0"></iframe>
+                    <iframe class="device type-interactive" src="feed-large-heart.html" frameborder="0"></iframe>
                 </div>
             </div>
         </div>
@@ -145,7 +194,7 @@
             </div>
             <div class="design-side">
                 <div class="device-hold">
-                    <div class="device"><div class="notch"></div>
+                    <div class="device type-slider"><div class="notch"></div>
                         <div class="slider-container">
                             <button class="slide-btn prev"><img class="arrow" src="static/assets/icons_essay/arrow-left.svg" alt=""></button>
                             <div class="slider">
@@ -174,7 +223,7 @@
             </div>
             <div class="design-side">
                 <div class="device-hold">
-                    <div class="device"><div class="notch"></div>
+                    <div class="device type-video"><div class="notch"></div>
                         <video autoplay loop muted playsinline>
                             <source src="designs/clubhouse-comments/clubhouse-comments.mp4" type="video/mp4">
                         </video>
@@ -371,6 +420,15 @@
                     }
                     isPlaying = !isPlaying;
                 });
+    </script>
+
+    <!-- READING PROGRESSBAR -->
+    <script>
+        window.addEventListener('scroll', () => {
+            const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const progress = (window.scrollY / totalHeight) * 100;
+            document.querySelector('.reading-progress').style.width = `${progress}%`;
+        });
     </script>
 </body>
 </html>

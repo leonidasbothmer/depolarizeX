@@ -152,12 +152,13 @@ video {
 }
 .video-controls {
     display: flex;
-    gap: 10px;
+    gap: 6px;
     width: 375px;
     align-items: center;
     justify-content: center;
     margin-top: 20px;
     /* outline: 1px solid red; */
+    padding: 0 160px;
 }
 .video-controls a {
     
@@ -166,7 +167,7 @@ video {
 }
 .progress-bar {
     flex-grow: 1;
-    height: 3px;
+    height: 4px;
     background: #eee;
     border-radius: 2px;
 }
@@ -226,6 +227,60 @@ footer {
     display: inline-block;
 }
 
+
+/* LEGEND/KEY */
+
+.legend-fab {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #FFA600;
+    border-radius: 25px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    /* transition: all 0.1s ease-in; */
+}
+.legend-fab.expanded {
+    width: 460px;
+    border-radius: 25px;
+    justify-content: space-between;
+    /* justify-content: flex-end; */
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.legend-icon {
+    font-size: 24px;
+    color: white;
+    /* transition: opacity 0.3s ease; */
+}
+.legend-content {
+    display: none;
+    flex-direction: row;
+    padding: 10px;
+    gap: 16px;
+    padding-top: 13px;
+}
+.legend-fab.expanded .legend-content {
+    display: flex;
+}
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.legend-circle {
+    width: 14px;
+    height: 14px;
+    border-radius: 7px;
+    margin-right: 6px;
+}
+.legend-item span {
+    color: white;
+}
 
 /* IPHONE SLIDER */
 
