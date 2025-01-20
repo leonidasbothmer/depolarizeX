@@ -110,7 +110,15 @@ h4 {
 emphasis {
     font-style: italic;
 }
-
+.rq {
+    color: #FFA600;
+    font-style: italic;
+    font-size: 36px;
+    padding: 0 75px 0 75px; 
+    line-height: 115%;
+    margin-bottom: 16px;
+    max-width: 720px;
+}
 
 /* ESSAY PROGRESS BAR */
 
@@ -220,6 +228,13 @@ video {
     border-radius: 2px;
 }
 .playPause {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    outline: none;
+}
+.mute-btn {
     background: none;
     border: none;
     cursor: pointer;
