@@ -196,6 +196,24 @@ main {
     align-items: center;
     justify-content: center;
     margin-top: 20px;
+
+    font-family: 'Helvetica', sans-serif;
+    font-weight: bolder;
+}
+.type-interactive + .device-claim {
+    color: #becec1;
+}
+.type-video + .device-claim {
+    color: #c49ac6;
+}
+.type-image + .device-claim {
+    color: #ebd0a7;
+}
+.type-slider + .device-claim {
+    color: #ebd0a7;
+}
+.type-actual + .device-claim {
+    color: #a3d3e9;
 }
 video {
     width: 100%;
