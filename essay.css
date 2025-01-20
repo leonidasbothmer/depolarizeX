@@ -56,13 +56,28 @@ a:visited {
 }
   
 h1 {
-    /* font-family: "Bricolage Grotesque", serif;
-    font-optical-sizing: auto;
+    font-family: "Bricolage Grotesque Condensed", sans-serif;
+
     font-weight: 700;
-    font-style: normal;
-    font-variation-settings:
-      "wdth" 72; */
-    font-size: 120px;
+    font-size: 96px;
+    line-height: 90%;
+}
+h1 span {
+    color: #FFA600;
+}
+header {
+    color: white;
+}
+.authors-hold {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 64px;
+}
+.author {
+    font-family: "ABC Marist Unlicenced Trial", serif; 
+    font-size: 24px;
+    /* font-weight: bold; */
+    line-height: 130%;
 }
 h2 {
     /* font-family: "Bricolage Grotesque Variable", serif;
@@ -107,7 +122,7 @@ h4 {
     font-style: italic;
     margin-top: 36px;
 }
-emphasis {
+em, emphasis {
     font-style: italic;
 }
 .rq {
@@ -155,6 +170,7 @@ main {
     gap: 64px;
     /* padding: 50px; */
     box-sizing: inherit;
+    /* min-height: 100vh; */
 
 }
 .device-hold {
@@ -266,6 +282,7 @@ footer {
     color: white;
     font-size: 20px;
     margin-top: 64px;
+    padding-bottom: 120px;
 }
 .references {
     font-size: 16px;

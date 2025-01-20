@@ -39,20 +39,94 @@
             </div>
         </div>
     </div>
-    <!-- <header></header>
+    <header>
+        <div class="header-inlay">
+            <div class="header-content-hold">
+                <div class="header-top">
+                    <h1>Political Polarization <br><span>by Design</span></h1>
+                </div>
+                <div class="header-bottom">
+                    <div class="authors-hold">
+                        <a class="author" href="#">Liv Brell</a>
+                        <a class="author" href="#">Leonidas v. Bothmer</a>
+                        <a class="author" href="#">Emil Dax</a>
+                        <a class="author" href="#">Ariel Khait</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </header>
+    
+    
+    
     <style>
         header {
             width: 100%;
-            height: 100vh;
-            border: 3px solid red;
-            z-index: 1000;
+            /* height: 100vh; */
+            padding-bottom: 100vh;
+            /* border: 3px solid red; */
+            z-index: 10000;
+            position: absolute;
+            top: 0;
         }
+        .header-inlay {
+            /* background-color: white; */
+            background-color: #303E48;
+            width: 100%;
+            height: 100vh;
+            /* border: green 3px solid; */
+        }
+        .header-content-hold {
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center;
+            align-items: center; */
+            height: 100%;
+            padding: 0 20px;
+        }
+        .header-top {
+            height: 50%;
+            display: flex;
+            justify-content: start;
+            align-items: start;
+            max-width: 1280px;
+            width: 100%;
+            margin: 0 auto;
+            padding-top: 240px;
+        }
+        .header-bottom {
+            width: 100%;
 
-    </style> -->
-    
+            height: 50%;
+            display: flex;
+            justify-content: end;
+            align-items: end;
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+        main {
+            position: fixed;
+            top: 0;
+            z-index: 0;
+            width: 100%;
+        }
+    </style>
+    <script>
+        document.addEventListener('scroll', () => {
+            const viewportHeight = window.innerHeight;
+            if (window.scrollY >= viewportHeight) {
+                document.querySelector('main').style.position = 'relative';
+                document.querySelector('header').style.position = 'static';
+                document.querySelector('header').style.paddingBottom = '0';
+            } else {
+                document.querySelector('main').style.position = 'fixed';
+                document.querySelector('header').style.position = 'absolute';
+                document.querySelector('header').style.paddingBottom = '100vh';
 
-    
-
+            }
+        });
+    </script>
 
     <main>
         <!-- 0. INTRO SECTION ######################################## -->
@@ -72,7 +146,7 @@
                 <div class="design-side">
                                         
                     <div class="device-hold">
-                        <div class="device type-slider"><div class="notch"></div>
+                        <div class="device type-actual"><div class="notch"></div>
                             <div class="slider-container">
                                 <button class="slide-btn prev"><img class="arrow" src="static/assets/icons_essay/arrow-left.svg" alt=""></button>
                                 <div class="slider">
@@ -312,7 +386,7 @@
                 </div>
                 <div class="design-side">
                     <div class="device-hold"><div class="notch"></div>
-                        <img class="device" src="designs/lockscreen-notification/lockscreen-notification.png" alt="">
+                        <img class="device type-image" src="designs/lockscreen-notification/lockscreen-notification.png" alt="">
                     </div>
                 </div>
             </div>
@@ -328,7 +402,10 @@
                 </div>
                 <div class="design-side">
                     <div class="device-hold"><div class="notch"></div>
-                        <iframe class="device" src="feed-gravity-hearts.html" frameborder="0"></iframe>
+                        <iframe class="device type-interactive" src="feed-gravity-hearts.html" frameborder="0"></iframe>
+                        <div class="device-claim">
+                            Have fun scrolling!
+                        </div>  
                     </div>
                 </div>
             </div>
@@ -340,7 +417,9 @@
                 <div class="essay-side">
                     <div class="essay-snippet">
                         <h3>Time and Scrolling</h3> <!-- Better title? -->
-                        <p>Text</p>
+                        <p>Have you heard about “Doom-Scrolling”? It refers to the habit of endlessly consuming content on a feed that never stops. Many of us are familiar with the satisfying feeling of switching off our minds and aimlessly scrolling through cute cat videos or other lighthearted content. However, this seemingly harmless activity also has its downsides, particularly for mental health. Over time, the trance-like state induced by endless scrolling can lead to increased anxiety, depression, and feelings of isolation.</p>
+                        <p>It is especially concerning for young adults, as studies have shown that prolonged social media use and features like infinite scrolling can exacerbate mental health issues by fostering addictive behaviors and reducing self-awareness. For instance, research highlights the connection between excessive screen time, content overload, and negative psychological outcomes (<a href="apa-2024">APA, 2024</a>). Time is a crucial factor in the issue of doom-scrolling, serving both as an important indicator and a significant consequence of this behavior. The longer you scroll, the more engaging content you encounter, which in turn keeps you spending even more time on your phone.</p>
+                        <p>On X, the endless scroll feature isn’t the only design choice aimed at boosting engagement. We also examined the autoplay function for reels. After watching a selected video on a user’s feed, the next reel seamlessly slides up from the bottom of the screen, taking center stage immediately. This design leaves users with little opportunity to disengage from the platform. Additionally, advertisements disguised as regular posts tailored to users’ preferences frequently appear within the feed, further driving engagement.</p>
                     </div>
                 </div>
                 <div class="design-side">
@@ -352,8 +431,9 @@
             <div class="paragraph-hold">
                 <div class="essay-side">
                     <div class="essay-snippet">
-                        <h4>Blurred ___: ___</h4>
-                        <p>Text</p>
+                        <h4>Scrolling Intervention: Blurry Screen – Clear Mind?</h4>
+                        <p>Social media features like infinite scroll make users lose track of time, become more engaged and less self-aware, which can also affect their memory. A human-computer-interaction study from Cornell University (<a href="#ruiz-molinaleon-heuer-2024">Ruiz, Molina León & Heuer, 2024</a>), looked at how adding small obstacles, called "design frictions," to a platform can reduce mindless scrolling.</p>
+                        <p>As a possible approach we took the simple scrolling feature and shifted it into a new dimension. By gradually making the screen blurrier as the users scroll too quickly, they are forced to slow down in order to recognize the content in their feeds. With this, we introduce friction that disrupts the zombie-like consumption of content. People are forced to read posts one by one, preventing them from overwhelming themselves with information. This could transform mindless scrolling into a more self-aware browsing experience. In addition to that, we see the gradual blurring of the screen as a metaphor for how users can’t fully process content when scrolling too quickly. It visually represents the negative consequences of "doom scrolling" figuratively and offers an approach to work against it.</p>
                     </div>
                 </div>
                 <div class="design-side">
@@ -367,13 +447,17 @@
             <div class="paragraph-hold">
                 <div class="essay-side">
                     <div class="essay-snippet">
-                        <h4>Literal Friction: ___</h4>
-                        <p>Text</p>
+                        <h4>Friction: A Literal Approach </h4>
+                        <p>So often, we are talking about friction in a metaphorical sense. Cluttered interfaces, bad performance, cognitive load as well as purposely placed interventions, for example in screen time apps. But couldn-t we just implement friction in a non-metaphorical sense? Friction that feels real, feels physical?</p>
+                        <p>This we explored in the endlessness of the linear social media feed: If the user scrolls too quickly, the screen becomes scrolling-interaction becomes continuously slower, or harder. It feels like the screen is becoming heavier and heavier, as the user is trying to drag it forward, clinching to the background it’s sitting on. Just as your mind is becoming heavier with the minute, with every bit of information you're consuming by the second. Only slowly the scrolling-speed is recovering, reflecting yourself processing the information.</p>
                     </div>
                 </div>
                 <div class="design-side">
                     <div class="device-hold">
                         <iframe class="device type-interactive" src="literal-friction.html" frameborder="0"></iframe>
+                        <div class="device-claim">
+                            Try it out for yourself!
+                        </div>  
                     </div>
                 </div>
             </div>
@@ -413,21 +497,63 @@
             <div class="paywall" style="width: 100%; height: 800px; position: absolute; bottom: 0; z-index: 100; background: linear-gradient(180deg, rgba(252, 251, 249, 0) 0%, #FCFBF9 80%);"></div>
         
         </div>
-        
+
+        <footer>
+            <div>
+                <div class="references">
+                    <h3>References</h3>
+                
+                    American Psychological Association (2024) Potential Risks of Content,
+                    Features, and Functions – A closer Look at the Science behind how Social Media affects Youth https://www.apa.org/topics/social-media-internet/psychological-science-behind-youth-social-media.pdf 
+                    
+                    <p id="bell-etal-2023" class="lit"><span class="lit-arrow">-> </span>Bell, L., Garnett, C., Bao, Y., Cheng, Z., Qian T., Perski, O., Potts, H. W. W. & Williamson, E. (2023). How Notifications Affect Engagement With a Behavior Change App: Results From a Micro-Randomized Trial. <em>JMIR Mhealth Uhealth</em>. <a href="https://doi.org/10.2196/38342">https://doi.org/10.2196/38342</a></p>
+                    <p id="bermes-2021" class="lit"><span class="lit-arrow">-> </span>Bermes, A. (2021). Information overload and fake news sharing: A transactional stress perspective exploring the mitigating role of consumers’ resilience during COVID-19. <em>Journal of Retailing and Consumer Services</em>. <a href="https://doi.org/10.1016/j.jretconser.2021.102555">https://doi.org/10.1016/j.jretconser.2021.102555</a></p>
+                    <p id="burkeman-2019" class="lit"><span class="lit-arrow">-> </span>Burkeman, O. (2019). The attention economy is in hyperdrive: how tech shaped the 2010s. <em>The Guardian</em>. <a href="https://www.theguardian.com/culture/2019/nov/22/attention-economy-in-hyperdrive-how-tech-shaped-2010s-oliver-burkeman">https://www.theguardian.com/culture/2019/nov/22/attention-economy-in-hyperdrive-how-tech-shaped-2010s-oliver-burkeman</a></p>
+                    <p id="center-for-humane-technology-2021" class="lit"><span class="lit-arrow">-> </span>Center for Humane Technology. (2021). The attention economy: How tech companies capture and monetize our attention. <a href="https://www.humanetech.com/youth/the-attention-economy">https://www.humanetech.com/youth/the-attention-economy</a></p>
+                    <p id="cinelli-2021" class="lit"><span class="lit-arrow">-> </span>Cinelli, M., De Francisci Morales, G., Galeazzi, A. & Starnini, M. (2021). The echo chamber effect on social media. <em>Proceedings of the National Academy of Sciences of the United States of America (PNAS)</em>. <a href="https://doi.org/10.1073/pnas.2023301118">https://doi.org/10.1073/pnas.2023301118</a></p>
+                    <p id="dekker-2024" class="lit"><span class="lit-arrow">-> </span>Dekker, (2024). Beyond the Buzz – Investigating the Effects of a Notification-Disabling Intervention. <a href="https://www.tandfonline.com/doi/full/10.1080/15213269.2024.2334025">https://www.tandfonline.com/doi/full/10.1080/15213269.2024.2334025</a></p>
+                    <p id="ewe-2023" class="lit"><span class="lit-arrow">-> </span>Ewe, K. (2023). The Ultimate Election Year: All the Elections Around the World in 2024. <em>Time Magazine</em>. <a href="https://time.com/6550920/world-elections-2024/">https://time.com/6550920/world-elections-2024/</a></p>
+                    <p id="eyal-2014" class="lit"><span class="lit-arrow">-> </span>Eyal, N. (2014). Hooked – how to build habit forming products. Portfolio/Penguin, New York.</p>
+                    <p id="gavilan-2022" class="lit"><span class="lit-arrow">-> </span>Gavilan, D. & Martinez Navarro, G. (2022). Exploring user’s experience of push notifications: a grounded theory approach. <em>Qualitative Market Research An International Journal</em>, 25(1). <a href="http://dx.doi.org/10.1108/QMR-05-2021-0061">http://dx.doi.org/10.1108/QMR-05-2021-0061</a></p>
+                    <p id="goldman-2021" class="lit"><span class="lit-arrow">-> </span>Goldman, B. (2021). Addictive potential of social media, explained. <em>Stanford Medicine</em>. <a href="https://scopeblog.stanford.edu/2021/10/29/addictive-potential-of-social-media-explained/">https://scopeblog.stanford.edu/2021/10/29/addictive-potential-of-social-media-explained/</a></p>
+                    <p id="lee-2023" class="lit"><span class="lit-arrow">-> </span>Lee, S. Y. & Kim, J.-H. (2023). What makes people more polarized? The effects of anonymity, being with like-minded others, and the moderating role of need for approval. <a href="https://doi.org/10.1016/j.tele.2022.101922">https://doi.org/10.1016/j.tele.2022.101922</a></p>
+                    <p id="localytics-2018" class="lit"><span class="lit-arrow">-> </span>Localytics. (2018). 21% of Users Abandon an App After One Use. <a href="https://uplandsoftware.com/localytics/resources/blog/21-percent-of-users-abandon-apps-after-one-use/">https://uplandsoftware.com/localytics/resources/blog/21-percent-of-users-abandon-apps-after-one-use/</a></p>
+                    <p id="lora-2024" class="lit"><span class="lit-arrow">-> </span>Lora, S. K. (2024). Infinite Scrolling, Finite Satisfaction: Exploring User Behavior and Satisfaction on Social Media in Bangladesh. <a href="https://arxiv.org/html/2408.09601v1#S3.SS1.SSS2">https://arxiv.org/html/2408.09601v1#S3.SS1.SSS2</a></p>
+                    <p id="kleinfeld-2023" class="lit"><span class="lit-arrow">-> </span>Kleinfeld, R. (2023). Polarization, Democracy, and Political Violence in the United States: What the Research Says. <em>Carnegie – Endowment for International Peace</em>. <a href="https://carnegieendowment.org/research/2023/09/polarization-democracy-and-political-violence-in-the-united-states-what-the-research-says?lang=en">https://carnegieendowment.org/research/2023/09/polarization-democracy-and-political-violence-in-the-united-states-what-the-research-says?lang=en</a></p>
+                    <p id="koc-2023" class="lit"><span class="lit-arrow">-> </span>Koç, B. (2023). The Role of User Interactions in Social Media on Recommendation Algorithms: Evaluation of TikTok's Personalization Practices From User's Perspective. <a href="http://dx.doi.org/10.13140/RG.2.2.34692.71040">http://dx.doi.org/10.13140/RG.2.2.34692.71040</a></p>
+                    <p id="konovalova-2023" class="lit"><span class="lit-arrow">-> </span>Konovalova, E., Le Mens, G., Schöll, N. (2023). Social media feedback and extreme opinion expression. <em>PLoS One</em>. <a href="https://doi.org/10.1371/journal.pone.0293805">https://doi.org/10.1371/journal.pone.0293805</a></p>
+                    <p id="kosheleva-2021" class="lit"><span class="lit-arrow">-> </span>Kosheleva, O. & Kreinovich, V. (2021). A “Fuzzy” Like Button Can Decrease Echo Chamber Effect. In: Ceberio, M., Kreinovich, V. (eds) How Uncertainty-Related Ideas Can Provide Theoretical Explanation For Empirical Dependencies. <em>Studies in Systems, Decision and Control</em>, vol 306. Springer, Cham. <a href="https://doi.org/10.1007/978-3-030-65324-8_9">https://doi.org/10.1007/978-3-030-65324-8_9</a></p>
+                    <p id="kramer-2014" class="lit"><span class="lit-arrow">-> </span>Kramer, A. D. I., Guillory, J. E., & Hancock, J. T. (2014). Experimental evidence of massive-scale emotional contagion through social networks. <em>Proceedings of the National Academy of Sciences</em>, 111(24), 8788–8790. <a href="https://doi.org/10.1073/pnas.1320040111">https://doi.org/10.1073/pnas.1320040111</a></p>
+                    <p id="mcclain-2024" class="lit"><span class="lit-arrow">-> </span>McClain, C., Anderson, M. & Gelles-Watnick, R. (2024). How Americans Navigate Politics on TikTok, X, Facebook and Instagram. <em>Pew Research Center</em>. <a href="https://www.pewresearch.org/internet/2024/06/12/how-americans-navigate-politics-on-tiktok-x-facebook-and-instagram/">https://www.pewresearch.org/internet/2024/06/12/how-americans-navigate-politics-on-tiktok-x-facebook-and-instagram/</a></p>
+                    <p id="mccoy-2022" class="lit"><span class="lit-arrow">-> </span>McCoy, J. & Press, B. (2022). What Happens When Democracies Become Perniciously Polarized? <em>Carnegie – Endowment for International Peace</em>. <a href="https://carnegieendowment.org/research/2022/01/what-happens-when-democracies-become-perniciously-polarized?lang=en">https://carnegieendowment.org/research/2022/01/what-happens-when-democracies-become-perniciously-polarized?lang=en</a></p>
+                    <p id="mccoy-press-somer-tuncel-2022" class="lit"><span class="lit-arrow">-> </span>McCoy, J., Press, B., Somer, M. & Tuncel, O. (2022). Reducing Pernicious Polarization: A Comparative Historical Analysis of Depolarization. <em>Carnegie – Endowment for International Peace</em>. <a href="https://carnegieendowment.org/research/2022/05/reducing-pernicious-polarization-a-comparative-historical-analysis-of-depolarization?lang=en">https://carnegieendowment.org/research/2022/05/reducing-pernicious-polarization-a-comparative-historical-analysis-of-depolarization?lang=en</a></p>
+                    <p id="musk-2022" class="lit"><span class="lit-arrow">-> </span>Musk, E. [@elonmusk]. (2022, October 26). Entering Twitter HQ – let that sink in! <em>X</em>. Retrieved January 20, 2025, from <a href="https://x.com/elonmusk/status/1585341984679469056">https://x.com/elonmusk/status/1585341984679469056</a></p>
+                    <p id="musk-2024" class="lit"><span class="lit-arrow">-> </span>Musk, E. [@elonmusk]. (2024, November 6). Let that sink in. <em>X</em>. Retrieved January 20, 2025, from <a href="https://x.com/elonmusk/status/1854034776815972649">https://x.com/elonmusk/status/1854034776815972649</a></p>
+                    <p id="national-institute-of-justice-2023" class="lit"><span class="lit-arrow">-> </span>National Institute of Justice. (2023). Five Things About the Role of the Internet and Social Media in Domestic Radicalization. <a href="https://nij.ojp.gov/topics/articles/five-things-about-role-internet-and-social-media-domestic-radicalization">https://nij.ojp.gov/topics/articles/five-things-about-role-internet-and-social-media-domestic-radicalization</a></p>
+                    <p id="naylor-2024" class="lit"><span class="lit-arrow">-> </span>Naylor, I. (2024). The Role of Push Notifications in Mobile App Engagement. <em>App Institute</em>. <a href="https://appinstitute.com/the-role-of-push-notifications-in-mobile-app-engagement/">https://appinstitute.com/the-role-of-push-notifications-in-mobile-app-engagement/</a></p>
+                    <p id="oestreicher-2024" class="lit"><span class="lit-arrow">-> </span>Oestreicher, G. (2024). What is Engagement Farming on Social Media? <em>Metricool</em>. <a href="https://metricool.com/what-is-engagement-farming/">https://metricool.com/what-is-engagement-farming/</a></p>
+                    <p id="otieno-2024" class="lit"><span class="lit-arrow">-> </span>Otieno, P. (2024). The Impact of Social Media on Political Polarization. <em>Journal of Communication</em>, 4(1), 56-68. <a href="https://doi.org/10.47941/jcomm.1686">https://doi.org/10.47941/jcomm.1686</a></p>
+                    <p id="reece-2024" class="lit"><span class="lit-arrow">-> </span>Reece, N. (2024). More than 4 billion people are eligible to vote in an election in 2024. Is this democracy’s biggest test? <em>The Conversation</em>. <a href="https://theconversation.com/more-than-4-billion-people-are-eligible-to-vote-in-an-election-in-2024-is-this-democracys-biggest-test-220837">https://theconversation.com/more-than-4-billion-people-are-eligible-to-vote-in-an-election-in-2024-is-this-democracys-biggest-test-220837</a></p>
+                    <p id="piazza-2020" class="lit"><span class="lit-arrow">-> </span>Piazza, J. (2020). Politician hate speech and domestic terrorism. <a href="https://doi.org/10.1080/03050629.2020.1739033">https://doi.org/10.1080/03050629.2020.1739033</a></p>
+                    <p id="rixen-2023" class="lit"><span class="lit-arrow">-> </span>Rixen, J. O., Meinhardt, L., Glöckler, M., Ziegenbein, M., Schlothauer, A., Colley, M., Rukzio, E., & Gugenheimer, J. (2023). The loop and reasons to break it: Investigating infinite scrolling behaviour in social media applications and reasons to stop. <em>Proceedings of the ACM on HumanComputer Interaction</em>, 7(MHCI), 1-22. <a href="https://doi.org/10.1145/3604275">https://doi.org/10.1145/3604275</a></p>
+                    <p id="ruiz-molinaleon-heuer-2024" class="lit"><span class="lit-arrow">-> </span>Ruiz, N., Molina León, G. & Heuer, H. (2024) Design Frictions on Social Media: Balancing Reduced Mindless Scrolling and User Satisfaction. <a href="https://doi.org/10.48550/arXiv.2407.18803">https://doi.org/10.48550/arXiv.2407.18803</a></p>
+                    <p id="saffer-2013" class="lit"><span class="lit-arrow">-> </span>Saffer, D. (2013). Designing with Details – Microinteractions. O’Reilley. pp. 99–100.</p>
+                    <p id="soegaard-2024" class="lit"><span class="lit-arrow">-> </span>Soegaard, M. (2024). The Role of Micro-interactions in Modern UX. Interaction Design Foundation. <a href="https://www.interaction-design.org/literature/article/micro-interactions-ux">https://www.interaction-design.org/literature/article/micro-interactions-ux</a></p>
+                    <p id="stroud-muddiman-scacco-2013" class="lit"><span class="lit-arrow">-> </span>Stroud, N. J., Muddiman, A. & Scacco, J. (2013). Social Media Buttons in Comment Sections. Center of Media Engagement. <a href="https://mediaengagement.org/research/engagement-buttons/">https://mediaengagement.org/research/engagement-buttons/</a></p>
+                    <p id="suciu-2023" class="lit"><span class="lit-arrow">-> </span>Suciu, P. (2023). X Is The Biggest Source Of Fake News And Disinformation, EU Warns. Forbes Magazine. <a href="https://www.forbes.com/sites/petersuciu/2023/09/26/x-is-the-biggest-source-of-fake-news-and-disinformation-eu-warns/">https://www.forbes.com/sites/petersuciu/2023/09/26/x-is-the-biggest-source-of-fake-news-and-disinformation-eu-warns/</a></p>
+                    <p id="tufekci-2018" class="lit"><span class="lit-arrow">-> </span>Tufekci, Z. (2018). Twitter and Tear Gas: The Power and Fragility of Networked Protest. Yale University Press. <a href="https://d-nb.info/124031910X/34">https://d-nb.info/124031910X/34</a></p>
+                    <p id="urban-airship-2017" class="lit"><span class="lit-arrow">-> </span>Urban Airship. (2017). How Push Notifications Impact Mobile App Retention Rates. <a href="https://grow.urbanairship.com/rs/313-QPJ-195/images/WP_App_Retention_Rates_Benchmarks.pdf">https://grow.urbanairship.com/rs/313-QPJ-195/images/WP_App_Retention_Rates_Benchmarks.pdf</a></p>
+                    <p id="wef-2024" class="lit"><span class="lit-arrow">-> </span>World Economic Forum [WEF]. (2024). The Global Risks Report. 19th Edition. <a href="https://www.weforum.org/publications/global-risks-report-2024/">https://www.weforum.org/publications/global-risks-report-2024/</a></p>
+                    <p id="zuckerberg-2025" class="lit"><span class="lit-arrow">-> </span>Zuckerberg, M. [@zuck]. (2025, January 7). It’s time to get back to our roots around free expression. We’re replacing fact checkers with Community Notes, simplifying our policies and focusing on reducing mistakes. Looking forward to this next chapter. Instagram. Retrieved January 17, 2025, from <a href="https://www.instagram.com/p/DEhf2uTJUs0/">https://www.instagram.com/p/DEhf2uTJUs0/</a></p>
+                
+                
+                </div>
+            </div>
+        </footer>
     </main>
 
 
-    <footer>
-        <div>
-            <div class="references">
-                <h3>References</h3>
-                <p id="burkeman" class="lit"><span class="lit-arrow">-></span>Burkeman, O. (22.10.2019) The attention economy is in hyperdrive: how tech shaped the 2010s. <i>The Guardian</i>.  <a href="https://www.theguardian.com/culture/2019/nov/22/attention-economy-in-hyperdrive-how-tech-shaped-2010s-oliver-burkeman">https://www.theguardian.com/culture/2019/nov/22/attention-economy-in-hyperdrive-how-tech-shaped-2010s-oliver-burkeman</a></p>
-                <p id="humane-tech" class="lit"><span class="lit-arrow">-> </span>Center for Humane Technology. (2021). The attention economy: How tech companies capture and monetize our attention.</p>
-                <p id="institute-justice" class="lit"><span class="lit-arrow">-> </span>National Institute of Justice. (2023). The impact of social media on political polarization.</p>
-                <p id="oestreicher" class="lit"><span class="lit-arrow">-> </span>Oestreicher, P. (2024). Understanding engagement farming in social media platforms.</p>
-            </div>
-        </div>
-    </footer>
+
 
     <!-- SLIDER -->
     <script>
