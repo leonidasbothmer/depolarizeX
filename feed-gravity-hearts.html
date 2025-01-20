@@ -4,26 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feed with Gravity Hearts</title>
-    <!-- <link rel="stylesheet" href="styles.css"> -->
+    
     <link rel="stylesheet" href="twitter.css">
     <link rel="stylesheet" href="device.css">
     <link rel="stylesheet" href="feed.css">
     <link rel="stylesheet" href="feed-gravity-hearts.css">
-    <!-- <link rel="stylesheet" href="onesec.css">
-    <link rel="stylesheet" href="splash.css"> -->
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
     <script src="https://p5play.org/v3/planck.min.js"></script>
     <script src="https://p5play.org/v3/p5play.js"></script>
-    <!-- <script src="menu-bar.js" defer></script> -->
-    <!-- <script src="create-posts.js" defer></script> -->
-
-    <style>
-        /* hide overflow and disable scroll to avoid offsett of p5 animations */
-        #feed {
-            overflow: hidden;
-            touch-action: none;
-        }
-    </style>
 </head>
 <body>
     <div class="screen">
@@ -71,8 +60,9 @@
                 <a href="#" class="menu-item">
                     <img src="static/assets/icons/menu-community.svg" alt="Community">
                 </a>
-                <a href="#" class="menu-item">
+                <a href="#" class="menu-item notifications">
                     <img src="static/assets/icons/menu-notifications.svg" alt="Notifications">
+                    <div id="notif-counter" class="notification-badge">1</div>
                 </a>
                 <a href="#" class="menu-item">
                     <img src="static/assets/icons/menu-message.svg" alt="Messages">
@@ -104,6 +94,10 @@
                     p.background("white");
                     p.clear();
                 }
+
+                const notificationBadge = document.getElementById('notif-counter');
+                let counter = 0
+
 
                 // Store p5 instance methods in window for click handler
                 window.createHeart = function(x, y) {
@@ -160,6 +154,9 @@
                 const y = -20; // Just above screen
                 
                 randomFunction(randomX, y);
+                // let counter = parseInt(notificationBadge.textContent);
+                counter++;
+                notificationBadge.textContent = counter;
                 setTimeout(randomCreateFunction, Math.random() * 200 + 50);
             }
 
