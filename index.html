@@ -2,13 +2,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Depolarize X</title>
 
-    <!-- Google Fonts
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Google Fonts -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet"> -->
-
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
+     -->
+    <!-- Style Sheets -->
     <link rel="stylesheet" href="essay.css">
     <link rel="stylesheet" href="device.css">
 </head>
@@ -38,282 +39,380 @@
             </div>
         </div>
     </div>
-
-
-    <script>
-        const legendFab = document.querySelector('.legend-fab');
-        
-        legendFab.addEventListener('click', (e) => {
-            e.stopPropagation(); // Prevent click from bubbling to document
-            legendFab.classList.toggle('expanded');
-        });
-
-        // Close when clicking outside
-        document.addEventListener('click', (e) => {
-            if (!legendFab.contains(e.target)) {
-                legendFab.classList.remove('expanded');
-            }
-        });
-    </script>
     <!-- <header></header>
     <style>
         header {
-            height: 100vh;
             width: 100%;
-            background-color: #808080;
-            position: relative;
-            /* top: 0;
-            left: 0; */
-            z-index: 100;
-            opacity: 0.5;
+            height: 100vh;
+            border: 3px solid red;
+            z-index: 1000;
         }
-        main {
-            position: sticky;
-            top: 0;
-            margin-top: -100vh;
-            z-index: 1;
-        }
+
     </style> -->
+    
+
+    
+
+
     <main>
-        <div class="paragraph-hold">
-            <div class="essay-side">
-                <div class="essay-snippet">
-                    <h2>Introduction</h2> <!-- should we remove this here? maybe instead a grey background? -->
-                    <p>
-                        "Let that sink in" Elon Musk posted, right after he bought Twitter for 42 billion US-dollars, and attached a photo carrying a bathroom sink into the headquarters, while throwing a goofy grin at the camera (source). With the entry of the self-proclaimed free speech advocate, political polarisation has reached a new peak (source) in social media. This trend of deregulating social media platforms has taken another turn after Trump being elected, placing Musk into the administration (source) and his agenda right into the oval office. Since leading personalities behind other tech-companies, especially social networking have followed his example, first and foremost Mark Zuckerberg, announcing profound changes in their policies (Zuckerberg, 2025), which subsequently will have impact on interfaces of and culture on these platforms.
-                    </p>
-                    <p>
-                        But let us take a step back and look at the broader context of these changes. 2024 being the ultimate election year (Ewe, 2023), countries have called over four billion people worldwide to cast their votes (Reece, 2024). Meanwhile political polarisation in developed countries is reaching new highs year after year since the beginning of this century (McCoy et al., 2022). The World Economic Forum (WEF) places political polarization at number three of their Global Risks Report for 2024, directly following mis- and disinformation (WEF, 2024). Especially in the bi-partisan political system of the United States, this phenomenon became very apparent in 2024, following a decade of continuous polarization (Kleinfeld, 2023).
-                    </p>
-                    <p>
-                        Social media plays a crucial role in shaping opinions and fostering political education but also intensifies this political polarization through mechanisms like filter bubbles and echo chambers (Otieno, P., 2024). Platforms like X are particularly influential, with nearly 60% of users relying on it to stay informed about politics (McClain, Anderson & Gelles-Watnick, 2024).
-                    </p>
-                    <p>
-                        Following McCoy & Press (2022) increasing political polarization will lead to democratic Decline eventually. The study highlights that out of 52 instances where democracies experienced pernicious polarization since 1950, half saw a significant decline in their democratic quality. Further, these polarized societies tend to be unsuccessful in their efforts to reduce polarization.
-                    </p>
-                    <p>
-                        So, how can we, as designers, take action? Which role does design play in political polarization? In this essay, we will follow up on the research question, to what extent social media interfaces take effect on political polarization. We will dive deep into the design of X and suggest speculative approaches to shed light on the details of design and functionality as well as the psychological mechanics, which are embedded into the views that we interact with everyday, consuming political content or news.
-                    </p>
-                    <h3>Approach</h3>
-                    <p>
-                        To achieve this, we first have to distinguish influences by interface design on political polarization from others, such as general psychological, sociological or algorithmic effects, which all however are interconnected. Linear "For you" feeds for example are an interface decision, fueled by algorithms that curate the content you will see. Hate speech is a general problem, however, can be empowered to emotionalizing design choices.
-                    </p>
-                    <p>
-                        Subsequently, we will lay out the different problem spheres that group sets of the existing features X offers, that take impact on polarization, whether positively or negatively. Those are first Engagement-centric Design, second the general Structure of Content or information architecture, third Trust and Truth and fourth Hate Speech. Inside those spheres we will analyze features twofold, once on their direct impact on polarization and once on their indirect impact. Latter could be a feature that increases engagement with the app, while engagement itself has a polarizing effect.
-                    </p>
-                </div>
-            </div>
-            <div class="design-side">
-                <div class="device-hold">
-                    <div class="device type-video"><div class="notch"></div>
-                        <video autoplay loop muted playsinline>
-                            <source src="essay-visuals/let-that-sink-in/let-that-sink-in.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                    <div class="video-controls">
-                        <button class="playPause">
-                            <img class="play-pause-icon" src="static/assets/icons_essay/pause-icon.svg" alt="play/pause">
-                        </button>
-                        <div class="progress-bar">
-                            <div class="progress"></div>
-                        </div>
+        <!-- 0. INTRO SECTION ######################################## -->
+        <div id="introduction" class="chapter-hold">
+            <div class="paragraph-hold">
+                <div class="essay-side">
+                    <div class="essay-snippet">
+                        <h2>Introduction</h2> <!-- should we remove this here? maybe instead a grey background? -->
+                        <p>“Let that sink in” Elon Musk posted, right after he bought Twitter for 42 billion US-dollars, and attached a photo carrying a bathroom sink into the headquarters, while throwing a goofy grin at the camera (<a href="#musk-2022">Musk, 2022</a>). With the entry of the self-proclaimed free speech advocate, political polarisation seems to have reached a new peak in social media. This trend of deregulating social media platforms has taken another turn after Trump being elected, placing Musk into the administration (<a href="#musk-2024">Musk, 2024</a>) and his agenda right into the oval office. Since leading personalities behind other tech-companies, especially social networking have followed his example, first and foremost Mark Zuckerberg, announcing profound changes in their policies (<a href="#zuck-2025">Zuckerberg, 2025</a>), which subsequently will have impact on interfaces of and culture on these platforms.</p>
+                        <p>But let us take a step back and look at the broader context of these changes. 2024 being the ultimate election year (<a href="#ewe-2023">Ewe, 2023</a>), countries have called over four billion people worldwide to cast their votes (<a href="#reece-2024">Reece, 2024</a>). Meanwhile political polarisation in developed countries is reaching new highs year after year since the beginning of this century (<a href="#mcoy-etal-2022">McCoy et al., 2022</a>). The World Economic Forum (WEF) places political polarization at number three of their Global Risks Report for 2024, directly following mis- and disinformation (<a href="#wef-2024">WEF, 2024</a>). Especially in the bi-partisan political system of the United States, this phenomenon became very apparent in 2024, following a decade of continuous polarization (<a href="#kleinfeld-2023">Kleinfeld, 2023</a>).</p>
+                        <p>Social media plays a crucial role in shaping opinions and fostering political education but also intensifies this political polarization through mechanisms like filter bubbles and echo chambers (<a href="#otieno-2024">Otieno, 2024</a>). Platforms like X are particularly influential, with nearly 60% of users relying on it to stay informed about politics (<a href="#mcclain-anderson-gelles-watnick-2024">McClain, Anderson & Gelles-Watnick, 2024</a>).</p>
+                        <p>Following McCoy & Press (<a href="#mccoy-press-2022">2022</a>) increasing political polarization will lead to democratic Decline eventually. The study highlights that out of 52 instances where democracies experienced pernicious polarization since 1950, half saw a significant decline in their democratic quality. Further, these polarized societies tend to be unsuccessful in their efforts to reduce polarization.</p>
+                        <p>So, how can we, as designers, take action? Which role does design play in political polarization? In this essay, we will follow up on the research question, to what extent X's interface increases political polarization and how we can unmask and disrupt these interaction patterns by design? We will dive deep into the design of X and suggest speculative approaches to shed light on the details of design and functionality as well as the psychological mechanics, which are embedded into the views that we interact with everyday, consuming political content or news.</p>
+                        
                     </div>
                 </div>
-            </div>
-        </div>
-
-
-
-        <div class="paragraph-hold">
-            <div class="essay-side">
-                <div class="essay-snippet">
-                    <h2>Engagement</h2>
-                    <p>
-                        <!-- <span>What is engagement and what about its time aspect?</span> -->
-                        Increasing engagement of your users with your product is an essential principle of the business model for the companies behind social media platforms, like X. Since most of these platforms are free to use and ad-financed, they rely on maximizing user visibility, which drives their constant pursuit of increasing the time users spend on their platforms (Center for Humane Technology, 2021). In other words, the user's attention becomes the currency with which they effectively pay these companies. This phenomenon is known as the attention economy, where our time, focus, and interactions are commodified to fuel the revenue streams of social networking companies (<a href="#burkeman">Burkeman, 2019</a>).
-                    </p>
-                    <p>
-                        <!-- <span>How is engagement-centric design implemented?</span> -->
-                        Engagement-centric design can contain different dimensions, such as algorithm-driven strategies, however, as we want to focus on interaction design, we can cook it down to three core strategies. First and foremost, platforms can drive engagement through interactions, such as the prominent like button or comments (source). Second, notifications are key for user retention and gratification (source). Finally, the ability to scroll infinitely through feeds subtly increases time spent on these platforms (source), a topic currently at the center of public debate, as short video reel/short/tiktok feeds have entered the consumer market by storm (source).
-                    </p>
-                    <p>
-                        <!-- <span>What are the effects in regard to polarisation?</span> -->
-                        Okay, but how does a highly engaging app affect political polarisation in discussion? A first simple but logical explanation for increased polarisation is the time spent on the platform. Those who spend more time on X, are exposed to more radical, hateful and polarized content (<a href="#institute-justice">National Institute of Justice, 2023</a>). At the same time those people of course interact more with posts of their peers, leading to positive feedback loops as these interactions shape their own future content, grouping users with similar opinions and thus reinforcing these of yourself. This phenomenon is called echo chambers or bubbles (source), which we will go more in depth in chapter structure of content. The third general argument for the correlation between engagement and polarisation is the fact that received engagement will drive user’s reach (X explains the mechanics here). This leads to radicalization of post content to evoke emotions in the viewers and provoke interaction, in its extreme form called engagement farming (Oestreicher, 2024).
-                    </p>
-                    <p>
-                        But let’s look at these above-mentioned features of X in detail and shed light on the concrete interface design decisions that ultimately lead to an increased engagement with the platform.
-                    </p>
-                </div>
-            </div>
-            <div class="design-side">
-                <!-- <iframe class="device" src="feed-large-heart.html" frameborder="0"></iframe> -->
-
-            </div>
-        </div>
-       
-        <div class="paragraph-hold">
-            <div class="essay-side">
-                <div class="essay-snippet">
-                    <h3>Interacting with Posts</h3>
-                    <p>
-                        X offers a set of options that let you interact with another user’s post. Most prominently in social media, we look at “liking”, represented by a heart on X. As the names suggest, these are one-dimensional “black and white” reactions on a post, which leads to the thought of more diverse reactions. Another important functionality is reposting, formerly retweeting, with which users can share posts with or without commenting on them in their own timeline and the feeds of their peers. Last, but maybe most well known for Twitter's (back then) discussion culture, we will discuss the threaded commenting functionality and propose alternative concepts that shed light on the polarizing effects the current implementation has on the community.
-                    </p>
-                </div>
-            </div>
-            <div class="design-side">
-            </div>
-        </div>
-        
-        <div class="paragraph-hold">
-            <div class="essay-side">
-                <div class="essay-snippet">
-                    <p>
-                        <strong>Microanimations/Microinteractions, beat them at their own game</strong>
-                    </p>
-                    <p>
-                        X offers a set of options that let you interact with another user’s post. Most prominently in social media, we look at “liking”, represented by a heart on X. As the names suggest, these are one-dimensional “black and white” reactions on a post, which leads to the thought of more diverse reactions. Another important functionality is reposting, formerly retweeting, with which users can share posts with or without commenting on them in their own timeline and the feeds of their peers. Last, but maybe most well known for Twitter's (back then) discussion culture, we will discuss the threaded commenting functionality and propose alternative concepts that shed light on the polarizing effects the current implementation has on the community.
-                    </p>
-                </div>
-            </div>
-            <div class="design-side">
-                <div class="device-hold">
-                    <iframe class="device type-interactive" src="feed-large-heart.html" frameborder="0"></iframe>
-                </div>
-            </div>
-        </div>
-        <div class="paragraph-hold">
-            <div class="essay-side">
-                <div class="essay-snippet">
-                    <p>
-                        <strong>Diverse Reactions</strong>
-                    </p>
-                    <p>
-                        [sample] X offers a set of options that let you interact with another user’s post. Most prominently in social media, we look at “liking”, represented by a heart on X. As the names suggest, these are one-dimensional “black and white” reactions on a post, which leads to the thought of more diverse reactions. Another important functionality is reposting, formerly retweeting, with which users can share posts with or without commenting on them in their own timeline and the feeds of their peers. Last, but maybe most well known for Twitter's (back then) discussion culture, we will discuss the threaded commenting functionality and propose alternative concepts that shed light on the polarizing effects the current implementation has on the community.
-                    </p>
-                </div>
-            </div>
-            <div class="design-side">
-                <div class="device-hold">
-                    <div class="device type-slider"><div class="notch"></div>
-                        <div class="slider-container">
-                            <button class="slide-btn prev"><img class="arrow" src="static/assets/icons_essay/arrow-left.svg" alt=""></button>
-                            <div class="slider">
-                                <img src="designs/be-that-emoji/be-that-emoji-1-2x.png" alt="">
-                                <img src="designs/be-that-emoji/be-that-emoji-2-2x.png" alt="">
-                                <img src="designs/be-that-emoji/be-that-emoji-3-2x.png" alt="">
-                                <img src="designs/be-that-emoji/be-that-emoji-4-2x.png" alt="">
+                <div class="design-side">
+                                        
+                    <div class="device-hold">
+                        <div class="device type-slider"><div class="notch"></div>
+                            <div class="slider-container">
+                                <button class="slide-btn prev"><img class="arrow" src="static/assets/icons_essay/arrow-left.svg" alt=""></button>
+                                <div class="slider">
+                                    <video autoplay loop muted playsinline>
+                                        <source src="essay-visuals/let-that-sink-in/let-that-sink-in.mp4" type="video/mp4">
+                                    </video>
+                                    <img src="essay-visuals/let-that-sink-in/let-that-sink-in.PNG" alt="">
+                                    
+                                </div>
+                                <button class="slide-btn next"><img class="arrow" src="static/assets/icons_essay/arrow-right.svg" alt=""></button>
                             </div>
-                            <button class="slide-btn next"><img class="arrow" src="static/assets/icons_essay/arrow-right.svg" alt=""></button>
                         </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <div class="paragraph-hold">
-            <div class="essay-side">
-                <div class="essay-snippet">
-                    <p>
-                        <strong>Reposting</strong>
-                    </p>
-                    <p>
-                        [sample] X offers a set of options that let you interact with another user’s post. Most prominently in social media, we look at “liking”, represented by a heart on X. As the names suggest, these are one-dimensional “black and white” reactions on a post, which leads to the thought of more diverse reactions. Another important functionality is reposting, formerly retweeting, with which users can share posts with or without commenting on them in their own timeline and the feeds of their peers. Last, but maybe most well known for Twitter's (back then) discussion culture, we will discuss the threaded commenting functionality and propose alternative concepts that shed light on the polarizing effects the current implementation has on the community. X offers a set of options that let you interact with another user’s post. Most prominently in social media, we look at “liking”, represented by a heart on X. As the names suggest, these are one-dimensional “black and white” reactions on a post, which leads to the thought of more diverse reactions. Another important functionality is reposting, formerly retweeting, with which users can share posts with or without commenting on them in their own timeline and the feeds of their peers. Last, but maybe most well known for Twitter's (back then) discussion culture, we will discuss the threaded commenting functionality and propose alternative concepts that shed light on the polarizing effects the current implementation has on the community. X offers a set of options that let you interact with another user’s post. Most prominently in social media, we look at “liking”, represented by a heart on X. As the names suggest, these are one-dimensional “black and white” reactions on a post, which leads to the thought of more diverse reactions. Another important functionality is reposting, formerly retweeting, with which users can share posts with or without commenting on them in their own timeline and the feeds of their peers. Last, but maybe most well known for Twitter's (back then) discussion culture, we will discuss the threaded commenting functionality and propose alternative concepts that shed light on the polarizing effects the current implementation has on the community.
-                    </p>
-                </div>
-            </div>
-            <div class="design-side">
-                <div class="device-hold">
-                    <div class="device type-video"><div class="notch"></div>
-                        <video autoplay loop muted playsinline>
-                            <source src="designs/clubhouse-comments/clubhouse-comments.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                    <div class="video-controls">
-                        <button class="playPause">
-                            <img class="play-pause-icon" src="static/assets/icons_essay/pause-icon.svg" alt="play/pause">
-                        </button>
-                        <div class="progress-bar">
-                            <div class="progress"></div>
+                        
+                        <div class="video-controls">
+                            <button class="playPause">
+                                <img class="play-pause-icon" src="static/assets/icons_essay/pause-icon.svg" alt="play/pause">
+                            </button>
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="paragraph-hold">
-            <div class="essay-side">
-                <div class="essay-snippet">
-                    <p>
-                        <strong>Commenting and Threads</strong>
-                    </p>
-                    <p>
-                        [sample] X offers a set of options that let you interact with another user’s post. Most prominently in social media, we look at “liking”, represented by a heart on X. As the names suggest, these are one-dimensional “black and white” reactions on a post, which leads to the thought of more diverse reactions. Another important functionality is reposting, formerly retweeting, with which users can share posts with or without commenting on them in their own timeline and the feeds of their peers. Last, but maybe most well known for Twitter's (back then) discussion culture, we will discuss the threaded commenting functionality and propose alternative concepts that shed light on the polarizing effects the current implementation has on the community.
-                    </p>
+
+            <div class="paragraph-hold">
+                <div class="essay-side">
+                    <div class="essay-snippet">
+                        <h3> Approach of Intervention</h3>
+                        <p>To achieve this, we first have to distinguish influences by interface design on political polarization from others, such as general psychological, sociological or algorithmic effects, which all however are interconnected. Linear “For you” feeds for example are an interface decision, fueled by algorithms that curate the content you will see. Hate speech is a general problem, however, can be empowered to emotionalizing design choices.</p>
+                        <p>Subsequently, we will lay out the different problem spheres that group sets of the existing features X offers, that take impact on polarization, whether positively or negatively. Those are first Engagement-centric Design, second the general Structure of Content or information architecture, third Trust and Truth and fourth Hate Speech. Inside those spheres we will analyze features twofold, once on their direct impact on polarization and once on their indirect impact. Latter could be a feature that increases engagement with the app, while engagement itself has a polarizing effect.</p>
+                        <p>By unraveling the hidden mechanisms behind X’s interface and exploring speculative, design-driven interventions, we aim to unmask how thoughtful design can challenge polarization and reshape the way we engage with political content online.</p>
+                    </div>
+                </div>
+                <div class="design-side" style="display: flex; flex-direction: column; justify-content: flex-end;">
+                    <!-- Nothing -->
+                    <p class="rq" style="color: #FFA600; font-style: italic; font-size: 36px; padding: 0 75px 0 75px; line-height: 115%; margin-bottom: 16px; max-width: 720px;">To what extent does X's interface increase political polarization and<br>how can we unmask and disrupt these interaction patterns by design?</p>
                 </div>
             </div>
-            <div class="design-side">
-                <iframe class="device" src="feed-large-heart.html" frameborder="0"></iframe>
-            </div>
         </div>
 
 
-
-        <div class="paragraph-hold">
-            <div class="essay-side">
-                <div class="essay-snippet">
-                    <h2>Structure of Content</h2>
-                    <p>
-                        <span>What is engagement and what about its time aspect?</span>
-                        Increasing engagement of your users with your product is an essential principle of the business model for the companies behind social media platforms, like X. Since most of these platforms are free to use and ad-financed, they rely on maximizing user visibility, which drives their constant pursuit of increasing the time users spend on their platforms (Center for Humane Technology, 2021). In other words, the user’s attention becomes the currency with which they effectively pay these companies. This phenomenon is known as the attention economy, where our time, focus, and interactions are commodified to fuel the revenue streams of social networking companies (Burkeman, 2019).
-                    </p>
-                    <p>
-                        <span>How is engagement-centric design implemented?</span>
-                        Engagement-centric design can contain different dimensions, such as algorithm-driven strategies, however, as we want to focus on interaction design, we can cook it down to three core strategies. First and foremost, platforms can drive engagement through interactions, such as the prominent like button or comments (source). Second, notifications are key for user retention and gratification (source). Finally, the ability to scroll infinitely through feeds subtly increases time spent on these platforms (source), a topic currently at the center of public debate, as short video reel/short/tiktok feeds have entered the consumer market by storm (source).
-                    </p>
-                    <p>
-                        <span>What are the effects in regard to polarisation?</span>
-                        Okay, but how does a highly engaging app affect political polarisation in discussion? A first simple but logical explanation for increased polarisation is the time spent on the platform. Those who spend more time on X, are exposed to more radical, hateful and polarized content (National Institute of Justice, 2023). At the same time those people of course interact more with posts of their peers, leading to positive feedback loops as these interactions shape their own future content, grouping users with similar opinions and thus reinforcing these of yourself. This phenomenon is called echo chambers or bubbles (source), which we will go more in depth in chapter structure of content. The third general argument for the correlation between engagement and polarisation is the fact that received engagement will drive user’s reach (X explains the mechanics here). This leads to radicalization of post content to evoke emotions in the viewers and provoke interaction, in its extreme form called engagement farming (Oestreicher, 2024).
-                    </p>
-                    <p>
-                        But let’s look at these above-mentioned features of X in detail and shed light on the concrete interface design decisions that ultimately lead to an increased engagement with the platform.
-                    </p>
+        <!-- 1. ENGAGEMENT SECTION ################################### -->
+        <div id="engagement" class="chapter-hold">
+            <div class="paragraph-hold">
+                <div class="essay-side">
+                    <div class="essay-snippet">
+                        <!-- <p class="over-title">Problem Spehere 1</p> -->
+                        <h2>Engagement</h2>
+                        <p class="small-title">What is engagement and what about it’s time aspect?</p>
+                        <p>Increasing engagement of your users with your product is an essential principle of the business model for the companies behind social media platforms, like X. Since most of these platforms are free to use and ad-financed, they rely on maximizing user visibility, which drives their constant pursuit of increasing the time users spend on their platforms (<a href="#center-humane-technology-2021">Center for Humane Technology, 2021</a>). In other words, the user’s attention becomes the currency with which they effectively pay these companies. This phenomenon is known as the attention economy, where our time, focus, and interactions are commodified to fuel the revenue streams of social networking companies (<a href="#burkeman-2019">Burkeman, 2019</a>).</p>
+                        <p class="small-title">How is engagement-centric design implemented?</p>
+                        <p>Engagement-centric design can contain different dimensions, such as algorithm-driven strategies, however, as we want to focus on interaction design, we can cook it down to three core strategies. First and foremost, platforms can drive engagement through interactions, such as the prominent like button or comments (<a href="#stroud-muddiman-scacco-2013">Stroud, Muddiman & Scacco, 2013</a>). Second, notifications are key for user retention and gratification. A study published 2023 by PMC (<a href="#bell-etal-2023">Bell et al., 2023</a>) proves that “receiving a notification, compared with not receiving a notification, increased the probability of opening the app in the next hour by 3.5-fold”. And finally, the ability to scroll infinitely through feeds subtly increases time spent on these platforms (<a href="#lora-2024">Lora, 2024</a>). A topic currently at the center of public debate, as short video format feeds have entered the consumer market by storm (<a href="#koc-2023">Koç, 2023</a>).</p>
+                        <p class="small-title">What are the effects in regard to polarisation?</p>
+                        <p>Okay, but how does a highly engaging app affect political polarisation in discussion? A first simple but logical explanation for increased polarisation is the time spent on the platform. Those who spend more time on X, are exposed to more radical, hateful and polarized content (<a href="#national-institute-justice-2023">National Institute of Justice, 2023</a>). At the same time those people of course interact more with posts of their peers, leading to positive feedback loops as these interactions shape their own future content, grouping users with similar opinions and thus reinforcing these of yourself. This phenomenon is called <emphasis>echo chambers</emphasis> or <emphasis>filter bubbles</emphasis> (<a href="#cinelli-etal-2021">Cinelli et al., 2021</a>), which we will go more in depth in the chapter <emphasis><a href="#structure-of-content">Structure of Content</a></emphasis>. The third general argument for the correlation between engagement and polarisation is the fact that received engagement will drive user’s reach (X explains the mechanics <a href="https://create.twitter.com/en/goals/engagement">here</a>). This leads to radicalization of post content to evoke emotions in the viewers and provoke interaction, in it’s extreme form called <emphasis>engagement farming</emphasis> (<a href="#oestreicher-2024">Oestreicher, 2024</a>).</p>
+                        <p>But let’s look at these above-mentioned features of X in detail and shed light on the concrete interface design decisions that ultimately lead to an increased engagement with the platform.</p>
+                    </div>
+                </div>
+                <div class="design-side">
+                    <!-- nothing -->
                 </div>
             </div>
-            <div class="design-side">
-                <iframe class="device" src="feed-large-heart.html" frameborder="0"></iframe>
+        </div>
 
+        <!-- 1.1 INTERACTIONS ---------------------------------------- -->
+       <div  id="interacting-with-posts" class="chapter-hold">
+            <div class="paragraph-hold">
+                <div class="essay-side">
+                    <div class="essay-snippet">
+                        <h3>Interacting with Posts</h3> <!-- should we remove this here? maybe instead a grey background? -->
+                        <p>X offers a set of options that let you interact with another user’s post. Most prominently in social media, we look at “liking”, represented by a heart on X. As the names suggest, these are one-dimensional “black and white” reactions on a post, which leads to the thought of more diverse reactions. Another important functionality is reposting, formerly retweeting, with which users can share posts with or without commenting on them in their own timeline and the feeds of their peers. Last, but maybe most well known for Twitter's (back then) discussion culture, we will discuss the threaded commenting functionality and propose alternative concepts that shed light on the polarizing effects the current implementation has on the community.</p>
+                    </div>
+                </div>
+                <div class="design-side">
+                    <!-- Nothing -->
+                </div>
+            </div>
+            
+            <!-- 1.1.1 GROWING HEARTS -->
+            <div id="microanimations" class="paragraph-hold">
+                <div class="essay-side">
+                    <div class="essay-snippet">
+                        <h4>Microanimations: Beat them at their own Game</h4>
+                        <p>We tap the cutely rounded little heart icon to like the post. Before it turns red, it pulses once and explodes into countless tiny sparkles. X uses the sparkling heart animation to nudge us to “heart” the respective post. “This small action makes the experience more rewarding. It encourages the user to interact with the content,” Soegaard (<a href="#soegaard-2024">2024</a>) states regarding this type of design choice. Dan Saffer goes down the same road (<a href="#saffer-2013">2013, p. 100</a>): “Interesting animations invite interaction”. That is, as long as these animations follow a set of five rules, divided by Android engineers Chat Haase and Romain Guy: Animations need to be fast, smooth, natural, simple and purposeful (<a href="#saffer-2013">Saffer, 2013, p. 99</a>).</p>
+                        <p>But what if the animation upon interaction is not enjoyable? What if it breaks with these rules? To achieve the opposite effect – namely, to de-engage users with the content – the same mechanic can be employed in a distracting or even annoying way. Every user interaction adds load and forces them to wait just a fraction of a second before diving back into the endlessly numbing spell of the monotony of the feed. The user may pause and think twice before pressing the like button, questioning whether the post truly deserves a like or if liking has simply become an automatic, conditioned response.</p>
+                    </div>
+                </div>
+                <div class="design-side">
+                    <div class="device-hold">
+                        <iframe class="device type-interactive" src="feed-large-heart.html" frameborder="0"></iframe>
+                        <div class="device-claim">
+                            Try it out for yourself!
+                        </div>  
+                    </div>
+                </div>
+            </div>
+       
+            <!-- 1.1.2 BE THAT EMOJI X -->
+            <div id="diverse-reactions" class="paragraph-hold">
+                <div class="essay-side">
+                    <div class="essay-snippet">
+                        <h4>Diverse Reactions: Be that emoji</h4>
+                        <p>Once more we take a look at the like button. At first glance, it might seem that social media platforms, like X, prominently display positive reactions to only discourage hate speech. However, it becomes evident that these platforms function in so-called „asymmetric feedback environments“ (<a href="#konovalova-2023">Konovalova, 2023</a>), where only positive reactions are counted and displayed, while there is no straightforward way to show or measure disapproval in forms of reactions. This imbalance in feedback has the consequence of extreme views and does not reflect a diverse atmospheric picture. Therefore it has a polarizing effect on content because ”social media platforms affect the expression of extreme opinions” (<a href="#konovalova-2023">Konovalova, 2023</a>).</p>
+                        <p>As a solution, introducing personalized forms of feedback could help reduce polarization. The idea is that people would capture and share their actual facial expressions as reactions and use it like emojis on a post. This way users step out of the anonymous computer sump, moreover, it bridges the gap between online interactions and the “real world”. This hurdle will reduce mindless engagement as well as increase the emotional value of engagement that is left. Users would see a more democratic representation of reactions. It is more diverse and original and would also encourage every person reacting on X to review content in a responsible and self-conscious way, as their actual identity is revealed.</p>
+                        <p>Aside from decreasing engagement, this feature would further take effect on polarisation twofold: First, on the segregation of users in echo chambers (more on that in Chapter 1.4 – <emphasis><a href="#for-you-and-following">For you and Following</a></emphasis>). As Kosheleva & Kreinovich (<a href="#kosheleva-kreinovich-2021">2021</a>) show “the echo chamber effect can be decreased if we simply replace the currently prevalent binary (yes-no) Like button on web pages with a more gradual (“fuzzy”) one – a button that will capture the relative degree of likeness“. Second, the interaction is more complex in cognitive load, time and self-awareness, which will, by adding friction, reduce mindless scrolling and increase the ability to recall viewed content (<a href="#ruiz-molinaleon-heuer-2024">Ruiz, Molina León & Heuer, 2024</a>).</p>
+
+                    </div>
+                </div>
+                <div class="design-side">
+                    <div class="device-hold">
+                        <div class="device type-video"><div class="notch"></div>
+                            <video autoplay loop playsinline muted>
+                                <source src="designs/be-that-emoji/be-that-emoji.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="video-controls">
+                            <button class="mute-btn">
+                                <img class="mute-icon" src="static/assets/icons_essay/muted-icon.svg" alt="play/pause">
+                            </button>
+                            <button class="playPause">
+                                <img class="play-pause-icon" src="static/assets/icons_essay/pause-icon.svg" alt="play/pause">
+                            </button>
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       
+            <!-- 1.1.3 GAMIFIED REPOSTS -->
+            <div id="reposting" class="paragraph-hold">
+                <div class="essay-side">
+                    <div class="essay-snippet">
+                        <h3>Reposting: Level up!</h3>
+                        <p>Another problem with the way of getting engaged too easily, is the simplicity to repost content, which can lead to virality and an enormous speed of spreading information, as well as disinformation and fake news (more on that specific matter in chapter 3 – <emphasis><a href="#trust-and-truth">Trust and Truth</a></emphasis>). This has been a major challenge, especially throughout the COVID-pandemic. A study, published 2021 on PMC (<a href="#bermes-2021">Bermes</a>) examines how information overload and fake news sharing are connected. Looking at X's interface design it becomes quickly visible that users are only two taps away from reposting posts in their feed. </p>
+                        <p>To make the repost feature more deliberate, we developed the idea of limiting the number of sharing options. Imagine having a reward-system which depicts your interaction tools on X. It’s essentially a gamified approach to content consumption inspired from video games when the player has limited resources like “Life”, “Energy” or “Items” play an inventory. If you have only two repost cards left in your digital wallet, you’ll think more carefully about which content is worth using them on. This system would encourage people to be more intentional about reposting, ensuring they read and evaluate posts before sharing them.This reduces the likelihood of spreading content which has not been checked twice and prioritizes content quality over quantity. The idea could also be extended to include the like and comment options within this system.</p>
+
+                    </div>
+                </div>
+                <div class="design-side">
+                    <div class="device-hold">
+                        <div class="device type-video"><div class="notch"></div>
+                            <video autoplay loop playsinline muted>
+                                <source src="designs/limited-reposts/limited-reposts.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="video-controls">
+                            <button class="mute-btn">
+                                <img class="mute-icon" src="static/assets/icons_essay/muted-icon.svg" alt="play/pause">
+                            </button>
+                            <button class="playPause">
+                                <img class="play-pause-icon" src="static/assets/icons_essay/pause-icon.svg" alt="play/pause">
+                            </button>
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+               
+            <!-- 1.1.4 CLUBHOUSE COMMENTS X--> 
+            <div id="commenting" class="paragraph-hold">
+                <div class="essay-side">
+                    <div class="essay-snippet">
+                        <h4>Commenting: Who likes silence, anyway?</h4>
+                        <p>When comparing different social media platforms, we see that only X (and its clones) prioritize commenting (replies) as the primary interaction in their layout. In contrast, platforms like Instagram and Facebook place likes at the forefront. Even discussion-focused apps like Threads or Reddit follow this "likes-first" approach. By prioritizing replies over likes, X actively emphasizes opinion sharing as it’s most important feature, encouraging users to express their own views. However, it can also contribute to several issues, particularly in the context of political polarization: Extreme or radical views, especially when they trigger strong reactions, are shown as the most popular comments under a post. This tends to garner more engagement, which can also lead to a post’s amplification. Beyond that, comments are stored indefinitely and offer to be engaged with, even if political context has changed.</p>
+                        <p>So, how could we depolarize the comment section of a post and prevent users from drowning in a sea of comments? We analyzed how comments are stored under a post and found that it's similar to a large archive where the most prominent content is pushed to the top. Emotional outbursts and personal attacks are set in stone here permanently. <emphasis>Hate speech</emphasis>, as a result, becomes another major factor contributing to polarization on X, which we will explore further in Chapter 4 – <emphasis><a href="#emotionalizing-design">Emotionalizing Design</a></emphasis>.</p>
+                        <p>Here, however, we focus on comments as reactions. Looking back at this comment archive, why not create a space more connected to reality by turning comments into a live discussion format? </p>
+                        <p>As commenting in social media, is a metaphor for a discussion in real life, but stems from a time, when the internet was providing mostly textual content, we can rethink this in nowadays technological context: In a world of video, live streaming and constant connection, users could join a digital room for live video meetings, creating a setting where specific phrases cannot be isolated and used to frame or misrepresent conversations. We intend to create a more natural discussion-culture and prevent polarizing comments to define a post. Will there even be breakout rooms to imitate the iconic threaded structure of X? Could I just open a room, when I disagree with a specific side note in that discussion? </p>
+                        <p>This video comment section would only be accessible to users willing to engage in active listening or open discussions with peers. In this way, it promotes a more mindful use of X and disengages users from superficial or toxic interactions, encouraging more meaningful, respectful exchanges. The fact, the discussion is brought into the present forces the users to solve their discussion now, instead of sending a statement into the void hoping for maximum engagement.</p>
+                    </div>
+                </div>
+                <div class="design-side">
+                    <div class="device-hold">
+                        <div class="device type-video"><div class="notch"></div>
+                            <video autoplay loop playsinline muted>
+                                <source src="designs/clubhouse-comments/clubhouse-comments.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="video-controls">
+                            <button class="mute-btn">
+                                <img class="mute-icon" src="static/assets/icons_essay/muted-icon.svg" alt="play/pause">
+                            </button>
+                            <button class="playPause">
+                                <img class="play-pause-icon" src="static/assets/icons_essay/pause-icon.svg" alt="play/pause">
+                            </button>
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 1.1.5 MAX 100 VIEWS X -->
+            <div id="view-limit" class="paragraph-hold">
+                <div class="essay-side">
+                    <div class="essay-snippet">
+                        <h4>Viewing Limit: 98, 99 and “Poof”!</h4>
+                        <p>Going viral on the Internet is as unpredictable as winning the lottery with your very first ticket. Yet, some posts manage to skyrocket overnight, reaching hundreds of thousands of users in a remarkably short time. The statement or image you just shared suddenly becomes the talk of the town. However, this surge in visibility can come with its downsides, especially when viral content spreads misinformation or fake news, amplifying the potential for harm on a massive scale. Unfortunately, this happens quite a lot on X, which makes the platform the biggest source of fake news and disinformation. (<a href="#suciu-2023">Suciu, 2023</a>)</p>
+                        <p>Introducing a viewing limit on each post would prevent posts from going viral and stop the spread of misinformation. When the limit of, for example, 100 views is reached, the post becomes blurry, rendering it unreadable, and it can no longer be retweeted. This approach would act as a speed bump in the rapid dissemination of content, encouraging users to engage more thoughtfully and reducing the potential for harmful or inaccurate information to gain traction.</p>
+                        
+                    </div>
+                </div>
+                <div class="design-side">
+                    <div class="device-hold">
+                        <img class="device type-image" src="designs/100-views/100-views.png" alt="">
+                    </div>
+
+                </div>
             </div>
         </div>
        
-        <div class="paragraph-hold">
-            <div class="essay-side">
-                <div class="essay-snippet">
-                    <h3>1.1 Inetracting with Posts</h3>
-                    <p>
-                        X offers a set of options that let you interact with another user’s post. Most prominently in social media, we look at “liking”, represented by a heart on X. As the names suggest, these are one-dimensional “black and white” reactions on a post, which leads to the thought of more diverse reactions. Another important functionality is reposting, formerly retweeting, with which users can share posts with or without commenting on them in their own timeline and the feeds of their peers. Last, but maybe most well known for Twitter's (back then) discussion culture, we will discuss the threaded commenting functionality and propose alternative concepts that shed light on the polarizing effects the current implementation has on the community.
-                    </p>
+        <!-- 1.2 NOTIFICATIONS --------------------------------------- -->
+        <div  id="notifications" class="chapter-hold">
+            <div class="paragraph-hold">
+                <div class="essay-side">
+                    <div class="essay-snippet">
+                        <h3>Receiving Notifications</h3> <!-- should we remove this here? maybe instead a grey background? -->
+                        <p>Text</p>
+                    </div>
+                </div>
+                <div class="design-side">
+                    <!-- Nothing -->
                 </div>
             </div>
-            <div class="design-side">
-                <!-- <iframe class="device" src="feed-large-heart.html" frameborder="0"></iframe> -->
+
+            <!-- 1.2.1 LOCKSCREEN -->
+            <div class="paragraph-hold">
+                <div class="essay-side">
+                    <div class="essay-snippet">
+                        <h4>Lockscreen Notifications: Hey, hey, HEY!</h4>
+                        <p>Text</p>
+                    </div>
+                </div>
+                <div class="design-side">
+                    <div class="device-hold"><div class="notch"></div>
+                        <img class="device" src="designs/lockscreen-notification/lockscreen-notification.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- 1.2.2 IN-APP NOTIFICATIONS -->
+            <div class="paragraph-hold">
+                <div class="essay-side">
+                    <div class="essay-snippet">
+                        <h4>In-App Notifications: Another One</h4>
+                        <p>Text</p>
+                    </div>
+                </div>
+                <div class="design-side">
+                    <div class="device-hold"><div class="notch"></div>
+                        <iframe class="device" src="feed-gravity-hearts.html" frameborder="0"></iframe>
+                    </div>
+                </div>
             </div>
         </div>
         
-        <div class="paragraph-hold">
-            <div class="essay-side">
-                <div class="essay-snippet">
-                    <p>
-                        <strong>Microanimations/Microinteractions, beat them at their own game</strong>
-                    </p>
-                    <p>
-                        X offers a set of options that let you interact with another user’s post. Most prominently in social media, we look at “liking”, represented by a heart on X. As the names suggest, these are one-dimensional “black and white” reactions on a post, which leads to the thought of more diverse reactions. Another important functionality is reposting, formerly retweeting, with which users can share posts with or without commenting on them in their own timeline and the feeds of their peers. Last, but maybe most well known for Twitter's (back then) discussion culture, we will discuss the threaded commenting functionality and propose alternative concepts that shed light on the polarizing effects the current implementation has on the community.
-                    </p>
+        <!-- 1.3 TIME AND SCROLLING ---------------------------------- -->
+        <div  id="time-scrolling" class="chapter-hold">
+            <div class="paragraph-hold">
+                <div class="essay-side">
+                    <div class="essay-snippet">
+                        <h3>Time and Scrolling</h3> <!-- Better title? -->
+                        <p>Text</p>
+                    </div>
+                </div>
+                <div class="design-side">
+                    <!-- Nothing -->
                 </div>
             </div>
-            <div class="design-side">
-                <iframe class="device" src="feed-large-heart.html" frameborder="0"></iframe>
+
+            <!-- 1.3.1 BLURRY SIGHT X -->
+            <div class="paragraph-hold">
+                <div class="essay-side">
+                    <div class="essay-snippet">
+                        <h4>Blurred ___: ___</h4>
+                        <p>Text</p>
+                    </div>
+                </div>
+                <div class="design-side">
+                    <div class="device-hold">
+                        <img class="device type-image" src="designs/blurry-sight/blurry-sight.png" alt="">
+                    </div>
+                </div>
+            </div>
+        
+            <!-- 1.3.2 LITERAL FRICTION -->
+            <div class="paragraph-hold">
+                <div class="essay-side">
+                    <div class="essay-snippet">
+                        <h4>Literal Friction: ___</h4>
+                        <p>Text</p>
+                    </div>
+                </div>
+                <div class="design-side">
+                    <div class="device-hold">
+                        <iframe class="device type-interactive" src="literal-friction.html" frameborder="0"></iframe>
+                    </div>
+                </div>
             </div>
         </div>
+
+        <!-- 1.4 FOLLOWING AND FOR YOU ------------------------------- -->
+        <div id="following-for-you" class="chapter-hold" style="display: none;">
+            <div class="paragraph-hold">
+                <div class="essay-side">
+                    <div class="essay-snippet">
+                        <h3>Following and For you</h3> <!-- Better title? -->
+                        <p>Text</p>
+                    </div>
+                </div>
+                <div class="design-side">
+                    <!-- Nothing -->
+                </div>
+            </div>
+        </div>
+
+                
+        <!-- 2. STRUCTURE OF CONTENT SECTION ######################### -->
+        <div id="structure-of-content" class="chapter-hold">
+            <div class="paragraph-hold">
+                <div class="essay-side">
+                    <div class="essay-snippet">
+                        <!-- <p class="over-title">Problem Spehere 1</p> -->
+                        <h2>Structure of Content</h2>
+                        <p>Text</p>
+                    </div>
+                </div>
+                <div class="design-side">
+                    <!-- nothing -->
+                </div>
+            </div>
+        </div>
+        
     </main>
+
+
     <footer>
         <div>
             <div class="references">
@@ -334,7 +433,7 @@
         let currentSlide = 0;
 
         function slide(direction) {
-            const slides = document.querySelectorAll('.slider img');
+            const slides = document.querySelectorAll('.slider *');
             currentSlide = (currentSlide + direction + slides.length) % slides.length;
             slider.style.transform = `translateX(-${currentSlide * 100}%)`;
         }
@@ -428,6 +527,23 @@
             const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
             const progress = (window.scrollY / totalHeight) * 100;
             document.querySelector('.reading-progress').style.width = `${progress}%`;
+        });
+    </script>
+
+    <!-- FAB -->
+    <script>
+        const legendFab = document.querySelector('.legend-fab');
+        
+        legendFab.addEventListener('click', (e) => {
+            e.stopPropagation(); // Prevent click from bubbling to document
+            legendFab.classList.toggle('expanded');
+        });
+
+        // Close when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!legendFab.contains(e.target)) {
+                legendFab.classList.remove('expanded');
+            }
         });
     </script>
 </body>

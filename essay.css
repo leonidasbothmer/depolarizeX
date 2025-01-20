@@ -32,7 +32,7 @@ body {
     font-style: normal;
     font-display: swap;
 }
-  
+
 p {
     /* font-family: "Monaspace _____ VF", sans-serif;  */
     font-family: "ABC Marist Unlicenced Trial", serif; 
@@ -41,8 +41,6 @@ p {
 
     margin-bottom: 18px;
 }
-
-
 a {
     color: #FFA600;
     text-decoration: none;
@@ -56,16 +54,32 @@ a:visited {
     /* color: #8C5B00; */
     text-decoration: none;
 }
-
+  
 h1 {
+    /* font-family: "Bricolage Grotesque", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 72; */
     font-size: 120px;
 }
 h2 {
+    /* font-family: "Bricolage Grotesque Variable", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 40; */
+
     font-size: 64px;
     line-height: 115%;
+
+
+
     font-family: "Bricolage Grotesque Condensed", sans-serif;
     font-optical-sizing: auto;
-    font-weight: SemiBold;
+    font-weight: 700;
     font-style: normal;
     margin-bottom: 64px;
     /* margin-top: calc((100vh - 812px - 12px) / 2); */
@@ -80,6 +94,21 @@ h3 {
     font-style: normal;
     margin-bottom: 32px;
     margin-top: 64px;
+}
+h4 {
+    font-family: "ABC Marist Unlicenced Trial", serif; 
+    font-size: 24px;
+    font: bold;
+    line-height: 115%;
+    margin-bottom: 18px;
+    margin-top: 36px;
+}
+.small-title {
+    font-style: italic;
+    margin-top: 36px;
+}
+emphasis {
+    font-style: italic;
 }
 
 
@@ -103,6 +132,11 @@ main {
     display: flex;
     flex-direction: column;
     gap: 256px;
+}
+.chapter-hold {
+    display: flex;
+    flex-direction: column;
+    gap: 172px;
 }
 .paragraph-hold {
     display: flex;
@@ -147,6 +181,14 @@ main {
 
 /* SCREEN STUFF */
 
+.device-claim {
+    display: flex;
+    gap: 6px;
+    width: 375px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
 video {
     width: 100%;
 }

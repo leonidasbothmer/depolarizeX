@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feed with Gravity Hearts</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <link rel="stylesheet" href="twitter.css">
+    <link rel="stylesheet" href="device.css">
+    <link rel="stylesheet" href="feed.css">
+    <link rel="stylesheet" href="feed-gravity-hearts.css">
+    <!-- <link rel="stylesheet" href="onesec.css">
+    <link rel="stylesheet" href="splash.css"> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="https://p5play.org/v3/planck.min.js"></script>
+    <script src="https://p5play.org/v3/p5play.js"></script>
+    <!-- <script src="menu-bar.js" defer></script> -->
+    <!-- <script src="create-posts.js" defer></script> -->
+
+    <style>
+        /* hide overflow and disable scroll to avoid offsett of p5 animations */
+        #feed {
+            overflow: hidden;
+            touch-action: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="screen">
+        <div class="home-ind-hold">
+            <div class="home-ind"></div>
+        </div>
+        <header id="tw-header">
+            <div class="ios-menu">
+                <div class="ios-time">
+                    <time datetime="15:12">15:12</time>
+                </div>
+                <div class="ios-battery-etc">
+                    <img src="static/assets/icons/cellular.svg" alt="Icon 2">
+                    <img src="static/assets/icons/wifi.svg" alt="Icon 3">
+                    <img src="static/assets/icons/battery.svg" alt="Icon 1">
+                </div>
+            </div>
+            <div class="tw-header">
+                <img class="profile-header" src="static/assets/icons/no-profile.svg" alt="">
+                <img class="logo-header" src="static/assets/logos/x-logo-black.svg" alt="">
+                <button class="secondary-btn">Upgrade</button>
+            </div>
+            <ul class="tab-bar">
+                <li class="tab tab-1">
+                    <div class="label-hold">
+                        <p class="label">For you</p>
+                    </div>
+                </li>
+                <li class="tab tab-2">
+                    <div class="label-hold active-tab">
+                        <p class="label">Following</p>
+                    </div>
+                </li>
+            </ul>
+        </header>
+        <main id="feed"></main>
+        <footer id="tw-menu">
+            <nav class="menu-bar">
+                <a href="#" class="menu-item">
+                    <img src="static/assets/icons/menu-home.svg" alt="Home">
+                </a>
+                <a href="#" class="menu-item">
+                    <img src="static/assets/icons/menu-search.svg" alt="Search">
+                </a>
+                <a href="#" class="menu-item">
+                    <img src="static/assets/icons/menu-community.svg" alt="Community">
+                </a>
+                <a href="#" class="menu-item">
+                    <img src="static/assets/icons/menu-notifications.svg" alt="Notifications">
+                </a>
+                <a href="#" class="menu-item">
+                    <img src="static/assets/icons/menu-message.svg" alt="Messages">
+                </a>
+            </nav>
+        </footer>
+    </div>
+    <!-- <script src="create-header.js"></script> -->
+    <script src="create-posts.js"></script>
+    <script defer>
+        document.addEventListener('postsLoaded', function() {
+            let sketch = new p5(function(p) {
+                let walls;
+
+                p.setup = function() {
+                    let canvas = p.createCanvas(375, 812-85);
+                    canvas.parent('feed');
+                    p.world.gravity.y = 15;
+
+                    walls = new p.Group();
+                    walls.collider = "static";
+                    let boundary = new walls.Sprite(p.width / 2, p.height+2, p.width, 2);
+                    boundary = new walls.Sprite(0-2, p.height / 2, 2, p.height);
+                    boundary = new walls.Sprite(p.width+2, p.height / 2, 2, p.height);
+                }
+
+                p.draw = function() {
+                    p.clear();
+                    p.background("white");
+                    p.clear();
+                }
+
+                // Store p5 instance methods in window for click handler
+                window.createHeart = function(x, y) {
+                    let heart = new p.Sprite(x, y, 13);
+                    heart.image = 'static/assets/icons/heart-red.svg';
+                    heart.vel.x = p.random(-1, 2);
+                    heart.vel.y = p.random(-2, -1);
+                }
+                window.createBookmark = function(x, y) {
+                    let bookmark = new p.Sprite(x, y, 13);
+                    bookmark.image = 'static/assets/icons/bookmark-blue.svg';
+                    bookmark.vel.x = p.random(-1, 2);
+                    bookmark.vel.y = p.random(-2, -1);
+                }
+                window.createComment = function(x, y) {
+                    let comment = new p.Sprite(x, y, 13);
+                    comment.image = 'static/assets/icons/comment-blue.svg';
+                    comment.vel.x = p.random(-1, 2);
+                    comment.vel.y = p.random(-2, -1);
+                    
+                }
+                window.createRetweet = function(x, y) {
+                    let retweet = new p.Sprite(x, y, 13);
+                    retweet.image = 'static/assets/icons/retweet-green.svg';
+                    retweet.vel.x = p.random(-1, 2);
+                    retweet.vel.y = p.random(-2, -1);
+                
+                }
+                window.createImpressions = function(x, y) {
+                    let impressions = new p.Sprite(x, y, 13);
+                    impressions.image = 'static/assets/icons/impressions-blue.svg';
+                    impressions.vel.x = p.random(-1, 2);
+                    impressions.vel.y = p.random(-2, -1);
+                }
+                window.createShare = function(x, y) {
+                        let share = new p.Sprite(x, y, 13);
+                        share.image = 'static/assets/icons/share-blue.svg';
+                        share.vel.x = p.random(-1, 2);
+                        share.vel.y = p.random(-2, -1);
+                }
+
+            function randomCreateFunction() {
+                const createFunctions = [
+                    createHeart,
+                    createBookmark,
+                    createComment,
+                    createRetweet,
+                    createImpressions,
+                    createShare
+                ];
+                
+                const randomFunction = createFunctions[Math.floor(Math.random() * createFunctions.length)];
+                const randomX = Math.random() * 375; // Canvas width
+                const y = -20; // Just above screen
+                
+                randomFunction(randomX, y);
+                setTimeout(randomCreateFunction, Math.random() * 200 + 50);
+            }
+
+            setTimeout(randomCreateFunction, 1000);
+            });
+
+            
+        });
+
+    </script>
+    
+</script>
+
+</body>
+</html>

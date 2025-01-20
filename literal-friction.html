@@ -1,0 +1,94 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feed</title>
+
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <link rel="stylesheet" href="device.css">
+    <link rel="stylesheet" href="twitter.css">
+    <link rel="stylesheet" href="feed.css">
+    <script src="menu-bar.js" defer></script>
+
+</head>
+<body>
+    <div class="screen">
+        <div class="notch"></div>
+        <div class="home-ind-hold">
+            <div class="home-ind"></div>
+        </div>
+        <header id="tw-header">
+            <div class="ios-menu">
+                <div class="ios-time">
+                    <time datetime="15:12">15:12</time>
+                </div>
+                <div class="ios-battery-etc">
+                    <img src="static/assets/icons/cellular.svg" alt="Icon 2">
+                    <img src="static/assets/icons/wifi.svg" alt="Icon 3">
+                    <img src="static/assets/icons/battery.svg" alt="Icon 1">
+                </div>
+            </div>
+            <div class="tw-header">
+                <img class="profile-header" src="static/assets/icons/no-profile.svg" alt="">
+                <img class="logo-header" src="static/assets/logos/x-logo-black.svg" alt="">
+                <button class="secondary-btn">Upgrade</button>
+            </div>
+            <ul class="tab-bar">
+                <li class="tab tab-1">
+                    <div class="label-hold ">
+                        <p class="label">For you</p>
+                    </div>
+                </li>
+                <li class="tab tab-2">
+                    <div class="label-hold active-tab">
+                        <p class="label">Following</p>
+                    </div>
+                </li>
+            </ul>
+        </header>
+        <main id="feed">
+        </main>
+        <footer id="tw-menu">
+            <nav class="menu-bar">
+                <a href="#" class="menu-item">
+                    <img src="static/assets/icons/menu-home.svg" alt="Home">
+                </a>
+                <a href="#" class="menu-item">
+                    <img src="static/assets/icons/menu-search.svg" alt="Search">
+                </a>
+                <a href="#" class="menu-item">
+                    <img src="static/assets/icons/menu-community.svg" alt="Community">
+                </a>
+                <a href="#" class="menu-item">
+                    <img src="static/assets/icons/menu-notifications.svg" alt="Notifications">
+                </a>
+                <a href="#" class="menu-item">
+                    <img src="static/assets/icons/menu-message.svg" alt="Messages">
+                </a>
+            </nav>
+        </footer>
+
+    </div>
+    <script src="create-posts.js"></script>
+
+    <script>
+        const feed = document.getElementById('feed');
+        let lastScrollTop = 0;
+
+        feed.addEventListener('wheel', function(e) {
+            const scrollTop = feed.scrollTop;
+            const maxScroll = feed.scrollHeight - feed.clientHeight;
+            const scrollProgress = scrollTop / maxScroll;
+            
+            // Increase resistance factor as user scrolls down
+            const resistance = 1 + (scrollProgress * 100);
+            
+            // Apply modified scroll
+            feed.scrollTop += e.deltaY / resistance;
+            
+            // Prevent default scroll
+            e.preventDefault();
+        }, { passive: false });
+  </script>
+</body>
+</html>
