@@ -1,13 +1,17 @@
+/* GENERAL */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-
 body {
     background-color: #FCFBF9;
 }
+
+
+/* FONTS */
 
 @font-face {
     font-family: "ABC Marist Unlicenced Trial";
@@ -16,7 +20,6 @@ body {
     font-style: normal;
     font-display: swap;
 }
-
 @font-face {
     font-family: "ABC Marist Unlicenced Trial";
     src: url('static/fonts/ABCMarist-RegularItalic-Trial.woff2') format('woff2');
@@ -24,7 +27,6 @@ body {
     font-style: italic;
     font-display: swap;
 }
-
 @font-face {
     font-family: "ABC Marist Unlicenced Trial";
     src: url('static/fonts/ABCMarist-Bold-Trial.woff2') format('woff2');
@@ -32,31 +34,26 @@ body {
     font-style: normal;
     font-display: swap;
 }
-
 p {
-    /* font-family: "Monaspace _____ VF", sans-serif;  */
     font-family: "ABC Marist Unlicenced Trial", serif; 
     font-size: 24px;
     line-height: 130%;
-
     margin-bottom: 18px;
 }
 a {
     color: #FFA600;
     text-decoration: none;
-
 }
 a:hover {
-    /* color: #FFA600; */
     text-decoration: underline;
 }
 a:visited {
-    /* color: #8C5B00; */
     text-decoration: none;
 }
-  
 h1 {
-    font-family: "Bricolage Grotesque Condensed", sans-serif;
+    /* font-family: "Bricolage Grotesque Condensed", sans-serif; */
+    font-family: "Bricolage Grotesque", sans-serif;
+
 
     font-weight: 700;
     font-size: 96px;
@@ -65,45 +62,25 @@ h1 {
 h1 span {
     color: #FFA600;
 }
-header {
-    color: white;
-}
-.authors-hold {
-    display: flex;
-    gap: 24px;
-    margin-bottom: 64px;
-}
 .author {
     font-family: "ABC Marist Unlicenced Trial", serif; 
     font-size: 24px;
-    /* font-weight: bold; */
     line-height: 130%;
 }
 h2 {
-    /* font-family: "Bricolage Grotesque Variable", serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
-    font-variation-settings:
-      "wdth" 40; */
-
+    font-family: "Bricolage Grotesque", sans-serif;   
     font-size: 64px;
     line-height: 115%;
-
-
-
-    font-family: "Bricolage Grotesque Condensed", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
     margin-bottom: 64px;
-    /* margin-top: calc((100vh - 812px - 12px) / 2); */
     margin-top: 196px;
 }
 h3 {
     font-size: 32px;
     line-height: 115%;
-    font-family: "Bricolage Grotesque Condensed", sans-serif;
+    font-family: "Bricolage Grotesque", sans-serif;
     font-optical-sizing: auto;
     font-weight: SemiBold;
     font-style: normal;
@@ -134,6 +111,19 @@ em, emphasis {
     margin-bottom: 16px;
     max-width: 720px;
 }
+
+
+/* HEADER */
+
+header {
+    color: white;
+}
+.authors-hold {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 64px;
+}
+
 
 /* ESSAY PROGRESS BAR */
 
@@ -275,6 +265,8 @@ video {
     padding: 0;
     outline: none;
 }
+
+
 /* REFERENCES */
 
 footer {
@@ -303,11 +295,9 @@ footer {
 
 }
 .references a:hover {
-    /* color: #FFD17B; */
     text-decoration: underline;
 }
 .references a:visited {
-    /* color: #8C5B00; */
     text-decoration: none;
 }
 .lit-arrow {
@@ -334,20 +324,17 @@ footer {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    /* transition: all 0.1s ease-in; */
 }
 .legend-fab.expanded {
     width: 460px;
     border-radius: 25px;
     justify-content: space-between;
-    /* justify-content: flex-end; */
     padding-right: 20px;
     padding-left: 20px;
 }
 .legend-icon {
     font-size: 24px;
     color: white;
-    /* transition: opacity 0.3s ease; */
 }
 .legend-content {
     display: none;
@@ -396,7 +383,6 @@ footer {
     background: rgba(0,0,0,1);
     color: white;
     border: none;
-    /* padding: 10px; */
     height: 48px;
     width: 24px;
     cursor: pointer;
@@ -405,5 +391,13 @@ footer {
 .arrow {
     height: 16px;
 }
-.prev { left: 0px;  border-radius: 0 100px 100px 0; padding-right: 10px; }
-.next { right: 0px; border-radius: 100px 0 0 100px; padding-left: 10px;  }
+.prev { 
+    left: 0px;  
+    border-radius: 0 100px 100px 0; 
+    padding-right: 10px; 
+}
+.next { 
+    right: 0px; 
+    border-radius: 100px 0 0 100px; 
+    padding-left: 10px;  
+}
