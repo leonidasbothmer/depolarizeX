@@ -12,6 +12,15 @@
     <!-- Style Sheets -->
     <link rel="stylesheet" href="essay.css">
     <link rel="stylesheet" href="device.css">
+    
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leader-line/1.0.7/leader-line.min.js"></script>
+    <script src="https://anseki.github.io/plain-draggable/plain-draggable.min.js"></script>
+
+    
+
+
 </head>
 <body>
     <div class="reading-progress"></div>
@@ -39,12 +48,17 @@
             </div>
         </div>
     </div>
+
+
     <header>
         <div class="header-inlay">
             <div class="header-content-hold">
                 <div class="header-top">
                     <h1>Political Polarization <br><span>by Design</span></h1>
+                    <p>Unmasking the effects of Engagement-Centric <br>Interface Design on Political Polarisation</p>
                 </div>
+               
+
                 <div class="header-bottom">
                     <div class="authors-hold">
                         <a class="author" href="#">Liv Brell</a>
@@ -57,78 +71,121 @@
             
         </div>
     </header>
-    
-    
-    
-    <style>
-        header {
-            width: 100%;
-            /* height: 100vh; */
-            padding-bottom: 100vh;
-            /* border: 3px solid red; */
-            z-index: 10000;
-            position: absolute;
-            top: 0;
-        }
-        .header-inlay {
-            /* background-color: white; */
-            background-color: #303E48;
-            width: 100%;
-            height: 100vh;
-            /* border: green 3px solid; */
-        }
-        .header-content-hold {
-            display: flex;
-            flex-direction: column;
-            /* justify-content: center;
-            align-items: center; */
-            height: 100%;
-            padding: 0 20px;
-        }
-        .header-top {
-            height: 50%;
-            display: flex;
-            justify-content: start;
-            align-items: start;
-            max-width: 1280px;
-            width: 100%;
-            margin: 0 auto;
-            padding-top: 240px;
-        }
-        .header-bottom {
-            width: 100%;
 
-            height: 50%;
-            display: flex;
-            justify-content: end;
-            align-items: end;
-            max-width: 1280px;
-            margin: 0 auto;
-        }
-        main {
-            position: fixed;
-            top: 0;
-            z-index: 0;
-            width: 100%;
-        }
-    </style>
-    <script>
-        document.addEventListener('scroll', () => {
-            const viewportHeight = window.innerHeight;
-            if (window.scrollY >= viewportHeight) {
-                document.querySelector('main').style.position = 'relative';
-                document.querySelector('header').style.position = 'static';
-                document.querySelector('header').style.paddingBottom = '0';
-            } else {
-                document.querySelector('main').style.position = 'fixed';
-                document.querySelector('header').style.position = 'absolute';
-                document.querySelector('header').style.paddingBottom = '100vh';
 
-            }
-        });
-    </script>
+    <aside id="toc-wrapper" class="toc-wrapper">
+        <div class="toc-inlay">
+            <nav class="toc">
+                <ul class="toc-list">
+                    <li class="toc-1-deg"><a href="#introduction">Introduction<span> -></span></a> </li>
+                    <li class="toc-1-deg"><a href="#engagement">Engagement</a>
+                    <li class="toc-2-deg"><a href="#interacting-with-posts">Interacting with Posts</a>
+                    <li class="toc-3-deg"><a href="#microanimations">Microanimations: Beat them at their own Game</a></li>
+                    <li class="toc-3-deg"><a href="#diverse-reactions">Diverse Reactions: Be that emoji</a></li>
+                    <li class="toc-3-deg"><a href="#reposting">Reposting: Level up!</a></li>
+                    <li class="toc-3-deg"><a href="#commenting">Commenting: Who likes silence, anyway?</a></li>
+                    <li class="toc-3-deg"><a href="#view-limit">Viewing Limit: 98, 99 and “Poof”!</a></li>
+                    <li class="toc-2-deg"><a href="#notifications">Receiving Notifications</a>
+                    <li class="toc-3-deg"><a href="#lockscreen">Lockscreen Notifications: Hey... Hey. HEY!</a></li>
+                    <li class="toc-3-deg"><a href="#in-app-notifications">In-App Notifications: Drowning in Dopamine</a></li>
+                    <li class="toc-2-deg"><a href="#time-scrolling">Time and Scrolling</a>
+                    <li class="toc-3-deg"><a href="#blurry-sight">Scrolling Intervention: Blurry Screen – Clear Mind?</a></li>
+                    <li class="toc-3-deg"><a href="#literal-friction">Friction: A Literal Approach</a></li>
+                    <li class="toc-2-deg"><a href="#following-for-you">Following and For you</a></li>
+                    <li class="toc-3-deg"><a href="#tbd-1">TBD</a></li>
+                    <li class="toc-3-deg"><a href="#tbd-1">TBD</a></li>
+                    <li class="toc-1-deg"><a href="#structure-of-content">Where Does this take us?</a>
+                </ul>
+            </nav>
+        </div>
+
+    </aside>
+    
+    
+
 
     <main>
+
+        <aside id="side-toc-wrapper" class="side-toc-wrapper">
+            <div class="side-toc-inlay">
+                <nav class="side-toc">
+                    <ul class="side-toc-list">
+                        <li class="side-toc-1-deg"><a href="#introduction">Introduction<span> -></span></a> </li>
+                        <li class="side-toc-1-deg"><a href="#engagement">Engagement</a>
+                        <li class="side-toc-2-deg"><a href="#interacting-with-posts">Interacting with Posts</a>
+                        <li class="side-toc-2-deg"><a href="#notifications">Receiving Notifications</a>
+                        <li class="side-toc-2-deg"><a href="#time-scrolling">Time and Scrolling</a>
+                        <li class="side-toc-2-deg"><a href="#following-for-you">Following and For you</a></li>
+                        <li class="side-toc-1-deg"><a href="#structure-of-content">Where Does this take us?</a>
+                    </ul>
+                </nav>
+            </div>
+    
+        </aside>
+        
+
+    
+        <!-- <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const toc = document.querySelector('.toc-wrapper');
+                const tocLinks = toc.querySelectorAll('a');
+    
+                tocLinks.forEach(link => {
+                    link.setAttribute('data-title', link.textContent);
+                    link.addEventListener('click', function(event) {
+                        event.preventDefault();
+                        const targetId = this.getAttribute('href').substring(1);
+                        const targetElement = document.getElementById(targetId);
+                        if (targetElement) {
+                            targetElement.scrollIntoView({ behavior: 'smooth' });
+                        }
+                    });
+                });
+    
+                // window.addEventListener('scroll', () => {
+                //     const tocTop = toc.getBoundingClientRect().top;
+                //     if (tocTop <= 0) {
+                //         toc.classList.add('fixed');
+                //     } else {
+                //         toc.classList.remove('fixed');
+                //     }
+                // });
+
+                document.addEventListener('scroll', () => {
+                    const viewportHeight = window.innerHeight;
+                    const tocBottom = toc.getBoundingClientRect().bottom;
+
+                    if (window.scrollY >= viewportHeight*1.5) {
+                        toc.classList.add('fixed');
+                    } else {
+                        toc.classList.remove('fixed');
+                    }
+                });
+                
+                // document.addEventListener('scroll', () => {
+                //     const viewportHeight = window.innerHeight;
+                //     if (window.scrollY >= viewportHeight) {
+                //         document.querySelector('main').style.position = 'relative';
+                //         document.querySelector('header').style.position = 'static';
+                //         document.querySelector('header').style.paddingBottom = '0';
+                //     } else {
+                //         document.querySelector('main').style.position = 'fixed';
+                //         document.querySelector('header').style.position = 'absolute';
+                //         document.querySelector('header').style.paddingBottom = '100vh';
+
+                //     }
+                // });
+            });
+
+        </script> -->
+
+    
+
+
+
+
+
+
         <!-- 0. INTRO SECTION ######################################## -->
         <div id="introduction" class="chapter-hold">
             <div class="paragraph-hold">
@@ -140,7 +197,6 @@
                         <p>Social media plays a crucial role in shaping opinions and fostering political education but also intensifies this political polarization through mechanisms like filter bubbles and echo chambers (<a href="#otieno-2024">Otieno, 2024</a>). Platforms like X are particularly influential, with nearly 60% of users relying on it to stay informed about politics (<a href="#mcclain-etal-2024">McClain, Anderson & Gelles-Watnick, 2024</a>).</p>
                         <p>Following McCoy & Press (<a href="#mccoy-press-2022">2022</a>) increasing political polarization will lead to democratic Decline eventually. The study highlights that out of 52 instances where democracies experienced pernicious polarization since 1950, half saw a significant decline in their democratic quality. Further, these polarized societies tend to be unsuccessful in their efforts to reduce polarization.</p>
                         <p>So, how can we, as designers, take action? Which role does design play in political polarization? In this essay, we will follow up on the research question, to what extent X's interface increases political polarization and how we can unmask and disrupt these interaction patterns by design? We will dive deep into the design of X and suggest speculative approaches to shed light on the details of design and functionality as well as the psychological mechanics, which are embedded into the views that we interact with everyday, consuming political content or news.</p>
-                        
                     </div>
                 </div>
                 <div class="design-side">
@@ -171,6 +227,33 @@
                     </div>
                 </div>
             </div>
+
+            <!-- STAGE 1 NETWORK -->
+            <div class="essay-visual">
+                <img src="essay-visuals/graphs/graph-1.svg" alt="">
+            </div>
+
+            <!-- Explanatory paragraph -->
+            <div class="paragraph-hold">
+                <div class="essay-side">
+                    <div class="essay-snippet">
+                        <p class="comment">
+                            It’s important to note: While researching and understanding the structure of the app, we categorized each element and feature under labels based on the causes of polarization, problem areas within the interface design, and the interactive features that directly engage with the user at the front end.
+                        </p>
+
+                    </div>
+                </div>
+                <div class="design-side" style="display: flex; flex-direction: column; justify-content: flex-end;">
+                    <!-- Nothing -->
+                    <p class="rq">To what extent does X's interface increase political polarization and<br>how can we unmask and disrupt these interaction patterns by design?</p>
+                </div>
+            </div>
+
+            <!-- STAGE 2 NETWORK -->
+            <div class="essay-visual">
+                <img src="essay-visuals/graphs/graph-2.svg" alt="">
+            </div>
+
 
             <div class="paragraph-hold">
                 <div class="essay-side">
@@ -229,12 +312,13 @@
                 <div class="essay-side">
                     <div class="essay-snippet">
                         <h4>Microanimations: Beat them at their own Game</h4>
-                        <p>We tap the cutely rounded little heart icon to like the post. Before it turns red, it pulses once and explodes into countless tiny sparkles. X uses the sparkling heart animation to nudge us to “heart” the respective post. “This small action makes the experience more rewarding. It encourages the user to interact with the content,” Soegaard (<a href="#soegaard-2024">2024</a>) states regarding this type of design choice. Dan Saffer goes down the same road (<a href="#saffer-2013">2013, p. 100</a>): “Interesting animations invite interaction”. That is, as long as these animations follow a set of five rules, divided by Android engineers Chat Haase and Romain Guy: Animations need to be fast, smooth, natural, simple and purposeful (<a href="#saffer-2013">Saffer, 2013, p. 99</a>).</p>
-                        <p>But what if the animation upon interaction is not enjoyable? What if it breaks with these rules? To achieve the opposite effect – namely, to de-engage users with the content – the same mechanic can be employed in a distracting or even annoying way. Every user interaction adds load and forces them to wait just a fraction of a second before diving back into the endlessly numbing spell of the monotony of the feed. The user may pause and think twice before pressing the like button, questioning whether the post truly deserves a like or if liking has simply become an automatic, conditioned response.</p>
+                        <p>We tap the cute little heart icon, and before it turns red, it pulses and bursts into tiny sparkles. A small, satisfying reward – just enough to nudge us into liking more posts.</p>
+                        <p>“This small action makes the experience more rewarding. It encourages users to interact with content,” Soegaard (<a href="#soegaard-2024">2024</a>) states. Dan Saffer (<a href="#saffer-2013">2013, p. 100</a>) agrees: “Interesting animations invite interaction” – but only when they follow five key principles: fast, smooth, natural, simple, and purposeful (Saffer, 2013, p. 99).</p>
+                        <p id="hearts-description" class="descriptive-text">On the mobile screen, on the right-hand side, you can see how a like-animation could also look like. Bringing up questions: <span class="marked-text"> what if the animation upon interaction is not enjoyable? What if it breaks with these rules? </span> To achieve the opposite effect – namely, to de-engage users with the content – the same mechanic can be employed in a distracting or even annoying way. Every user interaction adds load and forces them to wait just a fraction of a second before diving back into the endlessly numbing spell of the monotony of the feed. The user may pause and think twice before pressing the like button, questioning whether the post truly deserves a like or if liking has simply become an automatic, conditioned response.</p>
                     </div>
                 </div>
                 <div class="design-side">
-                    <div class="device-hold">
+                    <div  id="hearts-iframe" class="device-hold">
                         <iframe class="device type-interactive" src="feed-large-heart.html" frameborder="0"></iframe>
                         <div class="device-claim">
                             Try it out for yourself!
@@ -478,26 +562,28 @@
             </div>
         </div>
 
-                
-        <!-- 2. STRUCTURE OF CONTENT SECTION ######################### -->
-        <div id="structure-of-content" class="chapter-hold" style="position: relative;">
+        <!-- 0. INTRO SECTION ######################################## -->
+        <div id="outro" class="chapter-hold">
             <div class="paragraph-hold">
                 <div class="essay-side">
                     <div class="essay-snippet">
-                        <!-- <p class="over-title">Problem Spehere 1</p> -->
-                        <h2>Structure of Content</h2>
-                        <p>Incididunt occaecat labore deserunt amet fugiat officia velit proident esse. In nulla ullamco ex exercitation. Consequat adipisicing ea qui velit ut enim. Ullamco laborum quis ea. Sint nulla enim excepteur aute. Commodo dolor elit cillum enim velit id duis anim. Sit exercitation aliqua officia qui sint non fugiat laboris labore amet nostrud aliquip ut excepteur.</p>
-                        <p>In nulla ullamco ex exercitation. Consequat adipisicing ea qui velit ut enim. Ullamco laborum quis ea. Sint nulla enim excepteur aute. Commodo dolor elit cillum enim velit id duis anim. Sit exercitation aliqua officia qui sint non fugiat laboris labore amet nostrud aliquip ut excepteur.</p>
+                        <h2>What Comes Next?</h2>
+                        <p>[SAMPLE TEXT: NON REVIEWED AI] As we have explored, the design of social media interfaces like X plays a significant role in shaping political polarization. The features and interactions we engage with daily are not just neutral tools; they are powerful mechanisms that can either amplify division or foster understanding.</p>
+                        <p>But this is just the beginning of the conversation. How can we, as designers, developers, and users, take responsibility for the digital spaces we inhabit? What other speculative design interventions can we imagine to create a more balanced and thoughtful online environment?</p>
+                        <p>We invite you to reflect on these questions and consider how you can contribute to a more inclusive and less polarized digital world. Whether through innovative design, critical thinking, or active participation in discussions, each of us has a role to play in shaping the future of social media.</p>
+                        <p>Let's continue this dialogue and work together to unmask and disrupt the patterns that drive polarization. The journey towards a more harmonious digital landscape starts with us.</p>
                     </div>
                 </div>
                 <div class="design-side">
-                    <!-- nothing -->
+                                        
+                    nothing yet
                 </div>
             </div>
-            <div class="paywall" style="width: 100%; height: 800px; position: absolute; bottom: 0; z-index: 100; background: linear-gradient(180deg, rgba(252, 251, 249, 0) 0%, #FCFBF9 80%);"></div>
-        
+
+           
         </div>
 
+        <!-- FOOTER -------------------------------------------------- -->
         <footer>
             <div>
                 <div class="references">
@@ -551,8 +637,6 @@
     </main>
 
 
-
-
     <!-- SLIDER -->
     <script>
         const slider = document.querySelector('.slider');
@@ -568,7 +652,8 @@
 
         prevBtn.addEventListener('click', () => slide(-1));
         nextBtn.addEventListener('click', () => slide(1));
-    </script>
+          </script>
+
 
     <!-- LINKING TO REFERENCES -->
     <script>
@@ -604,6 +689,69 @@
             //         });
             //     }
             // });
+        
+    
+    </script>
+
+    <!-- HEADER -->
+    <script>
+        document.addEventListener('scroll', () => {
+            const viewportHeight = window.innerHeight;
+            if (window.scrollY < viewportHeight) {
+                // heading visible
+                document.querySelector('main').style.position = 'fixed';
+
+                document.querySelector('header').style.position = 'absolute';
+                document.querySelector('header').style.zIndex = '1005';
+
+                document.querySelector('header').style.paddingBottom = '100vh';
+
+                document.getElementById('toc-wrapper').style.position = 'fixed';
+                document.getElementById('toc-wrapper').style.zIndex = '1004';
+                document.getElementById('toc-wrapper').style.paddingBottom = '0';
+
+            } else if ((window.scrollY >= viewportHeight) && (window.scrollY < viewportHeight*2)) {
+                // toc visible
+                document.querySelector('main').style.position = 'fixed';
+
+                document.getElementById('toc-wrapper').style.position = 'absolute';
+                document.getElementById('toc-wrapper').style.paddingBottom = '100vh';
+                document.getElementById('toc-wrapper').style.paddingTop = '100vh';
+
+                document.querySelector('header').style.position = 'static';
+                document.querySelector('header').style.paddingBottom = '0';
+
+                
+            } else if (window.scrollY >= viewportHeight*2) {
+                // essay visible
+                document.querySelector('main').style.position = 'relative';
+
+                document.querySelector('header').style.position = 'static';
+                document.querySelector('header').style.paddingBottom = '0';
+
+
+
+                document.getElementById('toc-wrapper').style.position = 'static';
+                document.getElementById('toc-wrapper').style.paddingBottom = '0';
+
+            }
+
+        //     if (window.scrollY >= viewportHeight) {
+        //         document.querySelector('main').style.position = 'relative';
+        //         document.querySelector('header').style.position = 'static';
+        //         // document.querySelector('header').style.display = 'none';
+        //         document.querySelector('header').style.paddingBottom = '0';
+        //         // console.log('header off');
+        //     } else {
+        //         document.querySelector('main').style.position = 'fixed';
+        //         document.querySelector('header').style.position = 'absolute';
+        //         // document.querySelector('header').style.display = 'block';
+        //         document.querySelector('header').style.paddingBottom = '100vh';
+        //         // console.log('header in');
+
+        //     }
+        });
+
         
     </script>
     
@@ -673,6 +821,21 @@
                 legendFab.classList.remove('expanded');
             }
         });
+    </script>
+    
+    <!-- Leader Line -->
+    <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                let line = new LeaderLine(
+                    document.getElementById('hearts-description'),
+                    LeaderLine.pointAnchor(document.getElementById('hearts-iframe'), { x: '0%', y: '50%' }),
+                    { startPlug: "disc", startPlugSize: 1.5, endPlug: 'disc', endPlugSize: 1.5, color: '#FFA600' }
+                );
+
+                window.addEventListener('scroll', () => {
+                    line.position();
+                });
+            });
     </script>
 </body>
 </html>
