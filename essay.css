@@ -43,11 +43,18 @@ h1,h2,h3,h4,h5,h6,p {
     font-style: italic;
     font-display: swap;
 }
-@font-face {
+/* @font-face {
     font-family: "ABC Marist Unlicenced Trial";
     src: url('static/fonts/ABCMarist-BoldItalic-Trial.woff2') format('woff2');
     font-weight: bold;
     font-style: italic;
+    font-display: swap;
+} */
+@font-face {
+    font-family: "ABC Marist Unlicenced Trial";
+    src: url('static/fonts/ABCMarist-Bold-Trial.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
     font-display: swap;
 }
 @font-face {
@@ -140,8 +147,7 @@ em, emphasis {
     font-family: "Geist Sans", "sans-serif";
     font-size: 24px;
 }
-
-.descriptive-text {
+/* .descriptive-text {
     font-family: "Geist Sans", "sans-serif";
     font-size: 20px;
     background-color: #becec180;
@@ -150,15 +156,30 @@ em, emphasis {
     line-height: 150%;
     margin-top: 48px;
     padding: 24px;
-    /* margin-left: 96px; */
     padding-bottom: 28px;
-    /* margin-right: -96px; */
-}
-/* span.marked-text {
-    background-color: hsl(39, 100%, 60%);
-    font-family: "Geist Sans", "sans-serif";
-    font-size: 22px;
 } */
+
+span.marked-text {
+    display: inline-block;
+    margin: 20px 0px;
+    padding: 12px 20px;
+    background-color: hsl(39, 100%, 60%, .5);
+    /* font-family: "Geist Sans", "sans-serif"; */
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 130%;
+} 
+
+p.paragraph-note {
+    /* font-family: "Geist Sans", "sans-serif";
+    font-size: 20px;
+    color: #b0a99d; */
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: #becec1;
+    margin-top: 48px;
+}
 
 
 /* HEADER */
@@ -168,7 +189,6 @@ header {
     width: 100%;
     /* height: 100vh; */
     padding-bottom: 100vh;
-    border: 3px solid red;
     z-index: 10000;
     position: absolute;
     top: 0;
@@ -382,12 +402,17 @@ video {
 /* REFERENCES */
 
 footer {
-    background-color: #303E48;
     color: white;
     font-size: 20px;
     margin-top: 64px;
     padding-bottom: 120px;
+
+    background-color: #303E48;
+
 }
+/* .footer-inlay {
+    background-color: #303E48;
+} */
 .references {
     font-size: 16px;
     line-height: 130%;
@@ -530,69 +555,74 @@ footer {
 .toc-wrapper {
     position: fixed;
     top: 0;
-    border: 1px solid red;
     z-index: 1000;
-    border: solid 1px #FFA600;
     width: 100%;
-
     padding-bottom: 100vh;
-
-
     pointer-events: none;
+    font-family: "ABC Marist Unlicenced Trial", serif;
 }
 
 .toc-inlay {
-    background-color: rgba(100,100,100,0.9);
+    background-color: rgba(242, 239, 233);
     width: 100%;
     height: 100vh;
     /* border: green 3px solid; */
     pointer-events: auto;
+    display: flex;
+    justify-content: center;
+
 }
-
-
-
-
 
 .toc {
-
     font-family: "ABC Marist Unlicenced Trial", serif;
     font-size: 24px;
-    list-style: none;;
+    list-style: none;
+    width: 100%;
+    max-width: 1080px;
+    margin-top: -72px;
 }
-
-
-
 .toc ul {
     list-style: none;
     padding: 0;
     margin-bottom: 20px;
 }
+.toc li {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+}
+.toc li.toc-3-deg {
+    margin-left: 48px;
+}
+.toc li.toc-2-deg, li.toc-1-deg {
+    margin-top: 12px;
+}
+.main-toc-item { /* the circle infront */
+    background-color: #FFA600;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+}
+
+.toc a:hover {
+    /* text-decoration: underline; */
+    color: #FFA600;
+}
+
+
 
 .toc ul ul {
     margin-left: 20px;
 }
-
 .toc a {
     text-decoration: none;
-    color: #333;
+    color: black;
 }
 
-.toc a:hover {
-    text-decoration: underline;
-}
-
-/* 
 
 
-
-.toc a span {
-    display: none;
-}
-
-.toc a:hover span {
-    display: inline-block;
-}
-*/
+/* SIDE MENU */
 
 .side-toc-wrapper {
     position: fixed;
@@ -603,18 +633,11 @@ footer {
     padding: 0;
 
 }
-
-.side-toc-wrapper .side-toc a {
-    color: white;
-}
-
 .side-toc-wrapper ul {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-
 }
-
 .side-toc-wrapper li {
     overflow: hidden;
     width: 16px;
@@ -624,61 +647,24 @@ footer {
     font-size: 20px;
     color: #FFA600;
     margin-bottom: 12px;
-}
 
+}
 .side-toc-wrapper li:hover {
     width: auto;
     height: 32px;
     margin-top: -8px;
     margin-bottom: 4px;
 }
-
 .side-toc-wrapper li:hover a {
     padding: 4px 12px 2px 12px;
-
 }
-
+.side-toc-wrapper .side-toc a {
+    color: white;
+}
 .side-toc-wrapper li a {
-    display: none;
+    display: none; 
 }
 .side-toc-wrapper li:hover a {
-    display: block;
+    display: inline-block;
     text-decoration: none;
 }
-
-.side-toc-wrapper li:hover a:hover span {
-    display: none;
-}
-
-/* 
-
-
-
-.toc.fixed ul li {
-    margin-bottom: 20px;
-}
-
-.toc.fixed ul li a {
-    display: block;
-    width: 10px;
-    height: 10px;
-    background: #333;
-    border-radius: 50%;
-    overflow: hidden;
-    position: relative;
-}
-
-.toc.fixed ul li a::after {
-    content: attr(data-title);
-    position: absolute;
-    left: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    white-space: nowrap;
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-
-.toc.fixed ul li a:hover::after {
-    opacity: 1;
-} */

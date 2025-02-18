@@ -16,7 +16,9 @@
     
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leader-line/1.0.7/leader-line.min.js"></script>
-    <script src="https://anseki.github.io/plain-draggable/plain-draggable.min.js"></script>
+
+
+    <!-- <script src="https://d3js.org/d3.v7.min.js"></script> -->
 
     
 
@@ -50,6 +52,7 @@
     </div>
 
 
+    <!-- HEADER SLIDE -->
     <header>
         <div class="header-inlay">
             <div class="header-content-hold">
@@ -61,10 +64,10 @@
 
                 <div class="header-bottom">
                     <div class="authors-hold">
-                        <a class="author" href="#">Liv Brell</a>
-                        <a class="author" href="#">Leonidas v. Bothmer</a>
+                        <a class="author" href="https://fhp.incom.org/profile/17026">Liv Brell</a>
+                        <a class="author" href="https://www.leonidas-bothmer.de">Leonidas v. Bothmer</a>
                         <a class="author" href="#">Emil Dax</a>
-                        <a class="author" href="#">Ariel Khait</a>
+                        <a class="author" href="https://hayatariel.wixstudio.com/design?rc=test-site">Ariel Khait</a>
                     </div>
                 </div>
             </div>
@@ -72,29 +75,30 @@
         </div>
     </header>
 
-
+    <!-- MENU SLIDE -->
     <aside id="toc-wrapper" class="toc-wrapper">
         <div class="toc-inlay">
             <nav class="toc">
                 <ul class="toc-list">
-                    <li class="toc-1-deg"><a href="#introduction">Introduction<span> -></span></a> </li>
-                    <li class="toc-1-deg"><a href="#engagement">Engagement</a>
-                    <li class="toc-2-deg"><a href="#interacting-with-posts">Interacting with Posts</a>
+                    <h2>Content</h2>
+                    <li class="toc-1-deg"><div class="main-toc-item"></div><a href="#introduction">Introduction<span> -></span></a> </li>
+                    <!-- <li class="toc-1-deg"><div class="main-toc-item"></div><a href="#engagement">Engagement</a> -->
+                    <li class="toc-2-deg"><div class="main-toc-item"></div><a href="#interacting-with-posts">Interacting with Posts</a>
                     <li class="toc-3-deg"><a href="#microanimations">Microanimations: Beat them at their own Game</a></li>
                     <li class="toc-3-deg"><a href="#diverse-reactions">Diverse Reactions: Be that emoji</a></li>
                     <li class="toc-3-deg"><a href="#reposting">Reposting: Level up!</a></li>
                     <li class="toc-3-deg"><a href="#commenting">Commenting: Who likes silence, anyway?</a></li>
                     <li class="toc-3-deg"><a href="#view-limit">Viewing Limit: 98, 99 and “Poof”!</a></li>
-                    <li class="toc-2-deg"><a href="#notifications">Receiving Notifications</a>
+                    <li class="toc-2-deg"><div class="main-toc-item"></div><a href="#notifications">Receiving Notifications</a>
                     <li class="toc-3-deg"><a href="#lockscreen">Lockscreen Notifications: Hey... Hey. HEY!</a></li>
                     <li class="toc-3-deg"><a href="#in-app-notifications">In-App Notifications: Drowning in Dopamine</a></li>
-                    <li class="toc-2-deg"><a href="#time-scrolling">Time and Scrolling</a>
+                    <li class="toc-2-deg"><div class="main-toc-item"></div><a href="#time-scrolling">Time and Scrolling</a>
                     <li class="toc-3-deg"><a href="#blurry-sight">Scrolling Intervention: Blurry Screen – Clear Mind?</a></li>
                     <li class="toc-3-deg"><a href="#literal-friction">Friction: A Literal Approach</a></li>
-                    <li class="toc-2-deg"><a href="#following-for-you">Following and For you</a></li>
+                    <li class="toc-2-deg"><div class="main-toc-item"></div><a href="#following-for-you">Following and For you</a></li>
                     <li class="toc-3-deg"><a href="#tbd-1">TBD</a></li>
                     <li class="toc-3-deg"><a href="#tbd-1">TBD</a></li>
-                    <li class="toc-1-deg"><a href="#structure-of-content">Where Does this take us?</a>
+                    <li class="toc-1-deg"><div class="main-toc-item"></div><a href="#structure-of-content">Where Does this take us?</a>
                 </ul>
             </nav>
         </div>
@@ -106,85 +110,24 @@
 
     <main>
 
+        <!-- 0. SIDE MENU ############################################ -->
         <aside id="side-toc-wrapper" class="side-toc-wrapper">
             <div class="side-toc-inlay">
                 <nav class="side-toc">
                     <ul class="side-toc-list">
-                        <li class="side-toc-1-deg"><a href="#introduction">Introduction<span> -></span></a> </li>
-                        <li class="side-toc-1-deg"><a href="#engagement">Engagement</a>
+                        <li class="side-toc-1-deg"><a href="#introduction">Introduction</a> </li>
+                        <!-- <li class="side-toc-1-deg"><a href="#engagement">Engagement</a> -->
                         <li class="side-toc-2-deg"><a href="#interacting-with-posts">Interacting with Posts</a>
                         <li class="side-toc-2-deg"><a href="#notifications">Receiving Notifications</a>
                         <li class="side-toc-2-deg"><a href="#time-scrolling">Time and Scrolling</a>
                         <li class="side-toc-2-deg"><a href="#following-for-you">Following and For you</a></li>
-                        <li class="side-toc-1-deg"><a href="#structure-of-content">Where Does this take us?</a>
+                        <li class="side-toc-1-deg"><a href="#outro">Where Does this take us?</a>
                     </ul>
                 </nav>
             </div>
     
         </aside>
         
-
-    
-        <!-- <script>
-            document.addEventListener('DOMContentLoaded', () => {
-                const toc = document.querySelector('.toc-wrapper');
-                const tocLinks = toc.querySelectorAll('a');
-    
-                tocLinks.forEach(link => {
-                    link.setAttribute('data-title', link.textContent);
-                    link.addEventListener('click', function(event) {
-                        event.preventDefault();
-                        const targetId = this.getAttribute('href').substring(1);
-                        const targetElement = document.getElementById(targetId);
-                        if (targetElement) {
-                            targetElement.scrollIntoView({ behavior: 'smooth' });
-                        }
-                    });
-                });
-    
-                // window.addEventListener('scroll', () => {
-                //     const tocTop = toc.getBoundingClientRect().top;
-                //     if (tocTop <= 0) {
-                //         toc.classList.add('fixed');
-                //     } else {
-                //         toc.classList.remove('fixed');
-                //     }
-                // });
-
-                document.addEventListener('scroll', () => {
-                    const viewportHeight = window.innerHeight;
-                    const tocBottom = toc.getBoundingClientRect().bottom;
-
-                    if (window.scrollY >= viewportHeight*1.5) {
-                        toc.classList.add('fixed');
-                    } else {
-                        toc.classList.remove('fixed');
-                    }
-                });
-                
-                // document.addEventListener('scroll', () => {
-                //     const viewportHeight = window.innerHeight;
-                //     if (window.scrollY >= viewportHeight) {
-                //         document.querySelector('main').style.position = 'relative';
-                //         document.querySelector('header').style.position = 'static';
-                //         document.querySelector('header').style.paddingBottom = '0';
-                //     } else {
-                //         document.querySelector('main').style.position = 'fixed';
-                //         document.querySelector('header').style.position = 'absolute';
-                //         document.querySelector('header').style.paddingBottom = '100vh';
-
-                //     }
-                // });
-            });
-
-        </script> -->
-
-    
-
-
-
-
-
 
         <!-- 0. INTRO SECTION ######################################## -->
         <div id="introduction" class="chapter-hold">
@@ -232,6 +175,9 @@
             <div class="essay-visual">
                 <img src="essay-visuals/graphs/graph-1.svg" alt="">
             </div>
+
+
+
 
             <!-- Explanatory paragraph -->
             <div class="paragraph-hold">
@@ -314,6 +260,8 @@
                         <h4>Microanimations: Beat them at their own Game</h4>
                         <p>We tap the cute little heart icon, and before it turns red, it pulses and bursts into tiny sparkles. A small, satisfying reward – just enough to nudge us into liking more posts.</p>
                         <p>“This small action makes the experience more rewarding. It encourages users to interact with content,” Soegaard (<a href="#soegaard-2024">2024</a>) states. Dan Saffer (<a href="#saffer-2013">2013, p. 100</a>) agrees: “Interesting animations invite interaction” – but only when they follow five key principles: fast, smooth, natural, simple, and purposeful (Saffer, 2013, p. 99).</p>
+                        <p class="paragraph-note">Our Intervention</p>   
+                        
                         <p id="hearts-description" class="descriptive-text">On the mobile screen, on the right-hand side, you can see how a like-animation could also look like. Bringing up questions: <span class="marked-text"> what if the animation upon interaction is not enjoyable? What if it breaks with these rules? </span> To achieve the opposite effect – namely, to de-engage users with the content – the same mechanic can be employed in a distracting or even annoying way. Every user interaction adds load and forces them to wait just a fraction of a second before diving back into the endlessly numbing spell of the monotony of the feed. The user may pause and think twice before pressing the like button, questioning whether the post truly deserves a like or if liking has simply become an automatic, conditioned response.</p>
                     </div>
                 </div>
@@ -548,7 +496,7 @@
         </div>
 
         <!-- 1.4 FOLLOWING AND FOR YOU ------------------------------- -->
-        <div id="following-for-you" class="chapter-hold" style="display: none;">
+        <div id="following-for-you" class="chapter-hold">
             <div class="paragraph-hold">
                 <div class="essay-side">
                     <div class="essay-snippet">
@@ -562,7 +510,7 @@
             </div>
         </div>
 
-        <!-- 0. INTRO SECTION ######################################## -->
+        <!-- 0. OUTRO SECTION ######################################## -->
         <div id="outro" class="chapter-hold">
             <div class="paragraph-hold">
                 <div class="essay-side">
@@ -583,9 +531,12 @@
            
         </div>
 
+        
+    
+
         <!-- FOOTER -------------------------------------------------- -->
         <footer>
-            <div>
+            <div class="footer-inlay">
                 <div class="references">
                     <h3>References</h3>
                 
@@ -634,6 +585,7 @@
                 </div>
             </div>
         </footer>
+
     </main>
 
 
@@ -699,39 +651,52 @@
             const viewportHeight = window.innerHeight;
             if (window.scrollY < viewportHeight) {
                 // heading visible
+                console.log("header is visible and toc below");
+
+
                 document.querySelector('main').style.position = 'fixed';
+                document.querySelector('main').style.top = '0';
 
                 document.querySelector('header').style.position = 'absolute';
-                document.querySelector('header').style.zIndex = '1005';
-
                 document.querySelector('header').style.paddingBottom = '100vh';
+                // document.querySelector('header').style.zIndex = '1005';
 
                 document.getElementById('toc-wrapper').style.position = 'fixed';
+                document.getElementById('toc-wrapper').style.top = '0';
                 document.getElementById('toc-wrapper').style.zIndex = '1004';
                 document.getElementById('toc-wrapper').style.paddingBottom = '0';
 
             } else if ((window.scrollY >= viewportHeight) && (window.scrollY < viewportHeight*2)) {
                 // toc visible
+                console.log("toc is visible and main below");
+
                 document.querySelector('main').style.position = 'fixed';
+                document.querySelector('main').style.top = '0';
+
+                document.querySelector('header').style.position = 'static';
+                document.querySelector('header').style.paddingBottom = '0';
 
                 document.getElementById('toc-wrapper').style.position = 'absolute';
+                document.getElementById('toc-wrapper').style.top = '0';
                 document.getElementById('toc-wrapper').style.paddingBottom = '100vh';
                 document.getElementById('toc-wrapper').style.paddingTop = '100vh';
 
-                document.querySelector('header').style.position = 'static';
-                document.querySelector('header').style.paddingBottom = '0';
-
                 
-            } else if (window.scrollY >= viewportHeight*2) {
+            } else { //else if (window.scrollY >= viewportHeight*2) {
                 // essay visible
+                console.log("only main is visible");
+
                 document.querySelector('main').style.position = 'relative';
+                document.querySelector('main').style.paddingTop = '100vh';
+                // document.querySelector('main').style.top = '0';
 
                 document.querySelector('header').style.position = 'static';
                 document.querySelector('header').style.paddingBottom = '0';
 
 
+                document.getElementById('toc-wrapper').style.position = 'absolute';
+                document.getElementById('toc-wrapper').style.top = '0';
 
-                document.getElementById('toc-wrapper').style.position = 'static';
                 document.getElementById('toc-wrapper').style.paddingBottom = '0';
 
             }
