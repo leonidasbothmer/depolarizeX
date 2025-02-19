@@ -13,16 +13,8 @@
     <link rel="stylesheet" href="essay.css">
     <link rel="stylesheet" href="device.css">
     
-    
-
+    <!-- JS Libraries -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leader-line/1.0.7/leader-line.min.js"></script>
-
-
-    <!-- <script src="https://d3js.org/d3.v7.min.js"></script> -->
-
-    
-
-
 </head>
 <body>
     <div class="reading-progress"></div>
@@ -60,8 +52,6 @@
                     <h1>Political Polarization <br><span>by Design</span></h1>
                     <p>Unmasking the effects of Engagement-Centric <br>Interface Design on Political Polarisation</p>
                 </div>
-               
-
                 <div class="header-bottom">
                     <div class="authors-hold">
                         <a class="author" href="https://fhp.incom.org/profile/17026">Liv Brell</a>
@@ -75,40 +65,76 @@
         </div>
     </header>
 
-    <!-- MENU SLIDE -->
-    <aside id="toc-wrapper" class="toc-wrapper">
-        <div class="toc-inlay">
-            <nav class="toc">
-                <ul class="toc-list">
-                    <h2>Content</h2>
-                    <li class="toc-1-deg"><div class="main-toc-item"></div><a href="#introduction">Introduction<span> -></span></a> </li>
-                    <!-- <li class="toc-1-deg"><div class="main-toc-item"></div><a href="#engagement">Engagement</a> -->
-                    <li class="toc-2-deg"><div class="main-toc-item"></div><a href="#interacting-with-posts">Interacting with Posts</a>
-                    <li class="toc-3-deg"><a href="#microanimations">Microanimations: Beat them at their own Game</a></li>
-                    <li class="toc-3-deg"><a href="#diverse-reactions">Diverse Reactions: Be that emoji</a></li>
-                    <li class="toc-3-deg"><a href="#reposting">Reposting: Level up!</a></li>
-                    <li class="toc-3-deg"><a href="#commenting">Commenting: Who likes silence, anyway?</a></li>
-                    <li class="toc-3-deg"><a href="#view-limit">Viewing Limit: 98, 99 and “Poof”!</a></li>
-                    <li class="toc-2-deg"><div class="main-toc-item"></div><a href="#notifications">Receiving Notifications</a>
-                    <li class="toc-3-deg"><a href="#lockscreen">Lockscreen Notifications: Hey... Hey. HEY!</a></li>
-                    <li class="toc-3-deg"><a href="#in-app-notifications">In-App Notifications: Drowning in Dopamine</a></li>
-                    <li class="toc-2-deg"><div class="main-toc-item"></div><a href="#time-scrolling">Time and Scrolling</a>
-                    <li class="toc-3-deg"><a href="#blurry-sight">Scrolling Intervention: Blurry Screen – Clear Mind?</a></li>
-                    <li class="toc-3-deg"><a href="#literal-friction">Friction: A Literal Approach</a></li>
-                    <li class="toc-2-deg"><div class="main-toc-item"></div><a href="#following-for-you">Following and For you</a></li>
-                    <li class="toc-3-deg"><a href="#tbd-1">TBD</a></li>
-                    <li class="toc-3-deg"><a href="#tbd-1">TBD</a></li>
-                    <li class="toc-1-deg"><div class="main-toc-item"></div><a href="#structure-of-content">Where Does this take us?</a>
-                </ul>
-            </nav>
-        </div>
-
-    </aside>
-    
-    
-
-
     <main>
+
+        <!-- MENU SLIDE - not a slide currently -->
+        <aside id="toc-wrapper" class="toc-wrapper">
+            <div class="toc-inlay">
+                <nav class="toc">
+                    <ul class="toc-list">
+                        <h2>Content</h2>
+                        <li class="toc-1-deg">
+                            <div class="main-toc-item"></div>
+                            <a href="#introduction">Introduction</a>
+                        </li>
+                        <li class="toc-2-deg">
+                            <div class="main-toc-item"></div>
+                            <a href="#interacting-with-posts">Interacting with Posts</a>
+                        </li>
+                        <li class="toc-3-deg">
+                            <a id="nav-item-microanimations" href="#microanimations">Microanimations: Beat them at their own Game</a>
+                        </li>
+                        <li class="toc-3-deg">
+                            <a id="nav-item-diverse-reactions" href="#diverse-reactions">Diverse Reactions: Be that emoji</a>
+                        </li>
+                        <li class="toc-3-deg">
+                            <a id="nav-item-reposting" href="#reposting">Reposting: Level up!</a>
+                        </li>
+                        <li class="toc-3-deg">
+                            <a id="nav-item-commenting" href="#commenting">Commenting: Who likes silence, anyway?</a>
+                        </li>
+                        <li class="toc-3-deg">
+                            <a id="nav-item-view-limit" href="#view-limit">Viewing Limit: 98, 99 and “Poof”!</a>
+                        </li>
+                        <li class="toc-2-deg">
+                            <div class="main-toc-item"></div><a href="#notifications">Receiving Notifications</a></li>
+                        <li class="toc-3-deg">
+                            <a href="#lockscreen">Lockscreen Notifications: Hey... Hey. HEY!</a>
+                        </li>
+                        <li class="toc-3-deg">
+                            <a href="#in-app-notifications">In-App Notifications: Drowning in Dopamine</a>
+                        </li>
+                        <li class="toc-2-deg">
+                            <div class="main-toc-item"></div>
+                            <a href="#time-scrolling">Time and Scrolling</a></li>
+                        <li class="toc-3-deg">
+                            <a href="#blurry-sight">Scrolling Intervention: Blurry Screen – Clear Mind?</a>
+                        </li>
+                        <li class="toc-3-deg">
+                            <a href="#literal-friction">Friction: A Literal Approach</a>
+                        </li>
+                        <li class="toc-2-deg">
+                            <div class="main-toc-item"></div>
+                            <a href="#following-for-you">Following and For you</a></li>
+                        <li class="toc-3-deg">
+                            <a href="#tbd-1">TBD</a>
+                        </li>
+                        <li class="toc-3-deg">
+                            <a href="#tbd-1">TBD</a>
+                        </li>
+                        <li class="toc-1-deg">
+                            <div class="main-toc-item"></div>
+                            <a href="#structure-of-content">Where Does this take us?</a>
+                        </li>
+                    </ul>
+                    <!-- <div class="toc-preview-hold"> -->
+                    <img class="toc-preview-img" id="microanimations-prev" src="essay-visuals/previews/growing-hearts.png" alt="">
+                    <img class="toc-preview-img" id="diverse-reactions-prev" src="essay-visuals/previews/growing-hearts.png" alt="">
+                    <!-- </div> -->
+                </nav>
+            </div>
+    
+        </aside>
 
         <!-- 0. SIDE MENU ############################################ -->
         <aside id="side-toc-wrapper" class="side-toc-wrapper">
@@ -135,11 +161,22 @@
                 <div class="essay-side">
                     <div class="essay-snippet">
                         <h2>Introduction</h2> <!-- should we remove this here? maybe instead a grey background? -->
-                        <p>“Let that sink in” Elon Musk posted, right after he bought Twitter for 42 billion US-dollars, and attached a photo carrying a bathroom sink into the headquarters, while throwing a goofy grin at the camera (<a href="#musk-2022">Musk, 2022</a>). With the entry of the self-proclaimed free speech advocate, political polarisation seems to have reached a new peak in social media. This trend of deregulating social media platforms has taken another turn after Trump being elected, placing Musk into the administration (<a href="#musk-2024">Musk, 2024</a>) and his agenda right into the oval office. Since leading personalities behind other tech-companies, especially social networking have followed his example, first and foremost Mark Zuckerberg, announcing profound changes in their policies (<a href="#zuckerberg-2025">Zuckerberg, 2025</a>), which subsequently will have impact on interfaces of and culture on these platforms.</p>
-                        <p>But let us take a step back and look at the broader context of these changes. 2024 being the ultimate election year (<a href="#ewe-2023">Ewe, 2023</a>), countries have called over four billion people worldwide to cast their votes (<a href="#reece-2024">Reece, 2024</a>). Meanwhile political polarisation in developed countries is reaching new highs year after year since the beginning of this century (<a href="#mccoy-etal-2022">McCoy et al., 2022</a>). The World Economic Forum (WEF) places political polarization at number three of their Global Risks Report for 2024, directly following mis- and disinformation (<a href="#wef-2024">WEF, 2024</a>). Especially in the bi-partisan political system of the United States, this phenomenon became very apparent in 2024, following a decade of continuous polarization (<a href="#kleinfeld-2023">Kleinfeld, 2023</a>).</p>
-                        <p>Social media plays a crucial role in shaping opinions and fostering political education but also intensifies this political polarization through mechanisms like filter bubbles and echo chambers (<a href="#otieno-2024">Otieno, 2024</a>). Platforms like X are particularly influential, with nearly 60% of users relying on it to stay informed about politics (<a href="#mcclain-etal-2024">McClain, Anderson & Gelles-Watnick, 2024</a>).</p>
-                        <p>Following McCoy & Press (<a href="#mccoy-press-2022">2022</a>) increasing political polarization will lead to democratic Decline eventually. The study highlights that out of 52 instances where democracies experienced pernicious polarization since 1950, half saw a significant decline in their democratic quality. Further, these polarized societies tend to be unsuccessful in their efforts to reduce polarization.</p>
-                        <p>So, how can we, as designers, take action? Which role does design play in political polarization? In this essay, we will follow up on the research question, to what extent X's interface increases political polarization and how we can unmask and disrupt these interaction patterns by design? We will dive deep into the design of X and suggest speculative approaches to shed light on the details of design and functionality as well as the psychological mechanics, which are embedded into the views that we interact with everyday, consuming political content or news.</p>
+                        <!-- (<a href="#musk-2022">Musk, 2022</a>) -->
+                        <!-- (<a href="#musk-2024">Musk, 2024</a>) -->
+                        <!-- (<a href="#zuckerberg-2025">Zuckerberg, 2025</a>) -->
+                        <p>"Let that sink in," Elon Musk posted after acquiring Twitter for $42 billion, sharing a photo of himself carrying a bathroom sink into headquarters with a goofy grin (<a href="https://x.com/elonmusk/status/1585341984679469056">here on X</a>). Under his leadership as a self-proclaimed free speech advocate, political polarization on social media has surged. This trend of deregulating social media platforms took another turn after Trump's re-election, placing Musk in the administration (<a href="https://x.com/elonmusk/status/1854034776815972649">his announcement on this, again on X</a>) and bringing his deregulation agenda into the Oval Office. Other tech leaders, notably Mark Zuckerberg, have followed suit, announcing major policy shifts that will reshape platform interfaces and cultures (<a href="https://www.instagram.com/p/DEhf2uTJUs0/">Zuckerkerbergs Instagram announcement</a>).</p>
+                        <p>Stepping back, these changes unfold in a critical election year – 2024 – where over four billion people across 64 countries, including the EU, are set to vote (<a href="#ewe-2023">Ewe, 2023</a>, <a href="#reece-2024">Reece, 2024</a>). Meanwhile, political polarization in developed nations has intensified for decades (<a href="#mccoy-etal-2022">McCoy et al., 2022</a>), with the World Economic Forum ranking it as the third-largest global risk for 2024, right after mis- and disinformation (<a href="#wef-2024">WEF, 2024</a>). In the U.S., a decade of deepening division has made its impact especially clear in this election cycle (<a href="#kleinfeld-2023">Kleinfeld, 2023</a>).</p>
+                        <p>McCoy & Press (<a href="#mccoy-press-2022">2022</a>) highlight that rising political polarization has led to democratic decline in half of the affected democracies since 1950. Social media platforms like X amplify this divide, making their design – interfaces, algorithms, and interaction patterns – crucial in shaping public discourse. This raises questions about responsibility and the role of designers in mitigating polarization.</p>
+                            
+
+                        <p>Our research examines how X’s interface contributes to political polarization and explores how speculative design can disrupt these patterns to reshape political content consumption. To do so, we distinguish interface-driven influences from broader psychological, sociological, and algorithmic factors, which remain deeply interconnected. We identified four key problem areas: 
+                            <emphasis>Engagement-centric Design</emphasis>, 
+                            <emphasis>Content Structure</emphasis>, 
+                            <emphasis>Trust & Truth</emphasis>, and 
+                            <emphasis>Hate Speech</emphasis>. 
+                            Among these, Engagement-centric Design stood out as the most interesting factor in polarization. For this reason, we focused on critically analyzing and rethinking engagement-driven design patterns through speculative design approaches.</p>
+                            
+                            
                     </div>
                 </div>
                 <div class="design-side">
@@ -176,9 +213,6 @@
                 <img src="essay-visuals/graphs/graph-1.svg" alt="">
             </div>
 
-
-
-
             <!-- Explanatory paragraph -->
             <div class="paragraph-hold">
                 <div class="essay-side">
@@ -200,6 +234,39 @@
                 <img src="essay-visuals/graphs/graph-2.svg" alt="">
             </div>
 
+            <!-- Some kind of paragraph -->
+
+
+            <!-- STAGE 3 NETWORK -->
+            <div class="essay-visual">
+                <img src="essay-visuals/graphs/graph-2.svg" alt="">
+            </div>
+
+
+
+
+            <div class="paragraph-hold">
+                <div class="essay-side">
+                    <div class="essay-snippet">
+                        <h2>Engagement</h2>
+                        <p class="small-title">What is engagement and what about its time consuming aspect?</p>
+                        <p>Boosting user engagement is the lifeblood of platforms like X. Since most of these services are free to use and rely on ad revenue, their business models hinge on maximizing user and content visibility. The goal is to keep you glued to the app for as long as possible (<a href="#center-humane-technology-2021">Center for Humane Technology, 2021</a>).  In essence, your attention becomes the currency these companies thrive on. A world where your time, focus, and mental energy are commodified to power the revenue engine of social networking giants (<a href="#burkeman-2019">Burkeman, 2019</a>).</p>
+                        <p class="small-title">How is engagement-centric design implemented?</p>
+                        <p>Engagement-centric design works on multiple levels, but at its core, it’s about interaction. Let’s break it down into three key strategies. First, platforms lean heavily on simple interactions – think likes and comments – which are designed to keep you coming back for more (<a href="#stroud-muddiman-scacco-2013">Stroud, Muddiman & Scacco, 2013</a>). Then, there’s the all-important notification system. A 2023 study (<a href="#bell-etal-2023">Bell et al., 2023</a>)  found that users who received notifications were 3.5 times more likely to open the app within the next hour, compared to those who didn’t. So your phone’s constant buzzing is definitely by design. Finally, the never-ending scroll – an infinite feed that subtly increases the time you spend on the platform – is another tactic. It’s especially relevant now, with short video formats taking over the social media world (<a href="#koc-2023">Koç, 2023</a>).</p>
+                        <p class="small-title">What are the effects of these design patterns on polarisation?</p>
+                        <p>The link between high engagement and political polarization in online discussions is largely driven by the amount of time spent on the platform. Users who spend more time on X are more exposed to radical, polarized, and hateful content (<a href="#national-institute-justice-2023">National Institute of Justice, 2023</a>).  They interact more with like-minded peers, creating feedback loops that reinforce their views – known as <emphasis>echo chambers</emphasis> or <emphasis>filter bubbles</emphasis> (<a href="#cinelli-etal-2021">Cinelli et al., 2021</a>), which we will explain further in the last chapter <emphasis><a href="#following-for-you">Following and For you</a></emphasis>. Additionally, higher engagement increases a user's reach (X explains the mechanics <a href="https://create.twitter.com/en/goals/engagement">here</a>). , encouraging more provocative content to trigger emotional reactions and drive interaction. In its extreme form, this leads to <emphasis>engagement farming</emphasis> where social media algorithms are manipulated to artificially boost likes, shares, and comments (<a href="#oestreicher-2024">Oestreicher, 2024</a>).</p>
+                        <p>By unraveling the hidden mechanisms behind X’s interface and exploring speculative, design-driven interventions, we aim to unmask how thoughtful design can challenge polarization and reshape the way we engage with content online.</p>
+                        <p>Now let’s look at these aforementioned features of X and disrupt the concrete interface design decisions that ultimately lead to an increased engagement with the platform.</p>
+                    </div>
+                </div>
+                <div class="design-side">
+                    <!-- nothing -->
+                </div>
+            </div>
+
+
+
+
 
             <div class="paragraph-hold">
                 <div class="essay-side">
@@ -217,27 +284,7 @@
             </div>
         </div>
 
-        <!-- 1. ENGAGEMENT SECTION ################################### -->
-        <div id="engagement" class="chapter-hold">
-            <div class="paragraph-hold">
-                <div class="essay-side">
-                    <div class="essay-snippet">
-                        <!-- <p class="over-title">Problem Spehere 1</p> -->
-                        <h2>Engagement</h2>
-                        <p class="small-title">What is engagement and what about it’s time aspect?</p>
-                        <p>Increasing engagement of your users with your product is an essential principle of the business model for the companies behind social media platforms, like X. Since most of these platforms are free to use and ad-financed, they rely on maximizing user visibility, which drives their constant pursuit of increasing the time users spend on their platforms (<a href="#center-humane-technology-2021">Center for Humane Technology, 2021</a>). In other words, the user’s attention becomes the currency with which they effectively pay these companies. This phenomenon is known as the attention economy, where our time, focus, and interactions are commodified to fuel the revenue streams of social networking companies (<a href="#burkeman-2019">Burkeman, 2019</a>).</p>
-                        <p class="small-title">How is engagement-centric design implemented?</p>
-                        <p>Engagement-centric design can contain different dimensions, such as algorithm-driven strategies, however, as we want to focus on interaction design, we can cook it down to three core strategies. First and foremost, platforms can drive engagement through interactions, such as the prominent like button or comments (<a href="#stroud-muddiman-scacco-2013">Stroud, Muddiman & Scacco, 2013</a>). Second, notifications are key for user retention and gratification. A study published 2023 by PMC (<a href="#bell-etal-2023">Bell et al., 2023</a>) proves that “receiving a notification, compared with not receiving a notification, increased the probability of opening the app in the next hour by 3.5-fold”. And finally, the ability to scroll infinitely through feeds subtly increases time spent on these platforms (<a href="#lora-2024">Lora, 2024</a>). A topic currently at the center of public debate, as short video format feeds have entered the consumer market by storm (<a href="#koc-2023">Koç, 2023</a>).</p>
-                        <p class="small-title">What are the effects in regard to polarisation?</p>
-                        <p>Okay, but how does a highly engaging app affect political polarisation in discussion? A first simple but logical explanation for increased polarisation is the time spent on the platform. Those who spend more time on X, are exposed to more radical, hateful and polarized content (<a href="#national-institute-justice-2023">National Institute of Justice, 2023</a>). At the same time those people of course interact more with posts of their peers, leading to positive feedback loops as these interactions shape their own future content, grouping users with similar opinions and thus reinforcing these of yourself. This phenomenon is called <emphasis>echo chambers</emphasis> or <emphasis>filter bubbles</emphasis> (<a href="#cinelli-etal-2021">Cinelli et al., 2021</a>), which we will go more in depth in the chapter <emphasis><a href="#structure-of-content">Structure of Content</a></emphasis>. The third general argument for the correlation between engagement and polarisation is the fact that received engagement will drive user’s reach (X explains the mechanics <a href="https://create.twitter.com/en/goals/engagement">here</a>). This leads to radicalization of post content to evoke emotions in the viewers and provoke interaction, in it’s extreme form called <emphasis>engagement farming</emphasis> (<a href="#oestreicher-2024">Oestreicher, 2024</a>).</p>
-                        <p>But let’s look at these above-mentioned features of X in detail and shed light on the concrete interface design decisions that ultimately lead to an increased engagement with the platform.</p>
-                    </div>
-                </div>
-                <div class="design-side">
-                    <!-- nothing -->
-                </div>
-            </div>
-        </div>
+
 
         <!-- 1.1 INTERACTIONS ---------------------------------------- -->
        <div  id="interacting-with-posts" class="chapter-hold">
@@ -562,8 +609,8 @@
                     <p id="mcclain-etal-2024" class="lit"><span class="lit-arrow">-> </span>McClain, C., Anderson, M. & Gelles-Watnick, R. (2024). How Americans Navigate Politics on TikTok, X, Facebook and Instagram. <em>Pew Research Center</em>. <a href="https://www.pewresearch.org/internet/2024/06/12/how-americans-navigate-politics-on-tiktok-x-facebook-and-instagram/">https://www.pewresearch.org/internet/2024/06/12/how-americans-navigate-politics-on-tiktok-x-facebook-and-instagram/</a></p>
                     <p id="mccoy-press-2022" class="lit"><span class="lit-arrow">-> </span>McCoy, J. & Press, B. (2022). What Happens When Democracies Become Perniciously Polarized? <em>Carnegie – Endowment for International Peace</em>. <a href="https://carnegieendowment.org/research/2022/01/what-happens-when-democracies-become-perniciously-polarized?lang=en">https://carnegieendowment.org/research/2022/01/what-happens-when-democracies-become-perniciously-polarized?lang=en</a></p>
                     <p id="mccoy-etal-2022" class="lit"><span class="lit-arrow">-> </span>McCoy, J., Press, B., Somer, M. & Tuncel, O. (2022). Reducing Pernicious Polarization: A Comparative Historical Analysis of Depolarization. <em>Carnegie – Endowment for International Peace</em>. <a href="https://carnegieendowment.org/research/2022/05/reducing-pernicious-polarization-a-comparative-historical-analysis-of-depolarization?lang=en">https://carnegieendowment.org/research/2022/05/reducing-pernicious-polarization-a-comparative-historical-analysis-of-depolarization?lang=en</a></p>
-                    <p id="musk-2022" class="lit"><span class="lit-arrow">-> </span>Musk, E. [@elonmusk]. (2022, October 26). Entering Twitter HQ – let that sink in! <em>X</em>. Retrieved January 20, 2025, from <a href="https://x.com/elonmusk/status/1585341984679469056">https://x.com/elonmusk/status/1585341984679469056</a></p>
-                    <p id="musk-2024" class="lit"><span class="lit-arrow">-> </span>Musk, E. [@elonmusk]. (2024, November 6). Let that sink in. <em>X</em>. Retrieved January 20, 2025, from <a href="https://x.com/elonmusk/status/1854034776815972649">https://x.com/elonmusk/status/1854034776815972649</a></p>
+                    <!-- <p id="musk-2022" class="lit"><span class="lit-arrow">-> </span>Musk, E. [@elonmusk]. (2022, October 26). Entering Twitter HQ – let that sink in! <em>X</em>. Retrieved January 20, 2025, from <a href="https://x.com/elonmusk/status/1585341984679469056">https://x.com/elonmusk/status/1585341984679469056</a></p> -->
+                    <!-- <p id="musk-2024" class="lit"><span class="lit-arrow">-> </span>Musk, E. [@elonmusk]. (2024, November 6). Let that sink in. <em>X</em>. Retrieved January 20, 2025, from <a href="https://x.com/elonmusk/status/1854034776815972649">https://x.com/elonmusk/status/1854034776815972649</a></p> -->
                     <p id="national-institute-justice-2023" class="lit"><span class="lit-arrow">-> </span>National Institute of Justice. (2023). Five Things About the Role of the Internet and Social Media in Domestic Radicalization. <a href="https://nij.ojp.gov/topics/articles/five-things-about-role-internet-and-social-media-domestic-radicalization">https://nij.ojp.gov/topics/articles/five-things-about-role-internet-and-social-media-domestic-radicalization</a></p>
                     <p id="naylor-2024" class="lit"><span class="lit-arrow">-> </span>Naylor, I. (2024). The Role of Push Notifications in Mobile App Engagement. <em>App Institute</em>. <a href="https://appinstitute.com/the-role-of-push-notifications-in-mobile-app-engagement/">https://appinstitute.com/the-role-of-push-notifications-in-mobile-app-engagement/</a></p>
                     <p id="oestreicher-2024" class="lit"><span class="lit-arrow">-> </span>Oestreicher, G. (2024). What is Engagement Farming on Social Media? <em>Metricool</em>. <a href="https://metricool.com/what-is-engagement-farming/">https://metricool.com/what-is-engagement-farming/</a></p>
@@ -579,7 +626,7 @@
                     <p id="tufekci-2018" class="lit"><span class="lit-arrow">-> </span>Tufekci, Z. (2018). Twitter and Tear Gas: The Power and Fragility of Networked Protest. Yale University Press. <a href="https://d-nb.info/124031910X/34">https://d-nb.info/124031910X/34</a></p>
                     <p id="urban-airship-2017" class="lit"><span class="lit-arrow">-> </span>Urban Airship. (2017). How Push Notifications Impact Mobile App Retention Rates. <a href="https://grow.urbanairship.com/rs/313-QPJ-195/images/WP_App_Retention_Rates_Benchmarks.pdf">https://grow.urbanairship.com/rs/313-QPJ-195/images/WP_App_Retention_Rates_Benchmarks.pdf</a></p>
                     <p id="wef-2024" class="lit"><span class="lit-arrow">-> </span>World Economic Forum [WEF]. (2024). The Global Risks Report. 19th Edition. <a href="https://www.weforum.org/publications/global-risks-report-2024/">https://www.weforum.org/publications/global-risks-report-2024/</a></p>
-                    <p id="zuckerberg-2025" class="lit"><span class="lit-arrow">-> </span>Zuckerberg, M. [@zuck]. (2025, January 7). It’s time to get back to our roots around free expression. We’re replacing fact checkers with Community Notes, simplifying our policies and focusing on reducing mistakes. Looking forward to this next chapter. Instagram. Retrieved January 17, 2025, from <a href="https://www.instagram.com/p/DEhf2uTJUs0/">https://www.instagram.com/p/DEhf2uTJUs0/</a></p>
+                    <!-- <p id="zuckerberg-2025" class="lit"><span class="lit-arrow">-> </span>Zuckerberg, M. [@zuck]. (2025, January 7). It’s time to get back to our roots around free expression. We’re replacing fact checkers with Community Notes, simplifying our policies and focusing on reducing mistakes. Looking forward to this next chapter. Instagram. Retrieved January 17, 2025, from <a href="https://www.instagram.com/p/DEhf2uTJUs0/">https://www.instagram.com/p/DEhf2uTJUs0/</a></p> -->
                 
                 
                 </div>
@@ -609,19 +656,19 @@
 
     <!-- LINKING TO REFERENCES -->
     <script>
-        document.querySelectorAll('a').forEach(anchor => {
+        document.querySelectorAll('main a').forEach(anchor => {
             anchor.addEventListener('click', function(event) {
-                event.preventDefault();
-                // First remove all active-arrow classes
-                document.querySelectorAll('.lit-arrow').forEach(arrow => {
-                    arrow.classList.remove('active-arrow');
-                });
-                const targetId = this.getAttribute('href').substring(1);
-                const targetElement = document.getElementById(targetId);
-                if (targetElement) {
-                    targetElement.scrollIntoView({ behavior: 'smooth' });
-                    targetElement.querySelector('span').classList.add('active-arrow');
-                }
+            event.preventDefault();
+            // First remove all active-arrow classes
+            document.querySelectorAll('.lit-arrow').forEach(arrow => {
+                arrow.classList.remove('active-arrow');
+            });
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+            if (targetElement) {
+                targetElement.scrollIntoView({ behavior: 'smooth' });
+                targetElement.querySelector('span').classList.add('active-arrow');
+            }
             });
         });
         
@@ -649,72 +696,72 @@
     <script>
         document.addEventListener('scroll', () => {
             const viewportHeight = window.innerHeight;
-            if (window.scrollY < viewportHeight) {
-                // heading visible
-                console.log("header is visible and toc below");
+            // if (window.scrollY < viewportHeight) {
+            //     // heading visible
+            //     console.log("header is visible and toc below");
 
 
-                document.querySelector('main').style.position = 'fixed';
-                document.querySelector('main').style.top = '0';
+            //     document.querySelector('main').style.position = 'fixed';
+            //     document.querySelector('main').style.top = '0';
 
-                document.querySelector('header').style.position = 'absolute';
-                document.querySelector('header').style.paddingBottom = '100vh';
-                // document.querySelector('header').style.zIndex = '1005';
+            //     document.querySelector('header').style.position = 'absolute';
+            //     document.querySelector('header').style.paddingBottom = '100vh';
+            //     // document.querySelector('header').style.zIndex = '1005';
 
-                document.getElementById('toc-wrapper').style.position = 'fixed';
-                document.getElementById('toc-wrapper').style.top = '0';
-                document.getElementById('toc-wrapper').style.zIndex = '1004';
-                document.getElementById('toc-wrapper').style.paddingBottom = '0';
+            //     document.getElementById('toc-wrapper').style.position = 'fixed';
+            //     document.getElementById('toc-wrapper').style.top = '0';
+            //     document.getElementById('toc-wrapper').style.zIndex = '1004';
+            //     document.getElementById('toc-wrapper').style.paddingBottom = '0';
 
-            } else if ((window.scrollY >= viewportHeight) && (window.scrollY < viewportHeight*2)) {
-                // toc visible
-                console.log("toc is visible and main below");
+            // } else if ((window.scrollY >= viewportHeight) && (window.scrollY < viewportHeight*2)) {
+            //     // toc visible
+            //     console.log("toc is visible and main below");
 
-                document.querySelector('main').style.position = 'fixed';
-                document.querySelector('main').style.top = '0';
+            //     document.querySelector('main').style.position = 'fixed';
+            //     document.querySelector('main').style.top = '0';
 
-                document.querySelector('header').style.position = 'static';
-                document.querySelector('header').style.paddingBottom = '0';
+            //     document.querySelector('header').style.position = 'static';
+            //     document.querySelector('header').style.paddingBottom = '0';
 
-                document.getElementById('toc-wrapper').style.position = 'absolute';
-                document.getElementById('toc-wrapper').style.top = '0';
-                document.getElementById('toc-wrapper').style.paddingBottom = '100vh';
-                document.getElementById('toc-wrapper').style.paddingTop = '100vh';
+            //     document.getElementById('toc-wrapper').style.position = 'absolute';
+            //     document.getElementById('toc-wrapper').style.top = '0';
+            //     document.getElementById('toc-wrapper').style.paddingBottom = '100vh';
+            //     document.getElementById('toc-wrapper').style.paddingTop = '100vh';
 
                 
-            } else { //else if (window.scrollY >= viewportHeight*2) {
-                // essay visible
-                console.log("only main is visible");
+            // } else { //else if (window.scrollY >= viewportHeight*2) {
+            //     // essay visible
+            //     console.log("only main is visible");
 
+            //     document.querySelector('main').style.position = 'relative';
+            //     document.querySelector('main').style.paddingTop = '100vh';
+            //     // document.querySelector('main').style.top = '0';
+
+            //     document.querySelector('header').style.position = 'static';
+            //     document.querySelector('header').style.paddingBottom = '0';
+
+
+            //     document.getElementById('toc-wrapper').style.position = 'absolute';
+            //     document.getElementById('toc-wrapper').style.top = '0';
+
+            //     document.getElementById('toc-wrapper').style.paddingBottom = '0';
+
+            // }
+
+            if (window.scrollY >= viewportHeight) {
                 document.querySelector('main').style.position = 'relative';
-                document.querySelector('main').style.paddingTop = '100vh';
-                // document.querySelector('main').style.top = '0';
-
                 document.querySelector('header').style.position = 'static';
+                // document.querySelector('header').style.display = 'none';
                 document.querySelector('header').style.paddingBottom = '0';
-
-
-                document.getElementById('toc-wrapper').style.position = 'absolute';
-                document.getElementById('toc-wrapper').style.top = '0';
-
-                document.getElementById('toc-wrapper').style.paddingBottom = '0';
+                // console.log('header off');
+            } else {
+                document.querySelector('main').style.position = 'fixed';
+                document.querySelector('header').style.position = 'absolute';
+                // document.querySelector('header').style.display = 'block';
+                document.querySelector('header').style.paddingBottom = '100vh';
+                // console.log('header in');
 
             }
-
-        //     if (window.scrollY >= viewportHeight) {
-        //         document.querySelector('main').style.position = 'relative';
-        //         document.querySelector('header').style.position = 'static';
-        //         // document.querySelector('header').style.display = 'none';
-        //         document.querySelector('header').style.paddingBottom = '0';
-        //         // console.log('header off');
-        //     } else {
-        //         document.querySelector('main').style.position = 'fixed';
-        //         document.querySelector('header').style.position = 'absolute';
-        //         // document.querySelector('header').style.display = 'block';
-        //         document.querySelector('header').style.paddingBottom = '100vh';
-        //         // console.log('header in');
-
-        //     }
         });
 
         
