@@ -159,7 +159,7 @@ em, emphasis {
     padding-bottom: 28px;
 } */
 
-span.marked-text {
+.marked-text {
     display: inline-block;
     margin: 20px 0px;
     padding: 12px 20px;
@@ -179,6 +179,10 @@ p.paragraph-note {
     font-weight: bold;
     color: #becec1;
     margin-top: 48px;
+}
+p.blue {
+    /* color: #303E48; */
+    color: #3d80b0;
 }
 
 
