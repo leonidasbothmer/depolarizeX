@@ -73,7 +73,7 @@
                 <nav class="toc">
                     <!-- <div class="nav-img-placeholder"></div> -->
                     <ul class="toc-list">
-                        <!-- <h2>Content</h2> -->   
+                        <h2>Table of Contents</h2>   
                         <li class="toc-1-deg">
                             <div class="main-toc-item"></div>
                             <a href="#introduction">Introduction</a>
@@ -142,6 +142,10 @@
                         <li class="toc-2-deg">
                             <div class="main-toc-item"></div>
                             <a href="#following-for-you">Following and For you</a>
+                        </li>
+                        <li class="toc-3-deg">
+                            <div class="screen-bullet"></div>
+                            <a href="#following-for-you">Not for you</a>
                             <img class="toc-preview-img" src="essay-visuals/previews/not-for-you.png" alt="">
                         </li>
                         <li class="toc-1-deg">
@@ -191,10 +195,7 @@
             <div class="paragraph-hold">
                 <div class="essay-side">
                     <div class="essay-snippet">
-                        <h2>Introduction</h2> <!-- should we remove this here? maybe instead a grey background? -->
-                        <!-- (<a href="#musk-2022">Musk, 2022</a>) -->
-                        <!-- (<a href="#musk-2024">Musk, 2024</a>) -->
-                        <!-- (<a href="#zuckerberg-2025">Zuckerberg, 2025</a>) -->
+                        <h2>Introduction</h2> 
                         <p>"Let that sink in," Elon Musk posted after acquiring Twitter for $42 billion, sharing a photo of himself carrying a bathroom sink into headquarters with a goofy grin (<a href="https://x.com/elonmusk/status/1585341984679469056">here on X</a>). Under his leadership as a self-proclaimed free speech advocate, political polarization on social media has surged. This trend of deregulating social media platforms took another turn after Trump's re-election, placing Musk in the administration (<a href="https://x.com/elonmusk/status/1854034776815972649">his announcement on this</a>) and bringing his deregulation agenda into the Oval Office. Other tech leaders, notably Mark Zuckerberg, have followed suit, announcing major policy shifts that will reshape platform interfaces and cultures (<a href="https://www.instagram.com/p/DEhf2uTJUs0/">Zuck's announcement</a>).</p>
                         <p>Stepping back, these changes unfold in a critical election year – 2024 – where over four billion people across 64 countries, including the EU, are set to vote (<a href="#ewe-2023">Ewe, 2023</a>, <a href="#reece-2024">Reece, 2024</a>). Meanwhile, political polarization in developed nations has intensified for decades (<a href="#mccoy-etal-2022">McCoy et al., 2022</a>), with the World Economic Forum ranking it as the third-largest global risk for 2024, right after mis- and disinformation (<a href="#wef-2024">WEF, 2024</a>). In the U.S., a decade of deepening division has made its impact especially clear in this election cycle (<a href="#kleinfeld-2023">Kleinfeld, 2023</a>).</p>
                         <p>McCoy & Press (<a href="#mccoy-press-2022">2022</a>) highlight that rising political polarization has led to democratic decline in half of the affected democracies since 1950. Social media platforms like X amplify this divide, making their design – interfaces, algorithms, and interaction patterns – crucial in shaping public discourse. This raises questions about responsibility and the role of designers in mitigating polarization.</p>   
@@ -212,7 +213,6 @@
                                         <source src="essay-visuals/let-that-sink-in/let-that-sink-in.mp4" type="video/mp4">
                                     </video>
                                     <img src="essay-visuals/let-that-sink-in/let-that-sink-in.PNG" alt="">
-                                    
                                 </div>
                                 <button class="slide-btn next"><img class="arrow" src="static/assets/icons_essay/arrow-right.svg" alt=""></button>
                             </div>
@@ -631,7 +631,7 @@
                         <p>Pling. Madeline is now following you. Pling. You got a new reply on your comment. Pling. Jackson liked your Post. Pling, pling, pling. More likes, nice. Nice? Pling. Elon Musk has posted a video. Are you interested?</p>
                         <p>These notifications popping up on our screens have become such a routine part of daily life that we don’t notice how they keep us engaged with our phones. While most seem to be notifying you of activity and transactions, they all have in common that they are also of promotional value. Sometimes, it seems that the reason for the notification is so far-fetched, you start wondering if it is really about your user experience, like this Reddit user: <a href="https://www.reddit.com/r/Twitter/comments/p04gfv/solved_the_mystery_of_random_crap_in_notifications/">“Solved the mystery of random crap in notifications”</a>. </p>
                         <p>As mentioned above, the platform highly depends on notifications that drive user engagement and retention. To keep the platform top of mind, they continually send notifications. As Nir Eyal (<a href="#eyal-2014">2014</a>) explains, products create habits through a four-stage "hook" cycle. It starts with a trigger, like a lock screen notification, prompting user action. This investment, such as providing data for personalization, enhances future experiences, reinforcing engagement.</p>
-                        <p>Can there be too many notifications? Studies say yes, after a certain point, users get annoyed and turn them off (<a href="#gavilan-martineznavarro-2022">Gavilan & Martinez Navarro, 2022</a>) However, another study found that <emphasis>fear of missing out</emphasis> (FoMO) could make turning off notifications harder, as users fear missing key updates (<a href="#dekker-2024">Dekker, 2024</a>).  In social media, where notifications are emotionally charged, this keeps users hooked, fueling engagement.</p>
+                        <p>Can there be too many notifications? Studies say yes, after a certain point, users get annoyed and turn them off (<a href="#gavilan-martineznavarro-2022">Gavilan & Martinez Navarro, 2022</a>) However, another study found that <emphasis>fear of missing out</emphasis> (FoMO) could make turning off notifications harder, as users fear missing key updates (<a href="#dekker-2024">Dekker, 2024</a>). <span class="marked-text">In social media, where notifications are emotionally charged, this keeps users hooked, fueling engagement.</span></p>
                         <div class="description-hold type-image">
                             <p class="paragraph-note type-image">Speculation</p>   
                             <p class="blue">Based on this, we analyzed X’s different notifications and detected a high level of senseless content wanting the user to re-open the app. So why not approach this manipulative pattern with an urge for truth? Can we not promote the app without making up imaginary user interests that need to be served? We believe that especially for high engagement social media apps, only placing a small trigger, containing the app icon aside an absolutely meaningless copy, on the user's home screen will plant the urge to use the app into their minds or as Nir Eyal would say, form their habit of using X.</p>
@@ -848,8 +848,9 @@
         let currentSlide = 0;
 
         function slide(direction) {
-            const slides = document.querySelectorAll('.slider *');
-            currentSlide = (currentSlide + direction + slides.length) % slides.length;
+            const slides = document.querySelectorAll('.slider > *'); // Only direct children
+            const totalSlides = slides.length;
+            currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
             slider.style.transform = `translateX(-${currentSlide * 100}%)`;
         }
 
