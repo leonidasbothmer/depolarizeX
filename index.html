@@ -71,8 +71,9 @@
         <aside id="toc-wrapper" class="toc-wrapper">
             <div class="toc-inlay">
                 <nav class="toc">
+                    <!-- <div class="nav-img-placeholder"></div> -->
                     <ul class="toc-list">
-                        <!-- <h2>Content</h2> -->
+                        <!-- <h2>Content</h2> -->   
                         <li class="toc-1-deg">
                             <div class="main-toc-item"></div>
                             <a href="#introduction">Introduction</a>
@@ -86,45 +87,55 @@
                             <a href="#interacting-with-posts">Interacting with Posts</a>
                         </li>
                         <li class="toc-3-deg">
+                            <div class="screen-bullet"></div>
                             <a href="#microanimations">Microanimations: Beat them at their own Game</a>
                             <img class="toc-preview-img" id="microanimations-prev" src="essay-visuals/previews/growing-hearts.png" alt="">
                         </li>
                         <li class="toc-3-deg">
+                            <div class="screen-bullet"></div>
                             <a href="#diverse-reactions">Diverse Reactions: Be that emoji</a>
                             <img class="toc-preview-img" src="essay-visuals/previews/diverse-reactions.png" alt="">
                         </li>
                         <li class="toc-3-deg">
+                            <div class="screen-bullet"></div>
                             <a id="nav-item-reposting" href="#reposting">Reposting: Level up!</a>
                             <img class="toc-preview-img" src="essay-visuals/previews/reposting.png" alt="">
                         </li>
                         <li class="toc-3-deg">
+                            <div class="screen-bullet"></div>
                             <a id="nav-item-commenting" href="#commenting">Commenting: Who likes silence, anyway?</a>
                             <img class="toc-preview-img" src="essay-visuals/previews/clubhouse.png" alt="">
                         </li>
                         <li class="toc-3-deg">
+                            <div class="screen-bullet"></div>
                             <a id="nav-item-view-limit" href="#view-limit">Viewing Limit: 98, 99 and “Poof”!</a>
                             <img class="toc-preview-img" src="essay-visuals/previews/post-limit.png" alt="">
                         </li>
                         <li class="toc-2-deg">
-                            <div class="main-toc-item"></div><a href="#notifications">Receiving Notifications</a>
+                            <div class="main-toc-item"></div>
+                            <a href="#notifications">Receiving Notifications</a>
                         </li>
                         <li class="toc-3-deg">
+                            <div class="screen-bullet"></div>
                             <a href="#lockscreen">Lockscreen Notifications: Hey... Hey. HEY!</a>
                             <img class="toc-preview-img" src="essay-visuals/previews/notif-external.png" alt="">
                         </li>
                         <li class="toc-3-deg">
+                            <div class="screen-bullet"></div>
                             <a href="#in-app-notifications">In-App Notifications: Drowning in Dopamine</a>
-                            <img class="toc-preview-img" src="essay-visuals/previews/raining-notifs.png" alt="">
+                            <img class="toc-preview-img" src="essay-visuals/previews/raining-hearts.png" alt="">
                         </li>
                         <li class="toc-2-deg">
                             <div class="main-toc-item"></div>
                             <a href="#time-scrolling">Time and Scrolling</a>
                         </li>
                         <li class="toc-3-deg">
+                            <div class="screen-bullet"></div>
                             <a href="#blurry-sight">Scrolling Intervention: Blurry Screen – Clear Mind?</a>
                             <img class="toc-preview-img" src="essay-visuals/previews/blurry-sight.png" alt="">
                         </li>
                         <li class="toc-3-deg">
+                            <div class="screen-bullet"></div>
                             <a href="#literal-friction">Friction: A Literal Approach</a>
                             <img class="toc-preview-img" src="essay-visuals/previews/friction.png" alt="">
                         </li>
@@ -145,6 +156,10 @@
             document.querySelectorAll('.toc-preview-img').forEach(img => {
                 const randomTilt = Math.random() * 16 - 8; // Random number between -12 and 12
                 img.style.transform = `rotate(${randomTilt}deg) translateY(-50%)`;
+            });
+            document.querySelectorAll('.screen-bullet').forEach(bullet => {
+                const randomBulletTilt = Math.random() * 16 - 8; // Random tilt between -8 and 8 degrees
+                bullet.style.transform = `rotate(${randomBulletTilt}deg)`;
             });
         </script>
         </aside>
