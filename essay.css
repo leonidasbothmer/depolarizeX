@@ -470,6 +470,7 @@ footer {
 
 .legend-fab {
     position: fixed;
+    z-index: 2;
     bottom: 20px;
     left: 20px;
     background-color: #FFA600;
@@ -579,6 +580,7 @@ footer {
     /* padding-bottom: 100vh; */
     pointer-events: none;
     font-family: "ABC Marist Unlicenced Trial", serif;
+    /* border: red solid 3px; */
 }
 
 .toc-inlay {
@@ -589,6 +591,7 @@ footer {
     pointer-events: auto;
     display: flex;
     justify-content: center;
+    /* border: green dashed 3px; */
 
 }
 
@@ -598,19 +601,26 @@ footer {
     list-style: none;
     width: 100%;
     max-width: 1080px;
-    margin-top: -72px;
+    /* margin-top: -72px; */
     position: relative;
+    /* border: blue dotted 3px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .toc ul {
     list-style: none;
     padding: 0;
     margin-bottom: 20px;
+    /* border: yellow solid 3px; */
 }
 .toc li {
     display: flex;
     flex-direction: row;
     gap: 12px;
     align-items: center;
+    margin-left: -28px;
+    margin-bottom: 8px;
 }
 .toc li.toc-3-deg {
     margin-left: 48px;
@@ -640,21 +650,18 @@ footer {
     position: absolute;
     width: 256px;
     top: 50%;
-    right: 0;
+    right: 60;
     transform: translateY(-50%);
-    display: none;
+    opacity: 0;
+
+    border-radius: 28px;
+    outline: 4px #FFA600 solid;
 }
 
-
-
-
-
-#nav-item-microanimations:hover #microanimations-prev {
-    display: block;
+.toc ul li a:hover ~ img {
+    opacity: 1;
 }
-.toc .microanimations:hover #microanimations-prev {
-    display: block;
-}
+
 
 
 
@@ -692,6 +699,9 @@ footer {
     font-size: 20px;
     color: #FFA600;
     margin-bottom: 12px;
+    /* font-family: "Helvetica Neue", sans-serif;
+    font-weight: medium;
+    font-size: 18px; */
 
 }
 .side-toc-wrapper li:hover {

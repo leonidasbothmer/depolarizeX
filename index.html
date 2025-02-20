@@ -72,68 +72,81 @@
             <div class="toc-inlay">
                 <nav class="toc">
                     <ul class="toc-list">
-                        <h2>Content</h2>
+                        <!-- <h2>Content</h2> -->
                         <li class="toc-1-deg">
                             <div class="main-toc-item"></div>
                             <a href="#introduction">Introduction</a>
+                        </li>
+                        <li class="toc-1-deg">
+                            <div class="main-toc-item"></div>
+                            <a href="#engagement">X's Engage-mania</a>
                         </li>
                         <li class="toc-2-deg">
                             <div class="main-toc-item"></div>
                             <a href="#interacting-with-posts">Interacting with Posts</a>
                         </li>
                         <li class="toc-3-deg">
-                            <a id="nav-item-microanimations" href="#microanimations">Microanimations: Beat them at their own Game</a>
+                            <a href="#microanimations">Microanimations: Beat them at their own Game</a>
+                            <img class="toc-preview-img" id="microanimations-prev" src="essay-visuals/previews/growing-hearts.png" alt="">
                         </li>
                         <li class="toc-3-deg">
-                            <a id="nav-item-diverse-reactions" href="#diverse-reactions">Diverse Reactions: Be that emoji</a>
+                            <a href="#diverse-reactions">Diverse Reactions: Be that emoji</a>
+                            <img class="toc-preview-img" src="essay-visuals/previews/diverse-reactions.png" alt="">
                         </li>
                         <li class="toc-3-deg">
                             <a id="nav-item-reposting" href="#reposting">Reposting: Level up!</a>
+                            <img class="toc-preview-img" src="essay-visuals/previews/reposting.png" alt="">
                         </li>
                         <li class="toc-3-deg">
                             <a id="nav-item-commenting" href="#commenting">Commenting: Who likes silence, anyway?</a>
+                            <img class="toc-preview-img" src="essay-visuals/previews/clubhouse.png" alt="">
                         </li>
                         <li class="toc-3-deg">
                             <a id="nav-item-view-limit" href="#view-limit">Viewing Limit: 98, 99 and “Poof”!</a>
+                            <img class="toc-preview-img" src="essay-visuals/previews/post-limit.png" alt="">
                         </li>
                         <li class="toc-2-deg">
-                            <div class="main-toc-item"></div><a href="#notifications">Receiving Notifications</a></li>
+                            <div class="main-toc-item"></div><a href="#notifications">Receiving Notifications</a>
+                        </li>
                         <li class="toc-3-deg">
                             <a href="#lockscreen">Lockscreen Notifications: Hey... Hey. HEY!</a>
+                            <img class="toc-preview-img" src="essay-visuals/previews/notif-external.png" alt="">
                         </li>
                         <li class="toc-3-deg">
                             <a href="#in-app-notifications">In-App Notifications: Drowning in Dopamine</a>
+                            <img class="toc-preview-img" src="essay-visuals/previews/raining-notifs.png" alt="">
                         </li>
                         <li class="toc-2-deg">
                             <div class="main-toc-item"></div>
-                            <a href="#time-scrolling">Time and Scrolling</a></li>
+                            <a href="#time-scrolling">Time and Scrolling</a>
+                        </li>
                         <li class="toc-3-deg">
                             <a href="#blurry-sight">Scrolling Intervention: Blurry Screen – Clear Mind?</a>
+                            <img class="toc-preview-img" src="essay-visuals/previews/blurry-sight.png" alt="">
                         </li>
                         <li class="toc-3-deg">
                             <a href="#literal-friction">Friction: A Literal Approach</a>
+                            <img class="toc-preview-img" src="essay-visuals/previews/friction.png" alt="">
                         </li>
                         <li class="toc-2-deg">
                             <div class="main-toc-item"></div>
-                            <a href="#following-for-you">Following and For you</a></li>
-                        <li class="toc-3-deg">
-                            <a href="#tbd-1">TBD</a>
-                        </li>
-                        <li class="toc-3-deg">
-                            <a href="#tbd-1">TBD</a>
+                            <a href="#following-for-you">Following and For you</a>
+                            <img class="toc-preview-img" src="essay-visuals/previews/not-for-you.png" alt="">
                         </li>
                         <li class="toc-1-deg">
                             <div class="main-toc-item"></div>
-                            <a href="#structure-of-content">Where Does this take us?</a>
+                            <a href="#outro">Where Does this take us?</a>
                         </li>
                     </ul>
-                    <!-- <div class="toc-preview-hold"> -->
-                    <img class="toc-preview-img" id="microanimations-prev" src="essay-visuals/previews/growing-hearts.png" alt="">
-                    <img class="toc-preview-img" id="diverse-reactions-prev" src="essay-visuals/previews/growing-hearts.png" alt="">
-                    <!-- </div> -->
                 </nav>
             </div>
-    
+            
+        <script>
+            document.querySelectorAll('.toc-preview-img').forEach(img => {
+                const randomTilt = Math.random() * 16 - 8; // Random number between -12 and 12
+                img.style.transform = `rotate(${randomTilt}deg) translateY(-50%)`;
+            });
+        </script>
         </aside>
 
         <!-- group the written essay (no toc, no footer) -->
@@ -145,7 +158,7 @@
                 <nav class="side-toc">
                     <ul class="side-toc-list">
                         <li class="side-toc-1-deg"><a href="#introduction">Introduction</a> </li>
-                        <!-- <li class="side-toc-1-deg"><a href="#engagement">Engagement</a> -->
+                        <li class="side-toc-1-deg"><a href="#engagement">X's Engage-mania</a>
                         <li class="side-toc-2-deg"><a href="#interacting-with-posts">Interacting with Posts</a>
                         <li class="side-toc-2-deg"><a href="#notifications">Receiving Notifications</a>
                         <li class="side-toc-2-deg"><a href="#time-scrolling">Time and Scrolling</a>
@@ -299,9 +312,9 @@
                 <path d="M35.52 1497.72H45.38V1499.88H38.02V1503.62H44.48V1505.66H38.02V1512H35.52V1497.72ZM51.5755 1512.28C50.7488 1512.28 50.0088 1512.15 49.3555 1511.88C48.7155 1511.6 48.1688 1511.22 47.7155 1510.74C47.2755 1510.26 46.9355 1509.69 46.6955 1509.02C46.4688 1508.35 46.3555 1507.62 46.3555 1506.82C46.3555 1506.03 46.4688 1505.31 46.6955 1504.64C46.9355 1503.97 47.2755 1503.4 47.7155 1502.92C48.1688 1502.44 48.7155 1502.07 49.3555 1501.8C50.0088 1501.52 50.7488 1501.38 51.5755 1501.38C52.4021 1501.38 53.1355 1501.52 53.7755 1501.8C54.4288 1502.07 54.9755 1502.44 55.4155 1502.92C55.8688 1503.4 56.2088 1503.97 56.4355 1504.64C56.6755 1505.31 56.7955 1506.03 56.7955 1506.82C56.7955 1507.62 56.6755 1508.35 56.4355 1509.02C56.2088 1509.69 55.8688 1510.26 55.4155 1510.74C54.9755 1511.22 54.4288 1511.6 53.7755 1511.88C53.1355 1512.15 52.4021 1512.28 51.5755 1512.28ZM51.5755 1510.48C52.0821 1510.48 52.5221 1510.37 52.8955 1510.16C53.2688 1509.95 53.5755 1509.67 53.8155 1509.32C54.0555 1508.97 54.2288 1508.59 54.3355 1508.16C54.4555 1507.72 54.5155 1507.27 54.5155 1506.82C54.5155 1506.38 54.4555 1505.94 54.3355 1505.5C54.2288 1505.06 54.0555 1504.67 53.8155 1504.34C53.5755 1503.99 53.2688 1503.71 52.8955 1503.5C52.5221 1503.29 52.0821 1503.18 51.5755 1503.18C51.0688 1503.18 50.6288 1503.29 50.2555 1503.5C49.8821 1503.71 49.5755 1503.99 49.3355 1504.34C49.0955 1504.67 48.9155 1505.06 48.7955 1505.5C48.6888 1505.94 48.6355 1506.38 48.6355 1506.82C48.6355 1507.27 48.6888 1507.72 48.7955 1508.16C48.9155 1508.59 49.0955 1508.97 49.3355 1509.32C49.5755 1509.67 49.8821 1509.95 50.2555 1510.16C50.6288 1510.37 51.0688 1510.48 51.5755 1510.48ZM58.5309 1497.72H60.8109V1512H58.5309V1497.72ZM63.1352 1497.72H65.4152V1512H63.1352V1497.72ZM72.4194 1512.28C71.5927 1512.28 70.8527 1512.15 70.1994 1511.88C69.5594 1511.6 69.0127 1511.22 68.5594 1510.74C68.1194 1510.26 67.7794 1509.69 67.5394 1509.02C67.3127 1508.35 67.1994 1507.62 67.1994 1506.82C67.1994 1506.03 67.3127 1505.31 67.5394 1504.64C67.7794 1503.97 68.1194 1503.4 68.5594 1502.92C69.0127 1502.44 69.5594 1502.07 70.1994 1501.8C70.8527 1501.52 71.5927 1501.38 72.4194 1501.38C73.246 1501.38 73.9794 1501.52 74.6194 1501.8C75.2727 1502.07 75.8194 1502.44 76.2594 1502.92C76.7127 1503.4 77.0527 1503.97 77.2794 1504.64C77.5194 1505.31 77.6394 1506.03 77.6394 1506.82C77.6394 1507.62 77.5194 1508.35 77.2794 1509.02C77.0527 1509.69 76.7127 1510.26 76.2594 1510.74C75.8194 1511.22 75.2727 1511.6 74.6194 1511.88C73.9794 1512.15 73.246 1512.28 72.4194 1512.28ZM72.4194 1510.48C72.926 1510.48 73.366 1510.37 73.7394 1510.16C74.1127 1509.95 74.4194 1509.67 74.6594 1509.32C74.8994 1508.97 75.0727 1508.59 75.1794 1508.16C75.2994 1507.72 75.3594 1507.27 75.3594 1506.82C75.3594 1506.38 75.2994 1505.94 75.1794 1505.5C75.0727 1505.06 74.8994 1504.67 74.6594 1504.34C74.4194 1503.99 74.1127 1503.71 73.7394 1503.5C73.366 1503.29 72.926 1503.18 72.4194 1503.18C71.9127 1503.18 71.4727 1503.29 71.0994 1503.5C70.726 1503.71 70.4194 1503.99 70.1794 1504.34C69.9394 1504.67 69.7594 1505.06 69.6394 1505.5C69.5327 1505.94 69.4794 1506.38 69.4794 1506.82C69.4794 1507.27 69.5327 1507.72 69.6394 1508.16C69.7594 1508.59 69.9394 1508.97 70.1794 1509.32C70.4194 1509.67 70.726 1509.95 71.0994 1510.16C71.4727 1510.37 71.9127 1510.48 72.4194 1510.48ZM78.3748 1501.66H80.7948L82.8148 1509.38H82.8548L84.7948 1501.66H87.0948L88.9548 1509.38H88.9948L91.0948 1501.66H93.4148L90.1748 1512H87.8348L85.9148 1504.32H85.8748L83.9748 1512H81.5748L78.3748 1501.66ZM107.948 1510.4C107.414 1511.05 106.821 1511.53 106.168 1511.84C105.528 1512.13 104.788 1512.28 103.948 1512.28C103.294 1512.28 102.688 1512.19 102.128 1512C101.581 1511.8 101.108 1511.52 100.708 1511.16C100.308 1510.8 99.9943 1510.36 99.7677 1509.84C99.5543 1509.31 99.4477 1508.71 99.4477 1508.04C99.4477 1507.53 99.541 1507.07 99.7277 1506.66C99.9143 1506.25 100.161 1505.87 100.468 1505.54C100.774 1505.19 101.121 1504.89 101.508 1504.62C101.908 1504.35 102.314 1504.11 102.728 1503.9C102.541 1503.66 102.361 1503.43 102.188 1503.2C102.014 1502.96 101.861 1502.71 101.728 1502.46C101.594 1502.21 101.488 1501.94 101.408 1501.66C101.328 1501.38 101.288 1501.09 101.288 1500.78C101.288 1500.26 101.374 1499.79 101.548 1499.38C101.734 1498.97 101.988 1498.61 102.308 1498.32C102.628 1498.01 103.001 1497.78 103.428 1497.62C103.854 1497.46 104.308 1497.38 104.788 1497.38C105.241 1497.38 105.681 1497.45 106.108 1497.6C106.548 1497.73 106.928 1497.95 107.248 1498.24C107.581 1498.52 107.848 1498.87 108.048 1499.3C108.248 1499.73 108.348 1500.23 108.348 1500.8C108.348 1501.23 108.274 1501.62 108.128 1501.98C107.994 1502.34 107.808 1502.67 107.568 1502.98C107.341 1503.27 107.068 1503.54 106.748 1503.78C106.441 1504.02 106.114 1504.23 105.768 1504.42L107.988 1507.1C108.068 1506.87 108.148 1506.61 108.228 1506.32C108.308 1506.03 108.374 1505.65 108.428 1505.18H110.428C110.361 1505.81 110.234 1506.42 110.048 1507.02C109.874 1507.62 109.628 1508.17 109.308 1508.68L112.048 1512H109.248L107.948 1510.4ZM103.928 1505.4C103.714 1505.53 103.481 1505.67 103.228 1505.8C102.974 1505.93 102.734 1506.1 102.508 1506.3C102.294 1506.5 102.108 1506.74 101.948 1507.02C101.801 1507.3 101.728 1507.65 101.728 1508.08C101.728 1508.85 101.941 1509.45 102.368 1509.86C102.808 1510.27 103.361 1510.48 104.028 1510.48C104.441 1510.48 104.794 1510.43 105.088 1510.32C105.381 1510.2 105.628 1510.06 105.828 1509.9C106.041 1509.74 106.214 1509.57 106.348 1509.38C106.494 1509.19 106.621 1509.03 106.728 1508.88L103.928 1505.4ZM104.848 1499.08C104.421 1499.08 104.061 1499.23 103.768 1499.52C103.474 1499.8 103.328 1500.18 103.328 1500.66C103.328 1500.9 103.368 1501.13 103.448 1501.34C103.541 1501.54 103.648 1501.74 103.768 1501.94C103.901 1502.13 104.041 1502.31 104.188 1502.5C104.348 1502.69 104.494 1502.87 104.628 1503.04C104.841 1502.89 105.048 1502.75 105.248 1502.6C105.448 1502.44 105.628 1502.27 105.788 1502.1C105.948 1501.91 106.074 1501.71 106.168 1501.48C106.261 1501.25 106.308 1501 106.308 1500.72C106.308 1500.25 106.174 1499.87 105.908 1499.56C105.641 1499.24 105.288 1499.08 104.848 1499.08ZM118.423 1497.72H128.283V1499.88H120.923V1503.62H127.383V1505.66H120.923V1512H118.423V1497.72ZM134.478 1512.28C133.652 1512.28 132.912 1512.15 132.258 1511.88C131.618 1511.6 131.072 1511.22 130.618 1510.74C130.178 1510.26 129.838 1509.69 129.598 1509.02C129.372 1508.35 129.258 1507.62 129.258 1506.82C129.258 1506.03 129.372 1505.31 129.598 1504.64C129.838 1503.97 130.178 1503.4 130.618 1502.92C131.072 1502.44 131.618 1502.07 132.258 1501.8C132.912 1501.52 133.652 1501.38 134.478 1501.38C135.305 1501.38 136.038 1501.52 136.678 1501.8C137.332 1502.07 137.878 1502.44 138.318 1502.92C138.772 1503.4 139.112 1503.97 139.338 1504.64C139.578 1505.31 139.698 1506.03 139.698 1506.82C139.698 1507.62 139.578 1508.35 139.338 1509.02C139.112 1509.69 138.772 1510.26 138.318 1510.74C137.878 1511.22 137.332 1511.6 136.678 1511.88C136.038 1512.15 135.305 1512.28 134.478 1512.28ZM134.478 1510.48C134.985 1510.48 135.425 1510.37 135.798 1510.16C136.172 1509.95 136.478 1509.67 136.718 1509.32C136.958 1508.97 137.132 1508.59 137.238 1508.16C137.358 1507.72 137.418 1507.27 137.418 1506.82C137.418 1506.38 137.358 1505.94 137.238 1505.5C137.132 1505.06 136.958 1504.67 136.718 1504.34C136.478 1503.99 136.172 1503.71 135.798 1503.5C135.425 1503.29 134.985 1503.18 134.478 1503.18C133.972 1503.18 133.532 1503.29 133.158 1503.5C132.785 1503.71 132.478 1503.99 132.238 1504.34C131.998 1504.67 131.818 1505.06 131.698 1505.5C131.592 1505.94 131.538 1506.38 131.538 1506.82C131.538 1507.27 131.592 1507.72 131.698 1508.16C131.818 1508.59 131.998 1508.97 132.238 1509.32C132.478 1509.67 132.785 1509.95 133.158 1510.16C133.532 1510.37 133.972 1510.48 134.478 1510.48ZM141.374 1501.66H143.514V1503.66H143.554C143.62 1503.38 143.747 1503.11 143.934 1502.84C144.134 1502.57 144.367 1502.33 144.634 1502.12C144.914 1501.89 145.22 1501.71 145.554 1501.58C145.887 1501.45 146.227 1501.38 146.574 1501.38C146.84 1501.38 147.02 1501.39 147.114 1501.4C147.22 1501.41 147.327 1501.43 147.434 1501.44V1503.64C147.274 1503.61 147.107 1503.59 146.934 1503.58C146.774 1503.55 146.614 1503.54 146.454 1503.54C146.067 1503.54 145.7 1503.62 145.354 1503.78C145.02 1503.93 144.727 1504.15 144.474 1504.46C144.22 1504.75 144.02 1505.12 143.874 1505.56C143.727 1506 143.654 1506.51 143.654 1507.08V1512H141.374V1501.66ZM152.391 1501.66H154.891L157.591 1509.38H157.631L160.251 1501.66H162.631L158.611 1512.56C158.425 1513.03 158.238 1513.47 158.051 1513.9C157.878 1514.33 157.658 1514.7 157.391 1515.02C157.138 1515.35 156.818 1515.61 156.431 1515.8C156.045 1516 155.551 1516.1 154.951 1516.1C154.418 1516.1 153.891 1516.06 153.371 1515.98V1514.06C153.558 1514.09 153.738 1514.11 153.911 1514.14C154.085 1514.18 154.265 1514.2 154.451 1514.2C154.718 1514.2 154.938 1514.17 155.111 1514.1C155.285 1514.03 155.425 1513.93 155.531 1513.8C155.651 1513.68 155.751 1513.53 155.831 1513.36C155.911 1513.19 155.985 1512.99 156.051 1512.76L156.311 1511.96L152.391 1501.66ZM168.422 1512.28C167.596 1512.28 166.856 1512.15 166.202 1511.88C165.562 1511.6 165.016 1511.22 164.562 1510.74C164.122 1510.26 163.782 1509.69 163.542 1509.02C163.316 1508.35 163.202 1507.62 163.202 1506.82C163.202 1506.03 163.316 1505.31 163.542 1504.64C163.782 1503.97 164.122 1503.4 164.562 1502.92C165.016 1502.44 165.562 1502.07 166.202 1501.8C166.856 1501.52 167.596 1501.38 168.422 1501.38C169.249 1501.38 169.982 1501.52 170.622 1501.8C171.276 1502.07 171.822 1502.44 172.262 1502.92C172.716 1503.4 173.056 1503.97 173.282 1504.64C173.522 1505.31 173.642 1506.03 173.642 1506.82C173.642 1507.62 173.522 1508.35 173.282 1509.02C173.056 1509.69 172.716 1510.26 172.262 1510.74C171.822 1511.22 171.276 1511.6 170.622 1511.88C169.982 1512.15 169.249 1512.28 168.422 1512.28ZM168.422 1510.48C168.929 1510.48 169.369 1510.37 169.742 1510.16C170.116 1509.95 170.422 1509.67 170.662 1509.32C170.902 1508.97 171.076 1508.59 171.182 1508.16C171.302 1507.72 171.362 1507.27 171.362 1506.82C171.362 1506.38 171.302 1505.94 171.182 1505.5C171.076 1505.06 170.902 1504.67 170.662 1504.34C170.422 1503.99 170.116 1503.71 169.742 1503.5C169.369 1503.29 168.929 1503.18 168.422 1503.18C167.916 1503.18 167.476 1503.29 167.102 1503.5C166.729 1503.71 166.422 1503.99 166.182 1504.34C165.942 1504.67 165.762 1505.06 165.642 1505.5C165.536 1505.94 165.482 1506.38 165.482 1506.82C165.482 1507.27 165.536 1507.72 165.642 1508.16C165.762 1508.59 165.942 1508.97 166.182 1509.32C166.422 1509.67 166.729 1509.95 167.102 1510.16C167.476 1510.37 167.916 1510.48 168.422 1510.48ZM184.398 1512H182.158V1510.56H182.118C181.838 1511.08 181.418 1511.5 180.858 1511.82C180.311 1512.13 179.751 1512.28 179.178 1512.28C177.818 1512.28 176.831 1511.95 176.218 1511.28C175.618 1510.6 175.318 1509.58 175.318 1508.22V1501.66H177.598V1508C177.598 1508.91 177.771 1509.55 178.118 1509.92C178.465 1510.29 178.951 1510.48 179.578 1510.48C180.058 1510.48 180.458 1510.41 180.778 1510.26C181.098 1510.11 181.358 1509.92 181.558 1509.68C181.758 1509.43 181.898 1509.13 181.978 1508.78C182.071 1508.43 182.118 1508.06 182.118 1507.66V1501.66H184.398V1512Z" fill="#860066"/>
                 <path d="M110 232L110 676" stroke="url(#paint17_linear_1413_795)" stroke-width="2"/>
                 <path d="M110 1196L110 752" stroke="url(#paint18_linear_1413_795)" stroke-width="2"/>
-                <path d="M23 1221H1.00001L1 1504H23" stroke="#860066" stroke-width="2"/>
-                <path d="M23 1363H-1.17719e-06" stroke="#860066" stroke-width="2"/>
-                <path d="M23 1292H-1.17719e-06" stroke="#860066" stroke-width="2"/>
+                <path d="M20 1221H1.00001L1 1504H20" stroke="#860066" stroke-width="2"/>
+                <path d="M20 1363H3.8743e-07" stroke="#860066" stroke-width="2"/>
+                <path d="M20 1292H3.8743e-07" stroke="#860066" stroke-width="2"/>
                 <path d="M109.5 1245V1268" stroke="#860066" stroke-width="2"/>
                 <path d="M109.5 1316V1339" stroke="#860066" stroke-width="2"/>
                 <path d="M109.5 1386L110 1480" stroke="#860066" stroke-width="2"/>
@@ -388,29 +401,28 @@
                 </linearGradient>
                 </defs>
             </svg>
+                              
                 
                 
-                
-            <!-- 0. ENGAGEMENT SECTION ################################### -->
-            <div class="paragraph-hold">
-                <div class="essay-side">
-                    <div class="essay-snippet">
-                        <h2>X's Engage-mania</h2>
-                        <p class="small-title">What is engagement and what about its time consuming aspect?</p>
-                        <p>Boosting user engagement is the lifeblood of platforms like X. Since most of these services are free to use and rely on ad revenue, their business models hinge on maximizing user and content visibility. The goal is to keep you glued to the app for as long as possible (<a href="#center-humane-technology-2021">Center for Humane Technology, 2021</a>).  In essence, your attention becomes the currency these companies thrive on. A world where your time, focus, and mental energy are commodified to power the revenue engine of social networking giants (<a href="#burkeman-2019">Burkeman, 2019</a>).</p>
-                        <p class="small-title">How is engagement-centric design implemented?</p>
-                        <p>Engagement-centric design works on multiple levels, but at its core, it’s about interaction. Let’s break it down into three key strategies. First, platforms lean heavily on simple interactions – think likes and comments – which are designed to keep you coming back for more (<a href="#stroud-muddiman-scacco-2013">Stroud, Muddiman & Scacco, 2013</a>). Then, there’s the all-important notification system. A 2023 study (<a href="#bell-etal-2023">Bell et al., 2023</a>)  found that users who received notifications were 3.5 times more likely to open the app within the next hour, compared to those who didn’t. So your phone’s constant buzzing is definitely by design. Finally, the never-ending scroll – an infinite feed that subtly increases the time you spend on the platform – is another tactic. It’s especially relevant now, with short video formats taking over the social media world (<a href="#koc-2023">Koç, 2023</a>).</p>
-                        <p class="small-title">What are the effects of these design patterns on polarisation?</p>
-                        <p>The link between high engagement and political polarization in online discussions is largely driven by the amount of time spent on the platform. Users who spend more time on X are more exposed to radical, polarized, and hateful content (<a href="#national-institute-justice-2023">National Institute of Justice, 2023</a>).  They interact more with like-minded peers, creating feedback loops that reinforce their views – known as <emphasis>echo chambers</emphasis> or <emphasis>filter bubbles</emphasis> (<a href="#cinelli-etal-2021">Cinelli et al., 2021</a>), which we will explain further in the last chapter <emphasis><a href="#following-for-you">Following and For you</a></emphasis>. Additionally, higher engagement increases a user's reach (X explains the mechanics <a href="https://create.twitter.com/en/goals/engagement">here</a>). , encouraging more provocative content to trigger emotional reactions and drive interaction. In its extreme form, this leads to <emphasis>engagement farming</emphasis> where social media algorithms are manipulated to artificially boost likes, shares, and comments (<a href="#oestreicher-2024">Oestreicher, 2024</a>).</p>
-                        <p>By unraveling the hidden mechanisms behind X’s interface and exploring speculative, design-driven interventions, we aim to unmask how thoughtful design can challenge polarization and reshape the way we engage with content online.</p>
-                        <p>Now let’s look at these aforementioned features of X and disrupt the concrete interface design decisions that ultimately lead to an increased engagement with the platform.</p>
-                    </div>
-                </div>
-                <div class="design-side" style="display: flex; flex-direction: column; justify-content: flex-end;">
-                    <p class="rq">To what extent does X's interface increase political polarization and<br>how can we unmask and disrupt these interaction patterns by design?</p>
+        <!-- 0. ENGAGEMENT SECTION ################################### -->
+        <div id="engagement" class="paragraph-hold">
+            <div class="essay-side">
+                <div class="essay-snippet">
+                    <h2>X's Engage-mania</h2>
+                    <p class="small-title">What is engagement and what about its time consuming aspect?</p>
+                    <p>Boosting user engagement is the lifeblood of platforms like X. Since most of these services are free to use and rely on ad revenue, their business models hinge on maximizing user and content visibility. The goal is to keep you glued to the app for as long as possible (<a href="#center-humane-technology-2021">Center for Humane Technology, 2021</a>).  In essence, your attention becomes the currency these companies thrive on. A world where your time, focus, and mental energy are commodified to power the revenue engine of social networking giants (<a href="#burkeman-2019">Burkeman, 2019</a>).</p>
+                    <p class="small-title">How is engagement-centric design implemented?</p>
+                    <p>Engagement-centric design works on multiple levels, but at its core, it’s about interaction. Let’s break it down into three key strategies. First, platforms lean heavily on simple interactions – think likes and comments – which are designed to keep you coming back for more (<a href="#stroud-muddiman-scacco-2013">Stroud, Muddiman & Scacco, 2013</a>). Then, there’s the all-important notification system. A 2023 study (<a href="#bell-etal-2023">Bell et al., 2023</a>)  found that users who received notifications were 3.5 times more likely to open the app within the next hour, compared to those who didn’t. So your phone’s constant buzzing is definitely by design. Finally, the never-ending scroll – an infinite feed that subtly increases the time you spend on the platform – is another tactic. It’s especially relevant now, with short video formats taking over the social media world (<a href="#koc-2023">Koç, 2023</a>).</p>
+                    <p class="small-title">What are the effects of these design patterns on polarisation?</p>
+                    <p>The link between high engagement and political polarization in online discussions is largely driven by the amount of time spent on the platform. Users who spend more time on X are more exposed to radical, polarized, and hateful content (<a href="#national-institute-justice-2023">National Institute of Justice, 2023</a>).  They interact more with like-minded peers, creating feedback loops that reinforce their views – known as <emphasis>echo chambers</emphasis> or <emphasis>filter bubbles</emphasis> (<a href="#cinelli-etal-2021">Cinelli et al., 2021</a>), which we will explain further in the last chapter <emphasis><a href="#following-for-you">Following and For you</a></emphasis>. Additionally, higher engagement increases a user's reach (X explains the mechanics <a href="https://create.twitter.com/en/goals/engagement">here</a>). , encouraging more provocative content to trigger emotional reactions and drive interaction. In its extreme form, this leads to <emphasis>engagement farming</emphasis> where social media algorithms are manipulated to artificially boost likes, shares, and comments (<a href="#oestreicher-2024">Oestreicher, 2024</a>).</p>
+                    <p>By unraveling the hidden mechanisms behind X’s interface and exploring speculative, design-driven interventions, we aim to unmask how thoughtful design can challenge polarization and reshape the way we engage with content online.</p>
+                    <p>Now let’s look at these aforementioned features of X and disrupt the concrete interface design decisions that ultimately lead to an increased engagement with the platform.</p>
                 </div>
             </div>
-
+            <div class="design-side" style="display: flex; flex-direction: column; justify-content: flex-end;">
+                <p class="rq">To what extent does X's interface increase political polarization and<br>how can we unmask and disrupt these interaction patterns by design?</p>
+            </div>
+        </div>
 
         <!-- 1.1 INTERACTIONS ---------------------------------------- -->
        <div  id="interacting-with-posts" class="chapter-hold">
