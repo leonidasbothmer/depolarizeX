@@ -417,13 +417,15 @@ footer {
     font-size: 20px;
     margin-top: 64px;
     padding-bottom: 120px;
+    width: 100%;
 
     background-color: #303E48;
 
 }
-/* .footer-inlay {
+.footer-inlay {
+    width: 100%;
     background-color: #303E48;
-} */
+}
 .references {
     font-size: 16px;
     line-height: 130%;
