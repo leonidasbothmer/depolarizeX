@@ -188,17 +188,13 @@ em, emphasis {
     border-left: 12px solid hsla(39, 64%, 79%, 0.6);
 }
 .marked-text {
-    /* display: inline-block;
-    margin: 20px 0px;
-    padding: 12px 20px; */
+    display: inline;
     color: black;
     padding: 0 4px;
     margin: 0 4px;
     background-color: hsl(39, 100%, 60%);
     font-family: "ABC Marist Unlicenced Trial", serif;
     font-weight: 600;
-    font-size: 24px;
-    line-height: 130%;
 } 
 p.paragraph-note {
     /* font-family: "Geist Sans", "sans-serif";
