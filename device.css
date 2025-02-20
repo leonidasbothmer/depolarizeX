@@ -12,19 +12,19 @@
     background-color: white;
 }
 .device.type-interactive {
-    box-shadow: 0 0 0 11px #becec1; /* Second outline */
+    box-shadow: 0 0 0 12px #becec1; /* Second outline */
 }
 .device.type-video {
-    box-shadow: 0 0 0 11px #c49ac6; /* Second outline */
+    box-shadow: 0 0 0 12px #c49ac6; /* Second outline */
 }
 .device.type-image {
-    box-shadow: 0 0 0 11px #ebd0a7; /* Second outline */
+    box-shadow: 0 0 0 12px #ebd0a7; /* Second outline */
 }
 .device.type-slider {
-    box-shadow: 0 0 0 11px #ebd0a7; /* Second outline */
+    box-shadow: 0 0 0 12px #ebd0a7; /* Second outline */
 }
 .device.type-actual {
-    box-shadow: 0 0 0 11px #a3d3e9; /* Second outline */
+    box-shadow: 0 0 0 12px #a3d3e9; /* Second outline */
 }
 
 .screen {
