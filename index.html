@@ -857,7 +857,6 @@
         nextBtn.addEventListener('click', () => slide(1));
     </script>
 
-
     <!-- LINKING TO REFERENCES -->
     <script>
         document.querySelectorAll('main a').forEach(anchor => {
@@ -971,44 +970,72 @@
     
     <!-- VIDEO HANDLING -->
     <script>
-        const video = document.querySelector('video');
-        const progress = document.querySelector('.progress');
-        
-        let animationFrame;
-
-        function updateProgress() {
-            const percent = (video.currentTime / video.duration) * 100;
-            progress.style.width = percent + '%';
-            animationFrame = requestAnimationFrame(updateProgress);
-        }
-
-        video.addEventListener('play', () => {
-            animationFrame = requestAnimationFrame(updateProgress);
+        // Event delegation for handling multiple video controls
+        document.addEventListener('click', (e) => {
+            if (e.target.classList.contains('playPause') || e.target.closest('.playPause')) {
+                const button = e.target.classList.contains('playPause') ? e.target : e.target.closest('.playPause');
+                const container = button.parentElement.parentElement;
+                const video = container.querySelector('video');
+                const playPauseIcon = button.querySelector('.play-pause-icon');
+                
+                if (video.paused) {
+                    video.play();
+                    playPauseIcon.src = 'static/assets/icons_essay/pause-icon.svg';
+                } else {
+                    video.pause(); 
+                    playPauseIcon.src = 'static/assets/icons_essay/play-icon.svg';
+                }
+            }
         });
 
-        video.addEventListener('pause', () => {
-            cancelAnimationFrame(animationFrame);
+        // Multiple mute buttons should work
+        document.addEventListener('click', (e) => {
+            if (e.target.classList.contains('mute-btn') || e.target.closest('.mute-btn')) {
+                const button = e.target.classList.contains('mute-btn') ? e.target : e.target.closest('.mute-btn');
+                const container = button.parentElement.parentElement;
+                const video = container.querySelector('video');
+                const muteIcon = button.querySelector('.mute-icon');
+
+                video.muted = !video.muted;
+                muteIcon.src = video.muted ? 'static/assets/icons_essay/mute-icon.svg' : 'static/assets/icons_essay/unmute-icon.svg';
+            }
         });
 
-        video.addEventListener('ended', () => {
-            cancelAnimationFrame(animationFrame);
-            progress.style.width = '0%';
+        // Set initial mute state
+        document.querySelectorAll('video').forEach(video => {
+            video.muted = true;
+            const muteIcon = video.parentElement.parentElement.querySelector('.mute-icon');
+            if (muteIcon) {
+                muteIcon.src = 'static/assets/icons_essay/mute-icon.svg';
+            }
         });
 
-        const playPauseBtn = document.querySelector('.playPause');
-                const playPauseIcon = document.querySelector('.play-pause-icon');
-                let isPlaying = true;
 
-                playPauseBtn.addEventListener('click', () => {
-                    if (isPlaying) {
-                        video.pause();
-                        playPauseIcon.src = 'static/assets/icons_essay/play-icon.svg';
-                    } else {
-                        video.play();
-                        playPauseIcon.src = 'static/assets/icons_essay/pause-icon.svg';
-                    }
-                    isPlaying = !isPlaying;
-                });
+        // Update progress for each video
+        document.querySelectorAll('video').forEach(video => {
+            const container = video.closest('.device-hold');
+            const progress = container.querySelector('.progress');
+            let animationFrame;
+
+            function updateProgress() {
+                const percent = (video.currentTime / video.duration) * 100;
+                progress.style.width = percent + '%';
+                animationFrame = requestAnimationFrame(updateProgress);
+            }
+
+            video.addEventListener('play', () => {
+                animationFrame = requestAnimationFrame(updateProgress);
+            });
+
+            video.addEventListener('pause', () => {
+                cancelAnimationFrame(animationFrame);
+            });
+
+            video.addEventListener('ended', () => {
+                cancelAnimationFrame(animationFrame);
+                progress.style.width = '0%';
+            });
+        });
     </script>
 
     <!-- READING PROGRESSBAR -->
