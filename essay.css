@@ -276,6 +276,12 @@ main {
     flex-direction: column;
     gap: 256px;
 }
+.essay-hold {
+    display: flex;
+    flex-direction: column;
+    gap: 256px;
+    width: 100%;
+}
 .chapter-hold {
     width: 100%;
     display: flex;
@@ -418,7 +424,7 @@ footer {
     margin-top: 64px;
     padding-bottom: 120px;
     width: 100%;
-
+    z-index: 100;
     background-color: #303E48;
 
 }
@@ -661,13 +667,16 @@ footer {
 /* SIDE MENU */
 
 .side-toc-wrapper {
-    position: fixed;
-    z-index: 1000;
+    position: sticky;
+    position: -webkit-sticky;
+    /* z-index: 1000; */
     top: 20px;
-    left: 20px;
+    margin-left: 20px;
     align-items: flex-start;
     padding: 0;
 
+    margin-top: -236px; 
+    margin-bottom: -256px; 
 }
 .side-toc-wrapper ul {
     display: flex;
