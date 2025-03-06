@@ -29,9 +29,9 @@ h1,h2,h3,h4,h5,h6,p {
     cursor: url('cursor-files/pointer.svg') 10 10, pointer;
 }
 
-@media screen and (max-width: 1100px), screen and (max-height: 890px) {
+@media screen and (max-width: 1080px), screen and (max-height: 720px) {
     body:before {
-        content: "This is a desktop application. Please resize your window to at least 1100x890 pixels or zoom out to view this essay";
+        content: "This is a desktop application. Please resize your window to at least 1080x720 pixels or zoom out to view this essay";
         position: fixed;
         top: 0;
         left: 0;
